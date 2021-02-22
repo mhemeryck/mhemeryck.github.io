@@ -1,33 +1,22 @@
-# Site settings
-title:          "Martyn's musings"
-description:    "Blog of whatever"
-url:            "https://mhemeryck.github.io"
+title: Martyn's musings
+description: Random thoughts in no particular order
+url: https://mhemeryck.github.io
+author: Martijn Hemeryck
+email: martijn.hemeryck@gmail.com
 
-# Google Analytics
-google_analytics: UA—XXXXXXXX-X
+remote_theme: riggraz/no-style-please
 
-# Author
-author:
-  name:         Martijn Hemeryck
-  email:        martijn.hemeryck@gmail.com
+theme_config:
+  appearance: "dark"
+  back_home_text: ".."
+  date_format: "%Y-%m-%d"
 
-# Build settings
-markdown:       kramdown
-include:
-  - _pages
-
-# Assets
-sass:
-  sass_dir:     _sass
-  style:        compressed
-
-# Gems
 plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-seo-tag
-  # - jemoji #Uncomment this to allow emoji in your post
+  - jekyll-remote-theme
 
-# Permalinks
-permalink:      /:year-:month-:day/:title
-paginate:       5
+favicon: logo.png
+permalink: /:year-:month-:day/:title
+
+exclude:
+  - docker-compose.yml
+  - tags
