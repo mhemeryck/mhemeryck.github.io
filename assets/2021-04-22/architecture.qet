@@ -1,0 +1,511 @@
+<project title="" version="0.70" folioSheetQuantity="0">
+    <properties>
+        <property show="1" name="savedfilename">architecture</property>
+        <property show="1" name="savedtime">21:17</property>
+        <property show="1" name="savedfilepath">/home/mhemeryck/Projects/mhemeryck.github.io/assets/2021-04-22/architecture.qet</property>
+        <property show="1" name="saveddate">4/27/21</property>
+    </properties>
+    <newdiagrams>
+        <border displaycols="true" displayrows="true" cols="17" rows="8" rowsize="80" colsize="60"/>
+        <inset locmach="" title="" date="null" folio="%id/%total" plant="" displayAt="bottom" version="" author="" indexrev="" auto_page_num="" filename=""/>
+        <conductors displaytext="1" vertirotatetext="270" horizrotatetext="0" bicolor="false" numsize="7" function="" onetextperfolio="0" condsize="1" type="multi" vertical-alignment="AlignRight" color2="#000000" dash-size="1" tension-protocol="" horizontal-alignment="AlignBottom" num="_" formula=""/>
+        <report label="%f-%l%c"/>
+        <xrefs>
+            <xref showpowerctc="false" slave_label="(%f-%l%c)" powerprefix="" snapto="label" master_label="%f-%l%c" type="coil" delayprefix="" offset="0" switchprefix="" displayhas="cross"/>
+            <xref showpowerctc="false" slave_label="(%f-%l%c)" powerprefix="" snapto="label" master_label="%f-%l%c" type="commutator" delayprefix="" offset="0" switchprefix="" displayhas="cross"/>
+            <xref showpowerctc="false" slave_label="(%f-%l%c)" powerprefix="" snapto="label" master_label="%f-%l%c" type="protection" delayprefix="" offset="0" switchprefix="" displayhas="cross"/>
+        </xrefs>
+        <conductors_autonums current_autonum="" freeze_new_conductors="false"/>
+        <folio_autonums/>
+        <element_autonums freeze_new_elements="false" current_autonum=""/>
+    </newdiagrams>
+    <diagram height="660" version="0.70" freezeNewConductor="false" indexrev="" rows="8" colsize="60" filename="" plant="" displaycols="true" author="" displayAt="bottom" displayrows="true" freezeNewElement="false" auto_page_num="" title="" date="null" folio="%id/%total" order="1" locmach="" cols="17" rowsize="80">
+        <defaultconductor displaytext="1" vertirotatetext="270" horizrotatetext="0" bicolor="false" numsize="7" function="" onetextperfolio="0" condsize="1" type="multi" vertical-alignment="AlignRight" color2="#000000" dash-size="1" tension-protocol="" horizontal-alignment="AlignBottom" num="_" formula=""/>
+        <elements>
+            <element freezeLabel="false" orientation="0" x="840" y="370" type="embed://import/AREI-RGIE/arei_consumption_appliances/arei_lighting.elmt" uuid="{0d94048e-5ff3-4c85-bd8b-40a932259f0a}" z="10" prefix="">
+                <terminals>
+                    <terminal orientation="0" id="0" x="0" y="3" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="3" id="1" x="3" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="1" id="2" x="-3" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="2" id="3" x="0" y="-3" number="_" nameHidden="0" name="_"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text Valignment="AlignTop" text_width="-1" text_from="ElementInfo" x="-10" y="13" frame="false" Halignment="AlignLeft" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" uuid="{524efc48-a83e-4573-9e50-86ec2b90c02e}">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="2" x="770" y="370" type="embed://import/AREI-RGIE/arei_consumption_appliances/arei_lighting.elmt" uuid="{1727c11c-5cd7-41d9-ab61-260e9afb9b54}" z="10" prefix="">
+                <terminals>
+                    <terminal orientation="0" id="4" x="0" y="3" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="3" id="5" x="3" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="1" id="6" x="-3" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="2" id="7" x="0" y="-3" number="_" nameHidden="0" name="_"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text Valignment="AlignTop" text_width="-1" text_from="ElementInfo" x="-10" y="13" frame="false" Halignment="AlignLeft" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" uuid="{f6257b93-10f6-4b9d-a374-4c4ecd9474cd}">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="1" x="700" y="370" type="embed://import/AREI-RGIE/arei_consumption_appliances/arei_lighting.elmt" uuid="{ef8e5b77-8cd9-412f-bbc6-601bab466274}" z="10" prefix="">
+                <terminals>
+                    <terminal orientation="0" id="8" x="0" y="3" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="3" id="9" x="3" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="1" id="10" x="-3" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="2" id="11" x="0" y="-3" number="_" nameHidden="0" name="_"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text Valignment="AlignTop" text_width="-1" text_from="ElementInfo" x="-10" y="13" frame="false" Halignment="AlignLeft" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" uuid="{c29eba1a-8fad-4fd0-baff-6320b0c899af}">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="0" x="60" y="340" type="embed://import/AREI-RGIE/arei_consumption_appliances/arei_lighting.elmt" uuid="{b5b276d7-3d72-4fe0-b638-3ccc77516ba8}" z="10" prefix="">
+                <terminals>
+                    <terminal orientation="0" id="12" x="0" y="3" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="3" id="13" x="3" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="1" id="14" x="-3" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="2" id="15" x="0" y="-3" number="_" nameHidden="0" name="_"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text Valignment="AlignTop" text_width="-1" text_from="ElementInfo" x="-10" y="13" frame="false" Halignment="AlignLeft" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" uuid="{23e32c42-c97f-4907-8a70-c70eed908f2b}">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="0" x="60" y="400" type="embed://import/AREI-RGIE/arei_consumption_appliances/arei_lighting.elmt" uuid="{4f6e11b3-5760-40cd-818f-22024a294e88}" z="10" prefix="">
+                <terminals>
+                    <terminal orientation="0" id="16" x="0" y="3" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="3" id="17" x="3" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="1" id="18" x="-3" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="2" id="19" x="0" y="-3" number="_" nameHidden="0" name="_"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text Valignment="AlignTop" text_width="-1" text_from="ElementInfo" x="-10" y="13" frame="false" Halignment="AlignLeft" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" uuid="{fb223811-fc42-43b9-ae7d-ee945aacaf8c}">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="0" x="60" y="460" type="embed://import/AREI-RGIE/arei_consumption_appliances/arei_lighting.elmt" uuid="{d3497f87-71c1-4b48-99d6-c76f8a318e3e}" z="10" prefix="">
+                <terminals>
+                    <terminal orientation="0" id="20" x="0" y="3" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="3" id="21" x="3" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="1" id="22" x="-3" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="2" id="23" x="0" y="-3" number="_" nameHidden="0" name="_"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text Valignment="AlignTop" text_width="-1" text_from="ElementInfo" x="-10" y="13" frame="false" Halignment="AlignLeft" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" uuid="{470bbe25-bcd1-4a78-b55a-c594c4d64e41}">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="0" x="60" y="110" type="embed://import/AREI-RGIE/arei_switches/arei_push_button.elmt" uuid="{6be6a7ff-0b5a-4d4a-b343-9a00973d9df9}" z="10" prefix="">
+                <terminals>
+                    <terminal orientation="0" id="24" x="0" y="-8" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="3" id="25" x="-8" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="1" id="26" x="8" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="2" id="27" x="0" y="8" number="_" nameHidden="0" name="_"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text Valignment="AlignTop" text_width="-1" text_from="ElementInfo" x="-10" y="8" frame="false" Halignment="AlignLeft" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" uuid="{a1310985-6dd8-497e-a43d-721f106dac8f}">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="0" x="60" y="70" type="embed://import/AREI-RGIE/arei_switches/arei_push_button.elmt" uuid="{b37250f5-96ee-4917-8f98-a287c2191a94}" z="10" prefix="">
+                <terminals>
+                    <terminal orientation="0" id="28" x="0" y="-8" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="3" id="29" x="-8" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="1" id="30" x="8" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="2" id="31" x="0" y="8" number="_" nameHidden="0" name="_"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text Valignment="AlignTop" text_width="-1" text_from="ElementInfo" x="-10" y="8" frame="false" Halignment="AlignLeft" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" uuid="{7010acba-810e-4d7d-b875-b2915fc2888d}">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="0" x="60" y="150" type="embed://import/AREI-RGIE/arei_switches/arei_push_button.elmt" uuid="{842aef83-67e7-4a23-84b5-71c435d4d3f3}" z="10" prefix="">
+                <terminals>
+                    <terminal orientation="0" id="32" x="0" y="-8" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="3" id="33" x="-8" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="1" id="34" x="8" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="2" id="35" x="0" y="8" number="_" nameHidden="0" name="_"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text Valignment="AlignTop" text_width="-1" text_from="ElementInfo" x="-10" y="8" frame="false" Halignment="AlignLeft" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" uuid="{b2c953ea-8395-46eb-bf32-ecda87d5a036}">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="0" x="710" y="540" type="embed://import/AREI-RGIE/arei_consumption_appliances/arei_motor.elmt" uuid="{5f1abe1f-0765-486c-8187-5636aa093381}" z="10" prefix="">
+                <terminals>
+                    <terminal orientation="0" id="36" x="0" y="-9" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="3" id="37" x="-9" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="1" id="38" x="9" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="2" id="39" x="0" y="9" number="_" nameHidden="0" name="_"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text Valignment="AlignTop" text_width="-1" text_from="ElementInfo" x="-10" y="13" frame="false" Halignment="AlignLeft" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" uuid="{7f88199f-3a3b-4680-9f36-13ffdbb46360}">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="0" x="710" y="500" type="embed://import/AREI-RGIE/arei_consumption_appliances/arei_motor.elmt" uuid="{b9fe2efb-a099-43ac-b7e9-c57d3df20657}" z="10" prefix="">
+                <terminals>
+                    <terminal orientation="0" id="40" x="0" y="-9" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="3" id="41" x="-9" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="1" id="42" x="9" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="2" id="43" x="0" y="9" number="_" nameHidden="0" name="_"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text Valignment="AlignTop" text_width="-1" text_from="ElementInfo" x="-10" y="13" frame="false" Halignment="AlignLeft" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" uuid="{48d0e09b-6a76-48f1-80d3-3cca4af837a7}">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="0" x="710" y="460" type="embed://import/AREI-RGIE/arei_consumption_appliances/arei_motor.elmt" uuid="{10ba5352-2102-4500-8064-b0fd022aa359}" z="10" prefix="">
+                <terminals>
+                    <terminal orientation="0" id="44" x="0" y="-9" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="3" id="45" x="-9" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="1" id="46" x="9" y="0" number="_" nameHidden="0" name="_"/>
+                    <terminal orientation="2" id="47" x="0" y="9" number="_" nameHidden="0" name="_"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text Valignment="AlignTop" text_width="-1" text_from="ElementInfo" x="-10" y="13" frame="false" Halignment="AlignLeft" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" uuid="{2291b5ef-53db-41a3-a3a5-b24429c4a79a}">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+        </elements>
+        <conductors>
+            <conductor terminal1="34" displaytext="1" condsize="1" function="" y="0" dash-size="1" numsize="7" vertirotatetext="270" x="0" vertical-alignment="AlignRight" bicolor="false" type="multi" color2="#000000" formula="" freezeLabel="false" horizrotatetext="0" horizontal-alignment="AlignBottom" num="_" onetextperfolio="0" terminal2="30" tension-protocol="">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor terminal1="34" displaytext="1" condsize="1" function="" y="0" dash-size="1" numsize="7" vertirotatetext="270" x="0" vertical-alignment="AlignRight" bicolor="false" type="multi" color2="#000000" formula="" freezeLabel="false" horizrotatetext="0" horizontal-alignment="AlignBottom" num="_" onetextperfolio="0" terminal2="26" tension-protocol="">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor terminal1="5" displaytext="1" condsize="1" function="" y="0" dash-size="1" numsize="7" vertirotatetext="270" x="0" vertical-alignment="AlignRight" bicolor="false" type="multi" color2="#000000" formula="" freezeLabel="false" horizrotatetext="0" horizontal-alignment="AlignBottom" num="_" onetextperfolio="0" terminal2="2" tension-protocol="">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor terminal1="11" displaytext="1" condsize="1" function="" y="0" dash-size="1" numsize="7" vertirotatetext="270" x="0" vertical-alignment="AlignRight" bicolor="false" type="multi" color2="#000000" formula="" freezeLabel="false" horizrotatetext="0" horizontal-alignment="AlignBottom" num="_" onetextperfolio="0" terminal2="6" tension-protocol="">
+                <sequentialNumbers/>
+            </conductor>
+        </conductors>
+        <inputs>
+            <input x="720" y="60" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>UI: web based / app&lt;/p>&lt;/body>&lt;/html>"/>
+            <input x="650" y="540" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>230V&lt;/p>&lt;/body>&lt;/html>"/>
+            <input x="530" y="310" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>DALI&lt;/p>&lt;/body>&lt;/html>"/>
+            <input x="530" y="160" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>home assistant&lt;/p>&lt;/body>&lt;/html>"/>
+            <input x="170" y="90" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>unipi digital inputs&lt;/p>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>"/>
+            <input x="170" y="330" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>unipi digital outputs&lt;/p>&lt;/body>&lt;/html>"/>
+            <input x="640" y="310" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>230V / DALI bus&lt;/p>&lt;/body>&lt;/html>"/>
+            <input x="119.329" y="124.973" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>24V&lt;/p>&lt;/body>&lt;/html>"/>
+            <input x="520" y="50" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>mosquitto&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>MQTT broker&lt;/p>&lt;/body>&lt;/html>"/>
+            <input x="530" y="160" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>home assistant&lt;/p>&lt;/body>&lt;/html>"/>
+            <input x="110" y="160" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>SVV cable&lt;/p>&lt;/body>&lt;/html>"/>
+            <input x="720" y="190" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>thermostat&lt;/p>&lt;/body>&lt;/html>"/>
+            <input x="578.102" y="454.741" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>"/>
+            <input x="100" y="330" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>relays&lt;/p>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>"/>
+            <input x="630.51" y="152.387" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>HTTP&lt;/p>&lt;/body>&lt;/html>"/>
+            <input x="107.235" y="470.867" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>230V&lt;/p>&lt;/body>&lt;/html>"/>
+            <input x="670" y="420" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>covers&lt;/p>&lt;/body>&lt;/html>"/>
+            <input x="520" y="430" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>unipi digital outputs&lt;/p>&lt;/body>&lt;/html>"/>
+            <input x="636.96" y="223.339" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>HTTP&lt;/p>&lt;/body>&lt;/html>"/>
+            <input x="670" y="420" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>covers&lt;/p>&lt;/body>&lt;/html>"/>
+            <input x="770" y="400" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>(LED) lights&lt;/p>&lt;/body>&lt;/html>"/>
+            <input x="40" y="490" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>lights&lt;/p>&lt;/body>&lt;/html>"/>
+        </inputs>
+        <shapes>
+            <shape closed="0" is_movable="1" y1="210" x1="700" x2="800" type="Rectangle" ry="0" y2="260" rx="0" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape closed="0" is_movable="1" y1="110" x1="470" x2="520" type="Line" y2="220" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape closed="0" is_movable="1" y1="510" x1="620" x2="700" type="Line" y2="540" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape closed="0" is_movable="1" y1="390" x1="180" x2="60" type="Line" y2="340" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape closed="0" is_movable="1" y1="120" x1="180" x2="260" type="Rectangle" ry="0" y2="180" rx="0" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape closed="0" is_movable="1" y1="50" x1="450" x2="520" type="Rectangle" ry="0" y2="110" rx="0" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape closed="0" is_movable="1" y1="370" x1="180" x2="270" type="Rectangle" ry="0" y2="440" rx="0" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape closed="0" is_movable="1" y1="200" x1="520" x2="610" type="Rectangle" ry="0" y2="260" rx="0" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape closed="0" is_movable="1" y1="140" x1="260" x2="450" type="Line" y2="80" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape closed="0" is_movable="1" y1="400" x1="180" x2="60" type="Line" y2="400" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape closed="0" is_movable="1" y1="480" x1="620" x2="700" type="Line" y2="460" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape closed="0" is_movable="1" y1="150" x1="180" x2="80" type="Line" y2="150" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape closed="0" is_movable="1" y1="420" x1="180" x2="60" type="Line" y2="460" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape closed="0" is_movable="1" y1="340" x1="520" x2="620" type="Rectangle" ry="0" y2="410" rx="0" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape closed="0" is_movable="1" y1="90" x1="700" x2="790" type="Rectangle" ry="0" y2="140" rx="0" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape closed="0" is_movable="1" y1="410" x1="270" x2="450" type="Line" y2="80" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape closed="0" is_movable="1" y1="110" x1="470" x2="520" type="Line" y2="370" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape closed="0" is_movable="1" y1="370" x1="620" x2="700" type="Line" y2="370" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape closed="0" is_movable="1" y1="500" x1="620" x2="700" type="Line" y2="500" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape closed="0" is_movable="1" y1="220" x1="610" x2="700" type="Line" y2="120" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape closed="0" is_movable="1" y1="460" x1="520" x2="620" type="Rectangle" ry="0" y2="520" rx="0" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape closed="0" is_movable="1" y1="240" x1="610" x2="700" type="Line" y2="240" z="0">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+        </shapes>
+    </diagram>
+    <collection>
+        <category name="import">
+            <names>
+                <name lang="es">Elementos importados</name>
+                <name lang="ca">Elements importats</name>
+                <name lang="da">Importerede elementer</name>
+                <name lang="sl">Uvoženi elementi</name>
+                <name lang="en">Imported elements</name>
+                <name lang="pt">elementos importados</name>
+                <name lang="de">Importierte elemente</name>
+                <name lang="ro">Elemente importate</name>
+                <name lang="ru">Импортированные элементы</name>
+                <name lang="pl">Elementy importowane</name>
+                <name lang="cs">Zavedené prvky</name>
+                <name lang="el">Εισηγμένα στοιχεία</name>
+                <name lang="fr">Éléments importés</name>
+                <name lang="tr">İthal öğeler</name>
+                <name lang="it">Elementi importati</name>
+                <name lang="nl">Elementen geïmporteerd</name>
+                <name lang="hr">Uvezeni elementi</name>
+            </names>
+            <category name="AREI-RGIE">
+                <names>
+                    <name lang="fr">RGIE</name>
+                    <name lang="nl">AREI</name>
+                    <name lang="en">Belgian Domestic Electrical Symbols</name>
+                </names>
+                <category name="arei_switches">
+                    <names>
+                        <name lang="nl">Schakelaars</name>
+                        <name lang="fr">Interrupteurs</name>
+                        <name lang="en">Switches</name>
+                    </names>
+                    <element name="arei_push_button.elmt">
+                        <definition width="40" orientation="dyyy" link_type="simple" hotspot_y="19" hotspot_x="19" type="element" version="0.60" height="40">
+                            <uuid uuid="{ea1f711b-cf4d-4b26-afd6-79ffdbd76b39}"/>
+                            <names>
+                                <name lang="en">Push button</name>
+                                <name lang="nl">Drukknop</name>
+                                <name lang="fr">Bouton poussoir</name>
+                            </names>
+                            <informations>[NL]
+Dit gratis element werd ontworpen door ShadowHunter en werd gedownload van www.shadowhunter.co.uk , www.shadowhunter.be of www.arei-rgie.be. Dit element wordt aangeboden zoals het is en zonder enige garantie. ShadowHunter kan niet aansprakelijk worden gesteld voor rechtstreekse of onrechtstreekse schade die ontstaat uit het gebruik van dit element. Het gebruik, wijzigingen en de integratie van dit element in schema’s is toegestaan zonder enige voorwaarden, ongeacht het uiteindelijke doel of vergunningstype van het schema. Bij herdistributie van dit element mag deze licentie-informatie niet worden verwijderd. Contact: info@shadowhunter.co.uk 
+
+[FR]
+Cet élément gratuit a été conçu par ShadowHunter et téléchargé depuis www.shadowhunter.co.uk , www.shadowhunter.be of www.arei-rgie.be. Cet élément est fournie telle quelle et sans la moindre garantie. Shadowhunter ne peut pas être tenue responsable de dommages directs ou indirects résultant de l'utilisation de cet élément. L'utilisation, la modification et l'intégration de cet élément dans des schémas électriques est autorisée sans condition, quelle que soit la licence finale des schémas. Lors de la redistribution de cet élément, ces informations de licence ne peuvent jamais être supprimées.
+Contact: info@shadowhunter.co.uk
+
+[EN]
+This free element was designed by ShadowHunter and downloaded from www.shadowhunter.co.uk,  www.shadowhunter.be or www.arei-rgie.be. This element is provided as is and comes without any warranty. Shadowhunter be cannot be held liable for direct or indirect damages resulting from the use of this element. The usage, the modification and the integration of this element into diagrams is allowed without any condition, whatever the final license or purpose of the diagrams is. This license information may not be removed upon redistribution. Contact: info@shadowhunter.co.uk</informations>
+                            <description>
+                                <circle antialias="false" style="line-style:normal;line-weight:normal;filling:none;color:black" y="-6.5" x="-6.5" diameter="13"/>
+                                <circle antialias="false" style="line-style:normal;line-weight:normal;filling:none;color:black" y="-12" x="-12" diameter="24"/>
+                                <input size="9" y="20" x="-10" tagg="label" rotate="true" text=""/>
+                                <terminal orientation="w" y="0" x="-12"/>
+                                <terminal orientation="e" y="0" x="12"/>
+                                <terminal orientation="n" y="-12" x="0"/>
+                                <terminal orientation="s" y="12" x="0"/>
+                            </description>
+                        </definition>
+                    </element>
+                </category>
+                <category name="arei_consumption_appliances">
+                    <names>
+                        <name lang="nl">Verbruikstoestellen</name>
+                        <name lang="fr">Appareils d'utilisation</name>
+                        <name lang="en">Consumption appliances</name>
+                    </names>
+                    <element name="arei_lighting.elmt">
+                        <definition width="40" orientation="dyyy" link_type="simple" hotspot_y="20" hotspot_x="20" type="element" version="0.60" height="40">
+                            <uuid uuid="{7ee3427f-0d6e-4c55-80a2-44e6f55a6145}"/>
+                            <names>
+                                <name lang="fr"> Point lumineux</name>
+                                <name lang="nl">Verlichtingstoestel</name>
+                                <name lang="en">Lighting</name>
+                            </names>
+                            <informations>[NL]
+Dit gratis element werd ontworpen door ShadowHunter en werd gedownload van www.shadowhunter.co.uk , www.shadowhunter.be of www.arei-rgie.be. Dit element wordt aangeboden zoals het is en zonder enige garantie. ShadowHunter kan niet aansprakelijk worden gesteld voor rechtstreekse of onrechtstreekse schade die ontstaat uit het gebruik van dit element. Het gebruik, wijzigingen en de integratie van dit element in schema’s is toegestaan zonder enige voorwaarden, ongeacht het uiteindelijke doel of vergunningstype van het schema. Bij herdistributie van dit element mag deze licentie-informatie niet worden verwijderd. Contact: info@shadowhunter.co.uk 
+
+[FR]
+Cet élément gratuit a été conçu par ShadowHunter et téléchargé depuis www.shadowhunter.co.uk , www.shadowhunter.be of www.arei-rgie.be. Cet élément est fournie telle quelle et sans la moindre garantie. Shadowhunter ne peut pas être tenue responsable de dommages directs ou indirects résultant de l'utilisation de cet élément. L'utilisation, la modification et l'intégration de cet élément dans des schémas électriques est autorisée sans condition, quelle que soit la licence finale des schémas. Lors de la redistribution de cet élément, ces informations de licence ne peuvent jamais être supprimées.
+Contact: info@shadowhunter.co.uk
+
+[EN]
+This free element was designed by ShadowHunter and downloaded from www.shadowhunter.co.uk,  www.shadowhunter.be or www.arei-rgie.be. This element is provided as is and comes without any warranty. Shadowhunter be cannot be held liable for direct or indirect damages resulting from the use of this element. The usage, the modification and the integration of this element into diagrams is allowed without any condition, whatever the final license or purpose of the diagrams is. This license information may not be removed upon redistribution. Contact: info@shadowhunter.co.uk</informations>
+                            <description>
+                                <line antialias="false" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" y1="-16" x1="-16" x2="16" length2="1.5" end1="none" length1="1.5" y2="16"/>
+                                <line antialias="false" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" y1="16" x1="-16" x2="16" length2="1.5" end1="none" length1="1.5" y2="-16"/>
+                                <input size="9" y="25" x="-10" rotate="true" tagg="label" text=""/>
+                                <terminal orientation="w" y="0" x="-1"/>
+                                <terminal orientation="n" y="-1" x="0"/>
+                                <terminal orientation="s" y="1" x="0"/>
+                                <terminal orientation="e" y="0" x="1"/>
+                            </description>
+                        </definition>
+                    </element>
+                    <element name="arei_motor.elmt">
+                        <definition width="40" orientation="dyyy" link_type="simple" hotspot_y="19" hotspot_x="19" type="element" version="0.60" height="40">
+                            <uuid uuid="{0eb5be77-378a-41bc-a9c8-16cb1571a74f}"/>
+                            <names>
+                                <name lang="fr">Moteur</name>
+                                <name lang="nl">Motor</name>
+                                <name lang="en">Motor</name>
+                            </names>
+                            <informations>[NL]
+Dit gratis element werd ontworpen door ShadowHunter en werd gedownload van www.shadowhunter.co.uk , www.shadowhunter.be of www.arei-rgie.be. Dit element wordt aangeboden zoals het is en zonder enige garantie. ShadowHunter kan niet aansprakelijk worden gesteld voor rechtstreekse of onrechtstreekse schade die ontstaat uit het gebruik van dit element. Het gebruik, wijzigingen en de integratie van dit element in schema’s is toegestaan zonder enige voorwaarden, ongeacht het uiteindelijke doel of vergunningstype van het schema. Bij herdistributie van dit element mag deze licentie-informatie niet worden verwijderd. Contact: info@shadowhunter.co.uk 
+
+[FR]
+Cet élément gratuit a été conçu par ShadowHunter et téléchargé depuis www.shadowhunter.co.uk , www.shadowhunter.be of www.arei-rgie.be. Cet élément est fournie telle quelle et sans la moindre garantie. Shadowhunter ne peut pas être tenue responsable de dommages directs ou indirects résultant de l'utilisation de cet élément. L'utilisation, la modification et l'intégration de cet élément dans des schémas électriques est autorisée sans condition, quelle que soit la licence finale des schémas. Lors de la redistribution de cet élément, ces informations de licence ne peuvent jamais être supprimées.
+Contact: info@shadowhunter.co.uk
+
+[EN]
+This free element was designed by ShadowHunter and downloaded from www.shadowhunter.co.uk,  www.shadowhunter.be or www.arei-rgie.be. This element is provided as is and comes without any warranty. Shadowhunter be cannot be held liable for direct or indirect damages resulting from the use of this element. The usage, the modification and the integration of this element into diagrams is allowed without any condition, whatever the final license or purpose of the diagrams is. This license information may not be removed upon redistribution. Contact: info@shadowhunter.co.uk</informations>
+                            <description>
+                                <input size="9" y="25" x="-10" rotate="true" tagg="label" text=""/>
+                                <circle antialias="false" style="line-style:normal;line-weight:normal;filling:none;color:black" y="-13" x="-13" diameter="26"/>
+                                <text size="9" y="4.37318" x="-4.64058" text="M"/>
+                                <terminal orientation="w" y="0" x="-13"/>
+                                <terminal orientation="s" y="13" x="0"/>
+                                <terminal orientation="e" y="0" x="13"/>
+                                <terminal orientation="n" y="-13" x="0"/>
+                            </description>
+                        </definition>
+                    </element>
+                </category>
+            </category>
+        </category>
+    </collection>
+</project>
