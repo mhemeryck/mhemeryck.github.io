@@ -1,22 +1,32 @@
+remote_theme: daattali/beautiful-jekyll@5.0.0
+
 title: Martyn's musings
-description: Random thoughts in no particular order
-url: https://mhemeryck.github.io
+url: "https://mhemeryck.github.io/"
+url-pretty: blog.mhemeryck.com # TODO fix with dedicated URL; blog.mhemeryck.com ?
 author: Martijn Hemeryck
-email: martijn.hemeryck@gmail.com
 
-remote_theme: riggraz/no-style-please
+navbar-links:
+  About Me: "https://cv.mhemeryck.com"
 
-theme_config:
-  appearance: "auto"
-  back_home_text: ".."
-  date_format: "%Y-%m-%d"
+social-network-links:
+  email: "martijn.hemeryck@gmail.com"
+  github: mhemeryck
+  twitter: MartijnHemeryck
+  linkedin: martijn-hemeryck-67896245
+
+share-links-active:
+  twitter: true
+  linkedin: true
+  facebook: true
+
+timezone: "Europe/Brussels"
+highlighter: rouge
+oermalink: /:year-:month-:day/:title
 
 plugins:
   - jekyll-remote-theme
-
-favicon: logo.png
-permalink: /:year-:month-:day/:title
+  - jekyll-paginate
+  - jekyll-sitemap
 
 exclude:
   - docker-compose.yml
-  - tags
