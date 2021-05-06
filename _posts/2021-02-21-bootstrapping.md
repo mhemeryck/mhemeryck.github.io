@@ -1,5 +1,11 @@
 ---
-layout: post
+subtitle: bootstrapping a raspberry pi4 with arch for ARM
+cover-img:
+  - "/assets/2021-02-21/boots.jpg": "Photo by Ivan Bolshakov on Unsplash"
+tags:
+  - tech
+  - raspberry pi 4
+  - note-to-self
 ---
 
 I've recently bought myself a [raspberry pi 400], a small form factor keyboard with a _raspberry pi 4 4GB RAM_ built into it.

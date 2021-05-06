@@ -2,7 +2,13 @@
 layout: post
 title: "MQTT over TLS"
 author: "mhemeryck"
+cover-img:
+  - "/assets/2018-11-12/mosquito.jpg": "Photo by Wolfgang Hasselmann on Unsplash"
+tags:
+  - mqtt
+  - note-to-self
 ---
+
 [MQTT] is a popular lightweight protocol for use in home automation.
 If features a central broker where each of the clients can communicate with in a pub / sub fashion.
 
@@ -22,6 +28,7 @@ Doing the TLS setup requires a number of key and certificate files.
 The official [mosquitto-tls man page] fortunately lists all of them and how to generate them.
 
 Note that for the final setup, not all of these files are required; these are the files we _do_ need:
+
 1. `ca.crt`: Certificate Authority certificate: the "central" authority certifying ownership of the public key
 1. `server.key`: server private key, linked to the certificate.
 1. `server.crt`: certificate from the server (MQTT broker), signing the server key pair, by the CA.
@@ -103,7 +110,6 @@ In the window running the subscribe, the message should now appear.
 
 Here, the clients do _not_ verify themselves though, they just use the certificate to encrypt traffic over TLS.
 
-
-[MQTT]: https://en.wikipedia.org/wiki/MQTT
+[mqtt]: https://en.wikipedia.org/wiki/MQTT
 [mosquitto]: https://mosquitto.org/
 [mosquitto-tls man page]: https://mosquitto.org/man/mosquitto-tls-7.html

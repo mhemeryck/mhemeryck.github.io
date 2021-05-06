@@ -1,15 +1,21 @@
 ---
-layout: post
-title: "Updating GPG subkeys"
-author: "mhemeryck"
+title: Updating GPG subkeys
+subtitle: My yearly yubikey GPG subkey rotation process
+cover-img:
+  - "/assets/2019-07-09/keys.jpg": "Photo by Florian Berger on Unsplash"
+tags:
+  - gpg
+  - yubikey
+  - note-to-self
 ---
+
 This is just a list of things to consider when updating my GPG subkeys (encryption, signing, authentication) for the particular setup I use on a daily basis:
 
 1. one master key without any expiry date to generate and revoke subkeys
 1. I use [`pass`] as my password manager.
-    1. the basic idea is that it's a command-line password manager that uses gpg under the hood for encrypting / decrypting the passwords.
-    1. the passwords are encrypted with an encryption subkey
-    1. pass allows managing its history with git, linking the storage on a remote gitlab / github server.
+   1. the basic idea is that it's a command-line password manager that uses gpg under the hood for encrypting / decrypting the passwords.
+   1. the passwords are encrypted with an encryption subkey
+   1. pass allows managing its history with git, linking the storage on a remote gitlab / github server.
 1. the subkeys are only stored on my yubikey
 1. the subkeys are always valid for a period of one year
 1. the yubikey I use also has NFC, which makes it possible to use it on my android phone as well
@@ -17,6 +23,7 @@ This is just a list of things to consider when updating my GPG subkeys (encrypti
 I recently needed to go through this proces and did forget to re-encrypt ...
 
 The main steps are:
+
 1. generate new subkeys
 1. pass: re-encrypt with _both_ sets of keys available
 1. move the new keys to the card
@@ -46,9 +53,9 @@ Note: in case you didn't have your master key, this will not work.
 
 You can now add your signing and encryption keys; some parameters I'd like to use:
 
-  - 4096b size
-  - 1y expiration date
-  - RSA for both encryption / signing
+- 4096b size
+- 1y expiration date
+- RSA for both encryption / signing
 
 don't forget to call `save` in the end.
 
@@ -119,7 +126,6 @@ Plug the key card back in and sync
 Check the keys are available albeit from the key card:
 
     gpg -K
-
 
 [`pass`]: https://www.passwordstore.org/
 [tails]: https://tails.boum.org/
