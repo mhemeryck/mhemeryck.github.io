@@ -23,6 +23,8 @@ timezone: "Europe/Brussels"
 highlighter: rouge
 oermalink: /:year-:month-:day/:title
 
+gtag: G-2YN0MRTT7R
+
 plugins:
   - jekyll-remote-theme
   - jekyll-paginate
