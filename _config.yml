@@ -1,8 +1,8 @@
 remote_theme: daattali/beautiful-jekyll@5.0.0
 
 title: Martyn's musings
-url: "https://mhemeryck.github.io/"
-url-pretty: blog.mhemeryck.com # TODO fix with dedicated URL; blog.mhemeryck.com ?
+url: "https://mhemeryck.github.io"
+url-pretty: blog.mhemeryck.com
 author: Martijn Hemeryck
 
 navbar-links:
