@@ -5,7 +5,7 @@ I like to use this repo to dump some random notes-to-self, which also happen to 
 Deployed using [github pages], theme stolen from [beautiful jekyll].
 
 [github pages]: https://pages.github.com/
-[no-style-please]: https://beautifuljekyll.com/
+[beautiful jekyll]: https://beautifuljekyll.com/
 
 ## Local development
 
