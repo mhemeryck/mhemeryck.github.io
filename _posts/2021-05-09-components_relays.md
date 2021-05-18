@@ -89,6 +89,52 @@ Even though these diagrams only represent part of the information, they proved t
 
 ## Inside the cabinet
 
+Given the star-configuration for all of the lights, the amount of wiring in the central electricity cabinet quickly adds up.
+The following picture shows a work-in-progress view while laying out the cables:
+
+![cabinet-wip]
+
+Be sure you have a consistent _labelling scheme_ while pulling all of the cable.
+Looking back at these pictures, I think it is a bit of miracle I did not miss anything ...
+
+Besides from labelling the cables during the pulling of the cables, I also did use terminal clamps, like the [WAGO rail-mount terminal blocks].
+On one end of such a block, you have one or more terminals where you can connect your wires.
+The other end on this block can then later be used to connect whatever you need.
+
+Functionally, it does not do all that much.
+In terms of costs, a single block is not that expensive but since the amount of blocks you need quickly adds up, so do the costs.
+Even so, in a setup with a substantial amount of wiring it is almost necessary to have something like this in place.
+
+The next picture shows 2 DIN-rails with all of the terminal blocks for my lights.
+
+![cabinet-clamps]
+
+- top row: termination of line (brown) and neutral (blue) wires.
+- bottom row: termination of 2 more wires which I intend to use as a [DALI] bus[^5]; DALI+ (grey) and DALI- (black).
+- jumpers: middle of terminal blocks: some of the terminal blocks have "jumpers" in them, i.e. another advantage in the sense that you can easily add (parallel) connections[^6].
+- orange spacers: each set of blocks between these spacers represent a single electric circuit. This makes it easier to map the one-wire diagram to the actual wiring inside the cabinet.
+- green / yellow wires: these are terminated separately on the copper bar (visible between the two DIN rails) and directly connected to the main earth wire.
+- two-level terminal blocks: the terminal blocks used here have 2 levels, i.e. the outer 2 terminals are connected as well as the inner 2. A multitude of such terminal blocks exists, ranging for single to multiple levels as well as different functionalities (built-in diodes, resistors, ...). Here, two-level terminal blocks were used mostly because of space constraints.
+
+Note that at this point that the wires from the light fixtures in the house were just connected to these terminal blocks: having these blocks there means you can later still have all flexibility for connecting them elsewhere.
+
+The next part is connecting them to the module that contains the relays themselves.
+The [unipi relay outputs KB] lists all of the details for connecting a single relay:
+
+![unipi relay outputs img]
+
+This connection in itself is not all that complex for a _single_ relay.
+Since multiple lights on the same circuit are connected to the same circuit breaker, there is the practical concern of how to ensure these are all properly connected in parallel while still maintaining again a good overview.
+The following picture shows another set of terminal blocks that I did use for this:
+
+![cabinet-unipi]
+
+- line wire (brown): the terminal block holders (orange, left from the unipi module) hold a set of terminal blocks which have one end connected to the circuit breaker, the other ends serve to _distribute_ the voltage to multiple relays.
+- neutral wire (blue): since all neutral wires of a single circuit are placed next to each other, these can just be connected in parallel using a jumper.
+- relay: each of the lights are connected to "RO" connections coming from the unipi module.
+
+At this point we _finally_ have all of the wiring in place!
+
 # Hardware
 
 # Software
@@ -101,6 +147,8 @@ Even though these diagrams only represent part of the information, they proved t
 [^2]: the official regulation is the [AREI]
 [^3]: the voltage between each phase wire and the neutral wire is 240V
 [^4]: although it _could_ be wired in series, e.g. for a series of current-controlled LED fixtures
+[^5]: DALI is a bus system for digital light control. In theory, you could do full light control with DALI only (removing the need for relay-based control), but this means all of your light fixtures need to be DALI-aware.
+[^6]: not quite visible, but a similar connection can be made for the other wire (blue, neutral)
 
 [previous post]: {% post_url 2021-04-22-architecture %}
 [AREI]: https://economie.fgov.be/nl/publicaties/algemeen-reglement-op-de
@@ -108,7 +156,14 @@ Even though these diagrams only represent part of the information, they proved t
 [danger]: /assets/2021-05-09/danger.jpg
 [onewire]: /assets/2021-05-09/onewire.png
 [layout]: /assets/2021-05-09/layout.png
+[cabinet-wip]: /assets/2021-05-09/cabinet-wip.jpg
+[cabinet-clamps]: /assets/2021-05-09/cabinet-clamps.jpg
+[cabinet-unipi]: /assets/2021-05-09/cabinet-unipi.jpg
 [relay]: https://en.wikipedia.org/wiki/Relay
 [project huisinstallatie naslagwerk]: https://www.plantyn.com/webshop/product/project-huisinstallatie-naslagwerk-9789030142942
 [residual-current devices]: https://en.wikipedia.org/wiki/Residual-current_device
 [three-phase connection]: https://en.wikipedia.org/wiki/Three-phase_electric_power
+[WAGO rail-mount terminal blocks]: https://www.wago.com/global/electrical-interconnections/discover-rail-mount-terminal-blocks
+[DALI]: https://en.wikipedia.org/wiki/Digital_Addressable_Lighting_Interface
+[unipi relay outputs KB]: https://kb.unipi.technology/en:hw:02-neuron:description-of-io:03-description-of-ro
+[unipi relay outputs img]: https://kb.unipi.technology/_media/en:hw:010_connection_of_io.png
