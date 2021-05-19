@@ -152,9 +152,15 @@ The following picture shows what's actually inside such a unit: raspberry pi 3B+
 
 ![unipi module]
 
+I have a number of different neuron units in my setup, but for the relay control of lights, I specifically have the [unipi neuron L403] since it has the largest amount of relay outputs (56).
+
 Check out the [unipi KB] for more technical details.
 
 # Software
+
+The following diagram shows the different software _layers_:
+
+![software layers]
 
 # Network
 
@@ -190,3 +196,5 @@ Check out the [unipi KB] for more technical details.
 [unipi]: https://www.unipi.technology/
 [SPI]: https://en.wikipedia.org/wiki/Serial_Peripheral_Interface
 [unipi community forum]: https://forum.unipi.technology/
+[software layers]: /assets/2021-05-09/software.png
+[unipi neuron L403]: https://www.unipi.technology/unipi-neuron-l403-p102
