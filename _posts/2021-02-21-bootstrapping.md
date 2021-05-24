@@ -2,6 +2,7 @@
 subtitle: bootstrapping a raspberry pi4 with arch for ARM
 cover-img:
   - "/assets/2021-02-21/boots.jpg": "Photo by Ivan Bolshakov on Unsplash"
+readtime: true
 tags:
   - tech
   - raspberry pi 4

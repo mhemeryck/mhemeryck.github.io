@@ -21,7 +21,7 @@ share-links-active:
 
 timezone: "Europe/Brussels"
 highlighter: rouge
-oermalink: /:year-:month-:day/:title
+permalink: /:year-:month-:day/:title
 
 gtag: G-2YN0MRTT7R
 

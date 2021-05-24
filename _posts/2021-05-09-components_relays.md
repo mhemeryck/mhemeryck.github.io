@@ -3,6 +3,7 @@ title: "Components: relays"
 subtitle: "A first component setup E2E -- relays"
 cover-img:
   - "/assets/2021-05-09/relays.jpg": "Photo by Angeles Pérez on Unsplash"
+readtime: true
 tags:
   - home automation
   - mqtt
