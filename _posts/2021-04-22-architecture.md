@@ -3,6 +3,7 @@ title: Architecture
 subtitle: My home automation layout
 cover-img:
   - "/assets/2021-04-22/cover.jpg": "Photo by Maarten Deckers on Unsplash"
+readtime: true
 tags:
   - home automation
   - mqtt

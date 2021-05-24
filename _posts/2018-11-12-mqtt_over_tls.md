@@ -4,6 +4,7 @@ title: "MQTT over TLS"
 author: "mhemeryck"
 cover-img:
   - "/assets/2018-11-12/mosquito.jpg": "Photo by Wolfgang Hasselmann on Unsplash"
+readtime: true
 tags:
   - mqtt
   - note-to-self

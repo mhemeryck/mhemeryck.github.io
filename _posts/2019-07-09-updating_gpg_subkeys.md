@@ -3,6 +3,7 @@ title: Updating GPG subkeys
 subtitle: My yearly yubikey GPG subkey rotation process
 cover-img:
   - "/assets/2019-07-09/keys.jpg": "Photo by Florian Berger on Unsplash"
+readtime: true
 tags:
   - gpg
   - yubikey
