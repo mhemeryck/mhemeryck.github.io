@@ -9,7 +9,7 @@ tags:
   - tech
 ---
 
-The [previous post] laid out the rationale and principles behind a wired home automation setup.
+The [architecture post] laid out the rationale and principles behind a wired home automation setup.
 In this post, we shall take a first dive into one of the fundamental components in an end-to-end way: controlling a relay.
 
 ## A mandatory word of caution (!)
@@ -290,6 +290,43 @@ At this point, with all of these layers of software in between, the unipi neuron
 
 # Network
 
+## Topology
+
+The network topology is the same as described in the [architecture post]: all communications essentially run over the local network using MQTT events as the underlying protocol.
+
+![network topology]
+
+## Wiring and hardware
+
+The wiring is done using CAT6 [UTP] cable.
+
+The following picture shows a specific series of keystones to terminate the UTP cable inside of the electricty cabinet, such that it is easy to use patch cable to connect to the unipi units.
+
+![network electricity cabinet]
+
+The next picture gives a glimpse of my (arguably oversized) 6U network cabinet.
+
+![network switch]
+
+The top 2 rows are 2 24-port patch panels.
+The function of a patch panel is simply to provide a fixed point where the wiring inside of the building is terminated, much like th terminal clamps in the earlier discussion on the electricity wiring.
+Only a subset of ports are in use at the time of writing.
+
+The middle rows holds a 48-port [US-48-500W] unifi [power-over-ethernet] or "PoE" switch.
+[Ubiquiti UniFi] is a brand of so-called "prosumer" network equipment, meaning if offers some slightly more advanced features than your regular home network switch / router.
+Before, I did use to run my own [OpenWrt] router, but since I never did anything special beyond the standard settings and since I really needed a reliable network setup, I make the switch to Ubiquiti.
+In terms of stability, the brand has got a bit of a name of pushing updates a bit _too_ rapidly onto their customer base, effectively testing it in production.
+For my small home setup, this hasn't been an issue thus far, though.
+On the plus side, it means that updates do come in regularly.
+
+One of the key features for me is the PoE support the switch provides, since you can provide power and network connection over a single wire.
+Currently, the PoE feature powers 3 WiFi access points as well as a smaller switch that sits on my desk (also all from ubiquiti).
+At some point I will likely also get a hold of some PoE camera's as well as a PoE enabled doorbell.
+
+The [unifi controller] user interface and the related phone app are also really nice and intuitive.
+Despite all the eye-candy it offers, it does lack one critical feature to me: a proper DNS server for hosts on the local network.
+As a work-around, I do now run a [Pi-hole] server, that also doubles as a DNS server.
+
 # Service
 
 [^1]: ISBN/EAN 9789030142942
@@ -300,7 +337,7 @@ At this point, with all of these layers of software in between, the unipi neuron
 [^6]: not quite visible, but a similar connection can be made for the other wire (blue, neutral)
 [^7]: this could actually also be solved using configuration on the MQTT client setup, by only registering callbacks to certain topics.
 
-[previous post]: {% post_url 2021-04-22-architecture %}
+[architecture post]: {% post_url 2021-04-22-architecture %}
 [AREI]: https://economie.fgov.be/nl/publicaties/algemeen-reglement-op-de
 [principle]: /assets/2021-05-09/principle.png
 [danger]: /assets/2021-05-09/danger.jpg
@@ -335,3 +372,13 @@ At this point, with all of these layers of software in between, the unipi neuron
 [evok websockets interface]: https://evok.api-docs.io/1.0/mpqzDwPwirsoq7i5A/websocket
 [home assistant]: https://www.home-assistant.io/
 [evok2mqtt]: https://github.com/mhemeryck/evok2mqtt
+[network topology]: /assets/2021-04-22/architecture.png
+[network electricity cabinet]: /assets/2021-05-09/unipi-network-elec.jpg
+[network switch]: /assets/2021-05-09/unipi-network-switch.jpg
+[UTP]: https://en.wikipedia.org/wiki/Twisted_pair
+[power-over-ethernet]: https://en.wikipedia.org/wiki/Power_over_Ethernet
+[US-48-500W]: https://store.ui.com/collections/unifi-network-switching/products/unifiswitch-48-500w
+[Ubiquiti UniFi]: https://ui.com
+[OpenWrt]: https://openwrt.org/
+[unifi controller]: https://www.ui.com/download-software/
+[Pi-hole]: https://pi-hole.net/
