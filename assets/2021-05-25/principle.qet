@@ -1,0 +1,571 @@
+<project folioSheetQuantity="0" title="" version="0.70">
+    <properties>
+        <property show="1" name="savedfilename">principle</property>
+        <property show="1" name="saveddate">2021-05-25</property>
+        <property show="1" name="savedtime">21:49</property>
+        <property show="1" name="savedfilepath">/home/mhemeryck/Projects/mhemeryck.github.io/assets/2021-05-25/principle.qet</property>
+    </properties>
+    <newdiagrams>
+        <border cols="17" displaycols="true" rows="8" colsize="60" displayrows="true" rowsize="80"/>
+        <inset filename="" indexrev="" folio="%id/%total" displayAt="bottom" title="" auto_page_num="" author="" version="" plant="" locmach="" date="null"/>
+        <conductors type="multi" bicolor="false" num="_" dash-size="1" color2="#000000" numsize="7" condsize="1" vertirotatetext="270" tension-protocol="" formula="" vertical-alignment="AlignRight" horizrotatetext="0" function="" onetextperfolio="0" horizontal-alignment="AlignBottom" displaytext="1"/>
+        <report label="%f-%l%c"/>
+        <xrefs>
+            <xref type="commutator" slave_label="(%f-%l%c)" snapto="label" showpowerctc="false" switchprefix="" master_label="%f-%l%c" displayhas="cross" powerprefix="" delayprefix="" offset="0"/>
+            <xref type="protection" slave_label="(%f-%l%c)" snapto="label" showpowerctc="false" switchprefix="" master_label="%f-%l%c" displayhas="cross" powerprefix="" delayprefix="" offset="0"/>
+            <xref type="coil" slave_label="(%f-%l%c)" snapto="label" showpowerctc="false" switchprefix="" master_label="%f-%l%c" displayhas="cross" powerprefix="" delayprefix="" offset="0"/>
+        </xrefs>
+        <conductors_autonums freeze_new_conductors="false" current_autonum=""/>
+        <folio_autonums/>
+        <element_autonums freeze_new_elements="false" current_autonum=""/>
+    </newdiagrams>
+    <diagram freezeNewConductor="false" displaycols="true" filename="" rowsize="80" displayAt="bottom" rows="4" title="" folio="%id/%total" plant="" date="null" cols="8" freezeNewElement="false" colsize="60" order="1" version="0.70" indexrev="" auto_page_num="" author="" height="340" displayrows="true" locmach="">
+        <defaultconductor type="multi" bicolor="false" num="_" dash-size="1" color2="#000000" numsize="7" condsize="1" vertirotatetext="270" tension-protocol="" formula="" vertical-alignment="AlignRight" horizrotatetext="0" function="" onetextperfolio="0" horizontal-alignment="AlignBottom" displaytext="1"/>
+        <elements>
+            <element z="10" type="embed://import/AREI-RGIE/arei_consumption_appliances/arei_lighting.elmt" x="390" orientation="3" y="220" prefix="" uuid="{c20ab3cb-2aae-47d7-8f00-4e331807651b}" freezeLabel="false">
+                <terminals>
+                    <terminal x="0" id="0" orientation="0" number="_" name="_" y="3" nameHidden="0"/>
+                    <terminal x="3" id="1" orientation="3" number="_" name="_" y="0" nameHidden="0"/>
+                    <terminal x="-3" id="2" orientation="1" number="_" name="_" y="0" nameHidden="0"/>
+                    <terminal x="0" id="3" orientation="2" number="_" name="_" y="-3" nameHidden="0"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula">light</elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text x="-20" rotation="90" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" Valignment="AlignTop" Halignment="AlignLeft" frame="false" y="-20" text_width="-1" uuid="{e31f5e59-f94b-45cf-b29a-a859529aabb4}" text_from="ElementInfo">
+                        <text>light</text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element z="10" type="embed://import/AREI-RGIE/arei_general/arei_alternating_current_general.elmt" x="120" orientation="0" y="220" prefix="" uuid="{850a36f7-8897-4a19-abf1-a128ae93f598}" freezeLabel="false">
+                <terminals>
+                    <terminal x="0" id="4" orientation="0" number="_" name="_" y="4" nameHidden="0"/>
+                    <terminal x="-4" id="5" orientation="1" number="_" name="_" y="0" nameHidden="0"/>
+                    <terminal x="0" id="6" orientation="2" number="_" name="_" y="-4" nameHidden="0"/>
+                    <terminal x="4" id="7" orientation="3" number="_" name="_" y="0" nameHidden="0"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula">240VDC</elementInformation>
+                </elementInformations>
+                <dynamic_texts/>
+                <texts_groups/>
+            </element>
+            <element z="10" type="embed://import/AREI-RGIE/arei_switches/arei_impuls_relay.elmt" x="250" orientation="0" y="120" prefix="" uuid="{f9480825-ee93-49fb-a1fa-70ea2ca68363}" freezeLabel="false">
+                <terminals>
+                    <terminal x="0" id="8" orientation="0" number="_" name="_" y="-7" nameHidden="0"/>
+                    <terminal x="-20" id="9" orientation="3" number="_" name="_" y="0" nameHidden="0"/>
+                    <terminal x="20" id="10" orientation="1" number="_" name="_" y="0" nameHidden="0"/>
+                    <terminal x="0" id="11" orientation="2" number="_" name="_" y="7" nameHidden="0"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula">relay</elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text x="-10" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" Valignment="AlignTop" Halignment="AlignLeft" frame="false" y="8" text_width="-1" uuid="{f3bdcca8-254d-43ce-a781-660cb595bea4}" text_from="ElementInfo">
+                        <text>relay</text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+        </elements>
+        <conductors>
+            <conductor bicolor="false" displaytext="1" onetextperfolio="0" color2="#000000" dash-size="1" x="0" vertirotatetext="270" type="multi" horizontal-alignment="AlignBottom" num="_" tension-protocol="" freezeLabel="false" horizrotatetext="0" terminal2="2" formula="" y="0" numsize="7" terminal1="10" vertical-alignment="AlignRight" condsize="1" function="">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor bicolor="false" displaytext="1" onetextperfolio="0" color2="#000000" dash-size="1" x="0" vertirotatetext="270" type="multi" horizontal-alignment="AlignBottom" num="_" tension-protocol="" freezeLabel="false" horizrotatetext="0" terminal2="9" formula="" y="0" numsize="7" terminal1="7" vertical-alignment="AlignRight" condsize="1" function="">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor bicolor="false" displaytext="1" onetextperfolio="0" color2="#000000" dash-size="1" x="0" vertirotatetext="270" type="multi" horizontal-alignment="AlignBottom" num="_" tension-protocol="" freezeLabel="false" horizrotatetext="0" terminal2="7" formula="" y="0" numsize="7" terminal1="2" vertical-alignment="AlignRight" condsize="1" function="">
+                <sequentialNumbers/>
+            </conductor>
+        </conductors>
+        <inputs>
+            <input x="70" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>(mains power)&lt;/p>&lt;/body>&lt;/html>" y="260"/>
+            <input x="90" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>240VAC&lt;/p>&lt;/body>&lt;/html>" y="240"/>
+        </inputs>
+    </diagram>
+    <diagram freezeNewConductor="false" displaycols="true" filename="" rowsize="80" displayAt="bottom" rows="3" title="" folio="%id/%total" plant="" date="null" cols="9" freezeNewElement="false" colsize="60" order="2" version="0.70" indexrev="" auto_page_num="" author="" height="260" displayrows="true" locmach="">
+        <defaultconductor type="multi" bicolor="false" num="_" dash-size="1" color2="#000000" numsize="7" condsize="1" vertirotatetext="270" tension-protocol="" formula="" vertical-alignment="AlignRight" horizrotatetext="0" function="" onetextperfolio="0" horizontal-alignment="AlignBottom" displaytext="1"/>
+        <elements>
+            <element z="10" type="embed://import/10_electric/10_allpole/380_signaling&amp;operating/20_push_buttons/arret-urgence_no.elmt" x="250" orientation="1" y="110" prefix="S" uuid="{a1707956-8df2-4314-ac77-3b5138d9577d}" freezeLabel="false">
+                <terminals>
+                    <terminal x="0" id="0" orientation="0" number="_" name="_" y="-16" nameHidden="0"/>
+                    <terminal x="0" id="1" orientation="2" number="_" name="_" y="16" nameHidden="0"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text x="2.75" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" Valignment="AlignTop" Halignment="AlignLeft" frame="false" y="-9" text_width="-1" uuid="{f6489d24-2e6d-492e-8cbd-cf69f6a63ba9}" text_from="ElementInfo">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element z="10" type="embed://import/10_electric/10_allpole/392_generators&amp;sources/30_batteries/pile_1_element.elmt" x="110" orientation="1" y="140" prefix="" uuid="{57ea101b-d135-4637-b486-b09b7bb1ff77}" freezeLabel="false">
+                <terminals>
+                    <terminal x="-16" id="2" orientation="3" number="_" name="_" y="0" nameHidden="0"/>
+                    <terminal x="16" id="3" orientation="1" number="_" name="_" y="0" nameHidden="0"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text x="5" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" Valignment="AlignTop" Halignment="AlignLeft" frame="false" y="-27.45" text_width="-1" uuid="{a11e4ea8-28fe-4c27-8724-a9613539a6c6}" text_from="ElementInfo">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+        </elements>
+        <conductors>
+            <conductor bicolor="false" displaytext="1" onetextperfolio="0" color2="#000000" dash-size="1" x="0" vertirotatetext="270" type="multi" horizontal-alignment="AlignBottom" num="_" tension-protocol="" freezeLabel="false" horizrotatetext="0" terminal2="1" formula="" y="0" numsize="7" terminal1="2" vertical-alignment="AlignRight" condsize="1" function="">
+                <sequentialNumbers/>
+            </conductor>
+        </conductors>
+        <inputs>
+            <input x="60" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>GND&lt;/p>&lt;/body>&lt;/html>" y="160"/>
+            <input x="380" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>digital input (NO)&lt;/p>&lt;/body>&lt;/html>" y="60"/>
+            <input x="321.449" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>DIGND&lt;/p>&lt;/body>&lt;/html>" y="193.781"/>
+            <input x="310" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>DIVin&lt;/p>&lt;/body>&lt;/html>" y="70"/>
+            <input x="200" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>push button (NO)&lt;/p>&lt;/body>&lt;/html>" y="60"/>
+            <input x="50" rotation="0" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>24VDC&lt;/p>&lt;/body>&lt;/html>" y="80"/>
+        </inputs>
+        <shapes>
+            <shape z="0" type="Line" is_movable="1" closed="0" x2="330" y1="110" x1="270" y2="110">
+                <pen color="#000000" widthF="1" style="SolidLine"/>
+                <brush color="#000000" style="NoBrush"/>
+            </shape>
+            <shape z="0" type="Rectangle" ry="0" is_movable="1" closed="0" rx="0" x2="500" y1="90" x1="330" y2="180">
+                <pen color="#000000" widthF="1" style="SolidLine"/>
+                <brush color="#000000" style="NoBrush"/>
+            </shape>
+            <shape z="0" type="Line" is_movable="1" closed="0" x2="330" y1="160" x1="110" y2="160">
+                <pen color="#000000" widthF="1" style="SolidLine"/>
+                <brush color="#000000" style="NoBrush"/>
+            </shape>
+        </shapes>
+    </diagram>
+    <collection>
+        <category name="import">
+            <names>
+                <name lang="es">Elementos importados</name>
+                <name lang="ca">Elements importats</name>
+                <name lang="da">Importerede elementer</name>
+                <name lang="sl">Uvoženi elementi</name>
+                <name lang="en">Imported elements</name>
+                <name lang="pt">elementos importados</name>
+                <name lang="de">Importierte elemente</name>
+                <name lang="ro">Elemente importate</name>
+                <name lang="ru">Импортированные элементы</name>
+                <name lang="pl">Elementy importowane</name>
+                <name lang="cs">Zavedené prvky</name>
+                <name lang="el">Εισηγμένα στοιχεία</name>
+                <name lang="fr">Éléments importés</name>
+                <name lang="tr">İthal öğeler</name>
+                <name lang="it">Elementi importati</name>
+                <name lang="nl">Elementen geïmporteerd</name>
+                <name lang="hr">Uvezeni elementi</name>
+            </names>
+            <category name="AREI-RGIE">
+                <names>
+                    <name lang="fr">RGIE</name>
+                    <name lang="nl">AREI</name>
+                    <name lang="en">Belgian Domestic Electrical Symbols</name>
+                </names>
+                <category name="arei_switches">
+                    <names>
+                        <name lang="nl">Schakelaars</name>
+                        <name lang="fr">Interrupteurs</name>
+                        <name lang="en">Switches</name>
+                    </names>
+                    <element name="arei_push_button.elmt">
+                        <definition type="element" height="40" orientation="dyyy" hotspot_x="19" link_type="simple" version="0.60" width="40" hotspot_y="19">
+                            <uuid uuid="{ea1f711b-cf4d-4b26-afd6-79ffdbd76b39}"/>
+                            <names>
+                                <name lang="en">Push button</name>
+                                <name lang="nl">Drukknop</name>
+                                <name lang="fr">Bouton poussoir</name>
+                            </names>
+                            <informations>[NL]
+Dit gratis element werd ontworpen door ShadowHunter en werd gedownload van www.shadowhunter.co.uk , www.shadowhunter.be of www.arei-rgie.be. Dit element wordt aangeboden zoals het is en zonder enige garantie. ShadowHunter kan niet aansprakelijk worden gesteld voor rechtstreekse of onrechtstreekse schade die ontstaat uit het gebruik van dit element. Het gebruik, wijzigingen en de integratie van dit element in schema’s is toegestaan zonder enige voorwaarden, ongeacht het uiteindelijke doel of vergunningstype van het schema. Bij herdistributie van dit element mag deze licentie-informatie niet worden verwijderd. Contact: info@shadowhunter.co.uk 
+
+[FR]
+Cet élément gratuit a été conçu par ShadowHunter et téléchargé depuis www.shadowhunter.co.uk , www.shadowhunter.be of www.arei-rgie.be. Cet élément est fournie telle quelle et sans la moindre garantie. Shadowhunter ne peut pas être tenue responsable de dommages directs ou indirects résultant de l'utilisation de cet élément. L'utilisation, la modification et l'intégration de cet élément dans des schémas électriques est autorisée sans condition, quelle que soit la licence finale des schémas. Lors de la redistribution de cet élément, ces informations de licence ne peuvent jamais être supprimées.
+Contact: info@shadowhunter.co.uk
+
+[EN]
+This free element was designed by ShadowHunter and downloaded from www.shadowhunter.co.uk,  www.shadowhunter.be or www.arei-rgie.be. This element is provided as is and comes without any warranty. Shadowhunter be cannot be held liable for direct or indirect damages resulting from the use of this element. The usage, the modification and the integration of this element into diagrams is allowed without any condition, whatever the final license or purpose of the diagrams is. This license information may not be removed upon redistribution. Contact: info@shadowhunter.co.uk</informations>
+                            <description>
+                                <circle x="-6.5" diameter="13" antialias="false" y="-6.5" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+                                <circle x="-12" diameter="24" antialias="false" y="-12" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+                                <input x="-10" text="" rotate="true" size="9" y="20" tagg="label"/>
+                                <terminal x="-12" orientation="w" y="0"/>
+                                <terminal x="12" orientation="e" y="0"/>
+                                <terminal x="0" orientation="n" y="-12"/>
+                                <terminal x="0" orientation="s" y="12"/>
+                            </description>
+                        </definition>
+                    </element>
+                    <element name="arei_impuls_relay.elmt">
+                        <definition type="element" height="40" orientation="dyyy" hotspot_x="29" link_type="simple" version="0.60" width="60" hotspot_y="19">
+                            <uuid uuid="{95a667b4-b396-481f-9a2c-e690667b8f65}"/>
+                            <names>
+                                <name lang="en">Impulse relay</name>
+                                <name lang="nl">Impulsschakelaar</name>
+                                <name lang="fr">Télérupteur</name>
+                            </names>
+                            <informations>[NL]
+Dit gratis element werd ontworpen door ShadowHunter en werd gedownload van www.shadowhunter.co.uk , www.shadowhunter.be of www.arei-rgie.be. Dit element wordt aangeboden zoals het is en zonder enige garantie. ShadowHunter kan niet aansprakelijk worden gesteld voor rechtstreekse of onrechtstreekse schade die ontstaat uit het gebruik van dit element. Het gebruik, wijzigingen en de integratie van dit element in schema’s is toegestaan zonder enige voorwaarden, ongeacht het uiteindelijke doel of vergunningstype van het schema. Bij herdistributie van dit element mag deze licentie-informatie niet worden verwijderd. Contact: info@shadowhunter.co.uk 
+
+[FR]
+Cet élément gratuit a été conçu par ShadowHunter et téléchargé depuis www.shadowhunter.co.uk , www.shadowhunter.be of www.arei-rgie.be. Cet élément est fournie telle quelle et sans la moindre garantie. Shadowhunter ne peut pas être tenue responsable de dommages directs ou indirects résultant de l'utilisation de cet élément. L'utilisation, la modification et l'intégration de cet élément dans des schémas électriques est autorisée sans condition, quelle que soit la licence finale des schémas. Lors de la redistribution de cet élément, ces informations de licence ne peuvent jamais être supprimées.
+Contact: info@shadowhunter.co.uk
+
+[EN]
+This free element was designed by ShadowHunter and downloaded from www.shadowhunter.co.uk,  www.shadowhunter.be or www.arei-rgie.be. This element is provided as is and comes without any warranty. Shadowhunter be cannot be held liable for direct or indirect damages resulting from the use of this element. The usage, the modification and the integration of this element into diagrams is allowed without any condition, whatever the final license or purpose of the diagrams is. This license information may not be removed upon redistribution. Contact: info@shadowhunter.co.uk</informations>
+                            <description>
+                                <rect x="-24" height="22" antialias="false" y="-11" style="line-style:normal;line-weight:normal;filling:none;color:black" width="48"/>
+                                <input x="-10" text="" rotate="true" size="9" y="20" tagg="label"/>
+                                <line length1="1.5" antialias="false" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" x2="-4" end1="none" y1="4" y2="4" length2="1.5" x1="-19"/>
+                                <line length1="1.5" antialias="false" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" x2="-4" end1="none" y1="-4" y2="4" length2="1.5" x1="-4"/>
+                                <line length1="1.5" antialias="false" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" x2="4" end1="none" y1="-4" y2="4" length2="1.5" x1="4"/>
+                                <line length1="1.5" antialias="false" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" x2="19" end1="none" y1="4" y2="4" length2="1.5" x1="4"/>
+                                <terminal x="0" orientation="n" y="-11"/>
+                                <terminal x="0" orientation="s" y="11"/>
+                                <terminal x="24" orientation="e" y="0"/>
+                                <terminal x="-24" orientation="w" y="0"/>
+                            </description>
+                        </definition>
+                    </element>
+                </category>
+                <category name="arei_consumption_appliances">
+                    <names>
+                        <name lang="nl">Verbruikstoestellen</name>
+                        <name lang="fr">Appareils d'utilisation</name>
+                        <name lang="en">Consumption appliances</name>
+                    </names>
+                    <element name="arei_lighting.elmt">
+                        <definition type="element" height="40" orientation="dyyy" hotspot_x="20" link_type="simple" version="0.60" width="40" hotspot_y="20">
+                            <uuid uuid="{7ee3427f-0d6e-4c55-80a2-44e6f55a6145}"/>
+                            <names>
+                                <name lang="fr"> Point lumineux</name>
+                                <name lang="nl">Verlichtingstoestel</name>
+                                <name lang="en">Lighting</name>
+                            </names>
+                            <informations>[NL]
+Dit gratis element werd ontworpen door ShadowHunter en werd gedownload van www.shadowhunter.co.uk , www.shadowhunter.be of www.arei-rgie.be. Dit element wordt aangeboden zoals het is en zonder enige garantie. ShadowHunter kan niet aansprakelijk worden gesteld voor rechtstreekse of onrechtstreekse schade die ontstaat uit het gebruik van dit element. Het gebruik, wijzigingen en de integratie van dit element in schema’s is toegestaan zonder enige voorwaarden, ongeacht het uiteindelijke doel of vergunningstype van het schema. Bij herdistributie van dit element mag deze licentie-informatie niet worden verwijderd. Contact: info@shadowhunter.co.uk 
+
+[FR]
+Cet élément gratuit a été conçu par ShadowHunter et téléchargé depuis www.shadowhunter.co.uk , www.shadowhunter.be of www.arei-rgie.be. Cet élément est fournie telle quelle et sans la moindre garantie. Shadowhunter ne peut pas être tenue responsable de dommages directs ou indirects résultant de l'utilisation de cet élément. L'utilisation, la modification et l'intégration de cet élément dans des schémas électriques est autorisée sans condition, quelle que soit la licence finale des schémas. Lors de la redistribution de cet élément, ces informations de licence ne peuvent jamais être supprimées.
+Contact: info@shadowhunter.co.uk
+
+[EN]
+This free element was designed by ShadowHunter and downloaded from www.shadowhunter.co.uk,  www.shadowhunter.be or www.arei-rgie.be. This element is provided as is and comes without any warranty. Shadowhunter be cannot be held liable for direct or indirect damages resulting from the use of this element. The usage, the modification and the integration of this element into diagrams is allowed without any condition, whatever the final license or purpose of the diagrams is. This license information may not be removed upon redistribution. Contact: info@shadowhunter.co.uk</informations>
+                            <description>
+                                <line length1="1.5" antialias="false" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" x2="16" end1="none" y1="-16" y2="16" length2="1.5" x1="-16"/>
+                                <line length1="1.5" antialias="false" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" x2="16" end1="none" y1="16" y2="-16" length2="1.5" x1="-16"/>
+                                <input x="-10" text="" rotate="true" size="9" y="25" tagg="label"/>
+                                <terminal x="-1" orientation="w" y="0"/>
+                                <terminal x="0" orientation="n" y="-1"/>
+                                <terminal x="0" orientation="s" y="1"/>
+                                <terminal x="1" orientation="e" y="0"/>
+                            </description>
+                        </definition>
+                    </element>
+                    <element name="arei_motor.elmt">
+                        <definition type="element" height="40" orientation="dyyy" hotspot_x="19" link_type="simple" version="0.60" width="40" hotspot_y="19">
+                            <uuid uuid="{0eb5be77-378a-41bc-a9c8-16cb1571a74f}"/>
+                            <names>
+                                <name lang="fr">Moteur</name>
+                                <name lang="nl">Motor</name>
+                                <name lang="en">Motor</name>
+                            </names>
+                            <informations>[NL]
+Dit gratis element werd ontworpen door ShadowHunter en werd gedownload van www.shadowhunter.co.uk , www.shadowhunter.be of www.arei-rgie.be. Dit element wordt aangeboden zoals het is en zonder enige garantie. ShadowHunter kan niet aansprakelijk worden gesteld voor rechtstreekse of onrechtstreekse schade die ontstaat uit het gebruik van dit element. Het gebruik, wijzigingen en de integratie van dit element in schema’s is toegestaan zonder enige voorwaarden, ongeacht het uiteindelijke doel of vergunningstype van het schema. Bij herdistributie van dit element mag deze licentie-informatie niet worden verwijderd. Contact: info@shadowhunter.co.uk 
+
+[FR]
+Cet élément gratuit a été conçu par ShadowHunter et téléchargé depuis www.shadowhunter.co.uk , www.shadowhunter.be of www.arei-rgie.be. Cet élément est fournie telle quelle et sans la moindre garantie. Shadowhunter ne peut pas être tenue responsable de dommages directs ou indirects résultant de l'utilisation de cet élément. L'utilisation, la modification et l'intégration de cet élément dans des schémas électriques est autorisée sans condition, quelle que soit la licence finale des schémas. Lors de la redistribution de cet élément, ces informations de licence ne peuvent jamais être supprimées.
+Contact: info@shadowhunter.co.uk
+
+[EN]
+This free element was designed by ShadowHunter and downloaded from www.shadowhunter.co.uk,  www.shadowhunter.be or www.arei-rgie.be. This element is provided as is and comes without any warranty. Shadowhunter be cannot be held liable for direct or indirect damages resulting from the use of this element. The usage, the modification and the integration of this element into diagrams is allowed without any condition, whatever the final license or purpose of the diagrams is. This license information may not be removed upon redistribution. Contact: info@shadowhunter.co.uk</informations>
+                            <description>
+                                <input x="-10" text="" rotate="true" size="9" y="25" tagg="label"/>
+                                <circle x="-13" diameter="26" antialias="false" y="-13" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+                                <text x="-4.64058" text="M" size="9" y="4.37318"/>
+                                <terminal x="-13" orientation="w" y="0"/>
+                                <terminal x="0" orientation="s" y="13"/>
+                                <terminal x="13" orientation="e" y="0"/>
+                                <terminal x="0" orientation="n" y="-13"/>
+                            </description>
+                        </definition>
+                    </element>
+                </category>
+                <category name="arei_general">
+                    <names>
+                        <name lang="en">General</name>
+                        <name lang="nl">Algemeenheden</name>
+                        <name lang="fr">Généralités</name>
+                    </names>
+                    <element name="arei_alternating_current_general.elmt">
+                        <definition type="element" height="30" orientation="dyyy" hotspot_x="15" link_type="simple" version="0.60" width="30" hotspot_y="15">
+                            <uuid uuid="{49c55501-bb3a-4815-892a-af20ae3c4933}"/>
+                            <names>
+                                <name lang="en">Alternating current</name>
+                                <name lang="nl">Wisselstroom algemeen</name>
+                                <name lang="fr">Courant alternatif, symbole général</name>
+                            </names>
+                            <informations>[NL]
+Dit gratis element werd ontworpen door ShadowHunter en werd gedownload van www.shadowhunter.co.uk , www.shadowhunter.be of www.arei-rgie.be. Dit element wordt aangeboden zoals het is en zonder enige garantie. ShadowHunter kan niet aansprakelijk worden gesteld voor rechtstreekse of onrechtstreekse schade die ontstaat uit het gebruik van dit element. Het gebruik, wijzigingen en de integratie van dit element in schema’s is toegestaan zonder enige voorwaarden, ongeacht het uiteindelijke doel of vergunningstype van het schema. Bij herdistributie van dit element mag deze licentie-informatie niet worden verwijderd. Contact: info@shadowhunter.co.uk 
+
+[FR]
+Cet élément gratuit a été conçu par ShadowHunter et téléchargé depuis www.shadowhunter.co.uk , www.shadowhunter.be of www.arei-rgie.be. Cet élément est fournie telle quelle et sans la moindre garantie. Shadowhunter ne peut pas être tenue responsable de dommages directs ou indirects résultant de l'utilisation de cet élément. L'utilisation, la modification et l'intégration de cet élément dans des schémas électriques est autorisée sans condition, quelle que soit la licence finale des schémas. Lors de la redistribution de cet élément, ces informations de licence ne peuvent jamais être supprimées.
+Contact: info@shadowhunter.co.uk
+
+[EN]
+This free element was designed by ShadowHunter and downloaded from www.shadowhunter.co.uk,  www.shadowhunter.be or www.arei-rgie.be. This element is provided as is and comes without any warranty. Shadowhunter be cannot be held liable for direct or indirect damages resulting from the use of this element. The usage, the modification and the integration of this element into diagrams is allowed without any condition, whatever the final license or purpose of the diagrams is. This license information may not be removed upon redistribution. Contact: info@shadowhunter.co.uk</informations>
+                            <description>
+                                <arc x="-10" start="90" height="20" antialias="true" y="-10" style="line-style:normal;line-weight:normal;filling:none;color:black" width="10" angle="90"/>
+                                <arc x="-10" start="0" height="20" antialias="true" y="-10" style="line-style:normal;line-weight:normal;filling:none;color:black" width="10" angle="90"/>
+                                <arc x="0" start="180" height="18" antialias="true" y="-8" style="line-style:normal;line-weight:normal;filling:none;color:black" width="10" angle="90"/>
+                                <arc x="0" start="270" height="20" antialias="true" y="-10" style="line-style:normal;line-weight:normal;filling:none;color:black" width="10" angle="90"/>
+                                <input x="-14" text="" rotate="true" size="9" y="18" tagg="label"/>
+                                <terminal x="0" orientation="n" y="0"/>
+                                <terminal x="0" orientation="e" y="0"/>
+                                <terminal x="0" orientation="s" y="0"/>
+                                <terminal x="0" orientation="w" y="0"/>
+                            </description>
+                        </definition>
+                    </element>
+                </category>
+            </category>
+            <category name="10_electric">
+                <names>
+                    <name lang="nl">Elektrotechniek</name>
+                    <name lang="es">Eléctrica</name>
+                    <name lang="de">Elektrik</name>
+                    <name lang="cs">Elektrotechnika</name>
+                    <name lang="pl">Elektrotechnika</name>
+                    <name lang="ru">Электротехника</name>
+                    <name lang="da">Elektrisk</name>
+                    <name lang="fr">Electrique</name>
+                    <name lang="el">Ηλεκτρικά</name>
+                    <name lang="en">Electric</name>
+                    <name lang="it">Elettrica</name>
+                </names>
+                <category name="10_allpole">
+                    <names>
+                        <name lang="nl">Veel polig</name>
+                        <name lang="es">Multifilar</name>
+                        <name lang="cs">Vícežilový</name>
+                        <name lang="de">Allpolig</name>
+                        <name lang="pl">Schematy wieloliniowe</name>
+                        <name lang="ru">Многополюсные</name>
+                        <name lang="da">Flere ledere</name>
+                        <name lang="fr">Multifilaire</name>
+                        <name lang="el">Πολυγραμμικό</name>
+                        <name lang="en">All-pole</name>
+                        <name lang="it">Multifilare</name>
+                    </names>
+                    <category name="380_signaling&amp;operating">
+                        <names>
+                            <name lang="nl">Signalering en bediening</name>
+                            <name lang="es">Señalización y comando</name>
+                            <name lang="de">Melde- und Bedieneinrichtungen</name>
+                            <name lang="cs">Značení a příkazy</name>
+                            <name lang="ru">Сигнализация и управление</name>
+                            <name lang="pl">Obwody sterownicze</name>
+                            <name lang="fr">Signalétique et commande</name>
+                            <name lang="en">Signaling and operating</name>
+                            <name lang="el">Σήμανση και χειρισμός</name>
+                            <name lang="it">Segnalazione e comando</name>
+                        </names>
+                        <category name="20_push_buttons">
+                            <names>
+                                <name lang="pt">Botões de pressão</name>
+                                <name lang="nl">Knop druk</name>
+                                <name lang="es">Pulsadores</name>
+                                <name lang="de">Drucktaster</name>
+                                <name lang="cs">Tlačítka</name>
+                                <name lang="ru">Кнопки</name>
+                                <name lang="pl">Przyciski</name>
+                                <name lang="ar">مفاتيح ضاغطة</name>
+                                <name lang="fr">Boutons-poussoirs</name>
+                                <name lang="en">Push-buttons</name>
+                                <name lang="el">Μπουτόν</name>
+                                <name lang="it">Pulsanti</name>
+                            </names>
+                            <element name="arret-urgence_no.elmt">
+                                <definition type="element" height="50" orientation="dyyy" hotspot_x="22" link_type="master" version="0.5" width="30" hotspot_y="24">
+                                    <uuid uuid="{4F4B0EDC-6505-4AE7-A39C-41FBC8336D9C}"/>
+                                    <names>
+                                        <name lang="it">Arresto d'emergenza</name>
+                                        <name lang="nl">Noodstop drukknop (NO)</name>
+                                        <name lang="pl">Łącznik przyciskowy (przycisk bezpieczeństwa)</name>
+                                        <name lang="ru">Кнопка (НР)</name>
+                                        <name lang="fr">Arret d'urgence (NF)</name>
+                                        <name lang="ar">زرّ توقف طارئ (NF)</name>
+                                        <name lang="en">Push-button</name>
+                                        <name lang="es">Pulsador con enclave</name>
+                                        <name lang="cs">Nouzové zastavení</name>
+                                        <name lang="de">Pilzdrucktaster Schliesser</name>
+                                    </names>
+                                    <kindInformations>
+                                        <kindInformation show="1" name="type">commutator</kindInformation>
+                                    </kindInformations>
+                                    <informations>Author: The QElectroTech team
+License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
+                                    <description>
+                                        <line length1="1.5" antialias="true" end2="none" style="line-style:normal;line-weight:thin;filling:none;color:black" x2="-7.25" end1="none" y1="-2" x1="-10.25" length2="1.5" y2="0"/>
+                                        <polygon y3="20" x3="0" antialias="true" closed="false" style="line-style:normal;line-weight:normal;filling:none;color:black" x2="0" y1="-10" x1="-5" y2="10"/>
+                                        <arc x="-17.25" start="-90" height="10" antialias="true" y="-5" style="line-style:normal;line-weight:thin;filling:none;color:black" width="8" angle="-180"/>
+                                        <line length1="1.5" antialias="false" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" x2="0" end1="none" y1="-20" x1="0" length2="1.5" y2="-10"/>
+                                        <line length1="1.5" antialias="false" end2="none" style="line-style:normal;line-weight:thin;filling:none;color:black" x2="-10.25" end1="none" y1="-2" x1="-10.25" length2="1.5" y2="0"/>
+                                        <input x="2.75" text="_" size="9" y="3" tagg="label"/>
+                                        <line length1="1.5" antialias="false" end2="none" style="line-style:normal;line-weight:thin;filling:none;color:black" x2="-13.25" end1="none" y1="-5" x1="-13.25" length2="1.5" y2="5"/>
+                                        <line length1="1.5" antialias="false" end2="none" style="line-style:dashed;line-weight:thin;filling:none;color:black" x2="-3.25" end1="none" y1="0" x1="-13.25" length2="1.5" y2="0"/>
+                                        <terminal x="0" orientation="n" y="-20"/>
+                                        <terminal x="0" orientation="s" y="20"/>
+                                    </description>
+                                </definition>
+                            </element>
+                        </category>
+                    </category>
+                    <category name="392_generators&amp;sources">
+                        <names>
+                            <name lang="nl">Generatoren en Voedingen</name>
+                            <name lang="es">Generadores y fuentes</name>
+                            <name lang="de">Generatoren und Quellen</name>
+                            <name lang="cs">Generátory a zdroje</name>
+                            <name lang="ru">Генераторы и источники</name>
+                            <name lang="pl">Źródła zasilania</name>
+                            <name lang="fr">Générateurs et sources</name>
+                            <name lang="el">Γεννήτριες και πηγές</name>
+                            <name lang="en">Generators and sources</name>
+                            <name lang="it">Generatori e sorgenti</name>
+                        </names>
+                        <category name="30_batteries">
+                            <names>
+                                <name lang="nl">Batterijen</name>
+                                <name lang="es">Baterias</name>
+                                <name lang="de">Batterien</name>
+                                <name lang="cs">Baterie</name>
+                                <name lang="ru">Батареи</name>
+                                <name lang="pl">Ogniwa i baterie</name>
+                                <name lang="fr">Piles</name>
+                                <name lang="en">Batteries</name>
+                                <name lang="el">Μπαταρίες</name>
+                                <name lang="it">Batterie</name>
+                            </names>
+                            <element name="pile_1_element.elmt">
+                                <definition type="element" height="30" orientation="dyyy" hotspot_x="24" link_type="simple" version="0.5" width="50" hotspot_y="14">
+                                    <uuid uuid="{cd1cb3df-5e68-4b22-9523-0e7ac886d8d2}"/>
+                                    <names>
+                                        <name lang="fr">Pile 1 élément</name>
+                                        <name lang="de">Batterie 1 Element</name>
+                                        <name lang="it">Batteria (un elemento)</name>
+                                        <name lang="es">Bateria 1 elemento</name>
+                                        <name lang="ar">بطارية خليّة واحدة</name>
+                                        <name lang="be">Batterij 1 element DC</name>
+                                        <name lang="el">Μπαταρία (1 στοιχείο)</name>
+                                        <name lang="cs">Akumulátor 1 prvek</name>
+                                        <name lang="en">Battery one element</name>
+                                        <name lang="pl">Ogniwo elektrochemiczne</name>
+                                        <name lang="nl">Batterij 1 element DC</name>
+                                    </names>
+                                    <informations>Author: The QElectroTech team
+License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
+                                    <description>
+                                        <line length1="1.5" antialias="false" end2="none" x2="3" style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" y1="0" y2="0" x1="20" length2="1.5"/>
+                                        <input x="5" text="_" rotate="true" size="9" y="-15.45" tagg="label"/>
+                                        <line length1="1.5" antialias="false" end2="none" x2="-20" style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" y1="0" y2="0" x1="-3" length2="1.5"/>
+                                        <line length1="1.5" antialias="false" end2="none" x2="-3" style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" y1="-9" y2="9" x1="-3" length2="1.5"/>
+                                        <rect x="0" height="12" antialias="false" y="-6" style="line-style:normal;line-weight:normal;filling:black;color:black" width="3"/>
+                                        <text x="6" text="-" size="6" y="6.6666"/>
+                                        <text x="-11" text="+" size="6" y="6.6666"/>
+                                        <terminal x="-20" orientation="w" y="0"/>
+                                        <terminal x="20" orientation="e" y="0"/>
+                                    </description>
+                                </definition>
+                            </element>
+                        </category>
+                    </category>
+                </category>
+            </category>
+            <category name="20_logic">
+                <names>
+                    <name lang="nl">Logica</name>
+                    <name lang="es">Lógica</name>
+                    <name lang="cs">Logika</name>
+                    <name lang="de">Logik</name>
+                    <name lang="pl">Programowanie</name>
+                    <name lang="ru">Логика</name>
+                    <name lang="da">Logik</name>
+                    <name lang="fr">Logique</name>
+                    <name lang="el">Λογικά κυκλώματα</name>
+                    <name lang="en">Logic</name>
+                    <name lang="it">Logica</name>
+                </names>
+                <category name="10_functions">
+                    <names>
+                        <name lang="be">Logische poorten</name>
+                        <name lang="pt">Portas lógicas</name>
+                        <name lang="nl">Functie Plan (FUP)</name>
+                        <name lang="es">Puertas lógicas</name>
+                        <name lang="de">Logikfunktionen</name>
+                        <name lang="cs">Logické funkce</name>
+                        <name lang="ru">Логические устройства</name>
+                        <name lang="pl">Bloki funkcyjne (FBD)</name>
+                        <name lang="da">Logik funktioner</name>
+                        <name lang="ar">وظائف منطقيّة</name>
+                        <name lang="fr">Fonctions logiques</name>
+                        <name lang="en">Logic gates</name>
+                        <name lang="el">Λογικές πύλες</name>
+                        <name lang="it">Porte logiche</name>
+                    </names>
+                    <element name="entree.elmt">
+                        <definition type="element" height="80" orientation="dyyy" hotspot_x="24" link_type="simple" version="0.5" width="70" hotspot_y="40">
+                            <uuid uuid="{b178519f-09fc-4d37-bca4-71525f7306f7}"/>
+                            <names>
+                                <name lang="de">Eingang</name>
+                                <name lang="el">Είσοδος</name>
+                                <name lang="fr">Entrée</name>
+                                <name lang="cs">Vstup</name>
+                                <name lang="ru">Вход</name>
+                                <name lang="es">Entrada</name>
+                                <name lang="ar">دخل</name>
+                                <name lang="it">Ingresso</name>
+                                <name lang="pl">Wejście</name>
+                                <name lang="en">Input</name>
+                                <name lang="pt">Entrada</name>
+                                <name lang="nl">Ingang</name>
+                            </names>
+                            <informations>Author: The QElectroTech team
+License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
+                            <description>
+                                <line length1="1.5" antialias="false" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" x2="20" end1="none" y1="0" x1="40" length2="1.5" y2="0"/>
+                                <input x="25" text="_" rotate="true" size="8" y="-10" tagg="none"/>
+                                <input x="-25" text="_" rotate="true" size="9" y="50" tagg="label"/>
+                                <text x="-2" text="I" size="12" y="5"/>
+                                <rect x="-20" height="70" antialias="false" y="-35" style="line-style:normal;line-weight:normal;filling:none;color:black" width="40"/>
+                                <terminal x="40" orientation="e" y="0"/>
+                            </description>
+                        </definition>
+                    </element>
+                </category>
+            </category>
+        </category>
+    </collection>
+</project>
