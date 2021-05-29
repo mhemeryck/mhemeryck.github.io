@@ -39,7 +39,7 @@ For the _receiving_ of messages (I/O board → outside) you would need to regist
 The arguments to the callback function then hold information about the specific I/O action that triggered them.
 For the _sending_ of messages (outside → I/O board), you can just send a structured message directly.
 
-Here's a python snippet directly taken from the [evok websocket interface] docs:
+Here's a python snippet directly taken from the [evok websockets interface] docs:
 
 ```python
 import json
@@ -142,3 +142,16 @@ This snippet essentially details all actions that occur for incoming events from
 For the opposite action, a websocket event that needs to be translated to MQTT, a similar callback function is implemented.
 
 At this point, with all of these layers of software in between, the unipi neuron unit provides the standard MQTT-based interface to home assistant.
+
+[evok api docs]: https://evok.api-docs.io/1.0/jkctke5arbcnjt8az
+[evok websockets interface]: https://evok.api-docs.io/1.0/mpqzDwPwirsoq7i5A/websocket
+[evok2mqtt]: https://github.com/mhemeryck/evok2mqtt
+[evok]: https://github.com/UniPiTechnology/evok
+[home assistant]: https://www.home-assistant.io/
+[software layers]: /assets/2021-05-09/software.png
+[sysfs interface]: https://kb.unipi.technology/en:sw:02-apis:04-sysfs
+[raspbian]: https://www.raspberrypi.org/software/operating-systems/
+[spi]: https://en.wikipedia.org/wiki/Serial_Peripheral_Interface
+[rs-485]: https://en.wikipedia.org/wiki/RS-485
+[modbus]: https://simplymodbus.ca/
+[neuron open source os]: https://kb.unipi.technology/en:files:software:os-images:00-start#neuron_opensource_os
