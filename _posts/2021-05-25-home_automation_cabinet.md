@@ -8,6 +8,7 @@ tags:
   - home automation
   - tech
 ---
+
 # Inside the cabinet
 
 Given the star-configuration for all of the lights, the amount of wiring in the central electricity cabinet quickly adds up.
