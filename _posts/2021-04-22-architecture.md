@@ -21,7 +21,7 @@ Here, I will not give an exhaustive overview of those, but rather outline the fi
 
 Let's discuss!
 
-## MQTT broker
+# MQTT broker
 
 _Central_ to the drawing is a [mosquitto MQTT broker].
 MQTT is a _publish-subscribe_ protocol:
@@ -34,7 +34,7 @@ MQTT is a popular choice for IoT since the event-based model fits well for a lot
 Another advantage is that the each of the different clients only need to be aware of their connection to the broker.
 A disadvantage however is that all connections rely on the availability of the central broker.
 
-## MQTT clients
+# MQTT clients
 
 The principal other components of the setup are all MQTT clients which both subscribe and publish to specified topics, specifically:
 
@@ -47,12 +47,12 @@ The clients in this setup can provide (a combination of):
 - _actors_: lights, covers, sirens, ...
 - _logic_: send out events on a certain condition, e.g. on another event (an automation)
 
-### unipi
+## unipi
 
 For the sensors and actors I did use hardware from [unipi].
 In essence the unipi modules are DIN-rail mountable units housing a raspberry pi and a couple of I/O boards depending on the model you have.
 
-### home assistant
+## home assistant
 
 [home assistant] is an open source software project which aims to integrate all sorts of smart home devices.
 Given my choice of MQTT as an interfacing protocol throughout my setup, I heavily rely on the [home assistant MQTT integration].
@@ -66,7 +66,7 @@ The rationale behind this way of working is that nothing is really hard-wired in
 Note that home assistant supports a wide range of integrations beyond MQTT.
 The thermostat in the schematic for instance has an integration based on REST / HTTP.
 
-## Layers of abstraction
+# Layers of abstraction
 
 Planning for a DIY wired open home automation setup requires some other specific thinking in terms of the different layers of abstraction.
 The following diagram focuses on these different layers.
@@ -97,7 +97,7 @@ Most of my wiring was done in a [star topology].
 The upside is that it is very flexible towards the future.
 The (visible) downside is that the amount of wires piles up rapidly and you will need _some_ kind of system to keep a sane overview of this.
 
-## Toggling a light switch ...
+# Toggling a light switch ...
 
 To conclude, let's just walk through all the steps of toggling a push button:
 
@@ -112,7 +112,7 @@ To conclude, let's just walk through all the steps of toggling a push button:
 1. the unipi module toggles a relay, switching on the light
 1. finally, after the light has turned on, a state update is also pushed out from the unipi module, which updates the internal state on home assistant
 
-## Conclusion
+# Conclusion
 
 The focus of this post was to simply outline the main components and links in my home automation setup, principally based on MQTT and home assistant as the brains behind it all.
 
