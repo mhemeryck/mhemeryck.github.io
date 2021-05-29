@@ -2,14 +2,12 @@
 title: Architecture
 subtitle: My home automation layout
 cover-img:
-
-- "/assets/2021-04-22/cover.jpg": "Photo by Maarten Deckers on Unsplash"
-  readtime: true
-  tags:
-- home automation
-- mqtt
-- tech
-
+  - "/assets/2021-04-22/cover.jpg": "Photo by Maarten Deckers on Unsplash"
+    readtime: true
+    tags:
+  - home automation
+  - mqtt
+  - tech
 ---
 
 In the [previous post], I did start with explaining my vision and guiding principles in building a home automation setup.
