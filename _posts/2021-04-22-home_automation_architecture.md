@@ -2,12 +2,14 @@
 title: Architecture
 subtitle: My home automation layout
 cover-img:
-  - "/assets/2021-04-22/cover.jpg": "Photo by Maarten Deckers on Unsplash"
-readtime: true
-tags:
-  - home automation
-  - mqtt
-  - tech
+
+- "/assets/2021-04-22/cover.jpg": "Photo by Maarten Deckers on Unsplash"
+  readtime: true
+  tags:
+- home automation
+- mqtt
+- tech
+
 ---
 
 In the [previous post], I did start with explaining my vision and guiding principles in building a home automation setup.
@@ -125,7 +127,7 @@ Finally, I did also point the different layers of abstraction to consider when l
 
 [^1]: actually, there's some more processing involved using a custom library [evok2mqtt] of mine, but I will leave this out of the discussion for now
 
-[previous post]: {% post_url 2021-04-18-why %}
+[previous post]: {% post_url 2021-04-18-home_automation_why %}
 [architecture]: /assets/2021-04-22/architecture.png
 [flow]: /assets/2021-04-22/flow.png
 [layers]: /assets/2021-04-22/layers.png
