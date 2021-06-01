@@ -55,7 +55,6 @@ Even though these diagrams only represent part of the information, they proved t
 [^5]: DALI is a bus system for digital light control. In theory, you could do full light control with DALI only (removing the need for relay-based control), but this means all of your light fixtures need to be DALI-aware.
 [^6]: not quite visible, but a similar connection can be made for the other wire (blue, neutral)
 
-[architecture post]: {% post_url 2021-04-22-home_automation_architecture %}
 [AREI]: https://economie.fgov.be/nl/publicaties/algemeen-reglement-op-de
 [principle relay]: /assets/2021-05-25/principle.png
 [principle push button]: /assets/2021-05-25/principle_push_button.png
