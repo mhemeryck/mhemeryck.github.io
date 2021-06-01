@@ -10,7 +10,6 @@ tags:
   - tech
 ---
 
-The [architecture post] laid out the rationale and principles behind a wired home automation setup.
 In this post, we shall take a first dive into one of the fundamental components in an end-to-end way: controlling a relay.
 
 ## A mandatory word of caution (!)
@@ -338,7 +337,6 @@ As a work-around, I do now run a [Pi-hole] server, that also doubles as a DNS se
 [^6]: not quite visible, but a similar connection can be made for the other wire (blue, neutral)
 [^7]: this could actually also be solved using configuration on the MQTT client setup, by only registering callbacks to certain topics.
 
-[architecture post]: {% post_url 2021-04-22-architecture %}
 [AREI]: https://economie.fgov.be/nl/publicaties/algemeen-reglement-op-de
 [principle]: /assets/2021-05-09/principle.png
 [danger]: /assets/2021-05-09/danger.jpg

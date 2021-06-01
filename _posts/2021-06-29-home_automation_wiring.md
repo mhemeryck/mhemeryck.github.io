@@ -139,7 +139,7 @@ While the regulations pertaining to the wiring are specific to my country's regu
 [^1]: ISBN/EAN 9789030142942
 [^2]: the official regulation is the [AREI]
 
-[home automation overview post]: {% post_url 2021-04-18-home_automation_why %}
+[home automation overview post]: {% post_url 2021-06-15-home_automation_why %}
 [AREI]: https://economie.fgov.be/nl/publicaties/algemeen-reglement-op-de
 [principle relay]: /assets/2021-05-25/principle.png
 [principle push button]: /assets/2021-05-25/principle_push_button.png

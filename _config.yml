@@ -19,6 +19,8 @@ share-links-active:
   linkedin: true
   facebook: true
 
+future: true
+
 timezone: "Europe/Brussels"
 highlighter: rouge
 permalink: /:year-:month-:day/:title

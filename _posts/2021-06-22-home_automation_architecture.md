@@ -127,7 +127,7 @@ I did not yet dive down into the details of the different components i.e. the se
 Also, the different applications themselves, such as push buttons, lighting fixtures, DALI, shades, an alarm system, ... all merit their own discussion.
 Finally, I did also point the different layers of abstraction to consider when laying out a wired home automation system, which shall also make for an interesting future topic to dive into.
 
-[home automation overview post]: {% post_url 2021-04-18-home_automation_why %}
+[home automation overview post]: {% post_url 2021-06-15-home_automation_why %}
 [architecture]: /assets/2021-04-22/architecture.png
 [flow]: /assets/2021-04-22/flow.png
 [layers]: /assets/2021-04-22/layers.png
