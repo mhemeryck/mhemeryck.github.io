@@ -2,13 +2,17 @@
 title: "Hardware"
 subtitle: "Unipi units"
 cover-img:
-  - "https://kb.unipi.technology/_media/en:hw:neuron_m103-top.jpg": "unipi neuron unit"
+  - "/assets/2021-07-20/neuron-cover.jpg": "unipi neuron unit"
 readtime: true
 tags:
   - home automation
   - tech
-  - unipi
 ---
+
+This post is a part of a larger series of posts on my home automation setup.
+See the [home automation overview post], to learn about the rationale and a description of the other posts!
+
+# unipi
 
 For the hardware, I did choose the [unipi] neuron series:
 
@@ -29,9 +33,11 @@ I have a number of different neuron units in my setup, but for the relay control
 
 Check out the [unipi KB] for more technical details.
 
+[home automation overview post]: {% post_url 2021-06-15-home_automation_why %}
 [unipi]: https://www.unipi.technology/
-[unipi hardware]: /assets/2021-05-09/unipi-hardware.png
 [spi]: https://en.wikipedia.org/wiki/Serial_Peripheral_Interface
 [unipi module]: https://kb.unipi.technology/_media/en:hw:neuron_m103-top.jpg
 [unipi neuron l403]: https://www.unipi.technology/unipi-neuron-l403-p102
 [unipi kb]: https://kb.unipi.technology/en:hw:02-neuron
+[unipi community forum]: https://forum.unipi.technology/
+[unipi hardware]: /assets/2021-07-20/unipi-hardware.png
