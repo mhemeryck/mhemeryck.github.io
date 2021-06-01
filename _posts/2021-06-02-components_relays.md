@@ -355,7 +355,6 @@ As a work-around, I do now run a [Pi-hole] server, that also doubles as a DNS se
 [unipi module]: https://kb.unipi.technology/_media/en:hw:neuron_m103-top.jpg
 [unipi]: https://www.unipi.technology/
 [SPI]: https://en.wikipedia.org/wiki/Serial_Peripheral_Interface
-[unipi community forum]: https://forum.unipi.technology/
 [software layers]: /assets/2021-05-09/software.png
 [unipi neuron L403]: https://www.unipi.technology/unipi-neuron-l403-p102
 [neuron open source OS]: https://kb.unipi.technology/en:files:software:os-images:00-start#neuron_opensource_os
