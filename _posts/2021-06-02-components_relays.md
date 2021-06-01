@@ -349,13 +349,10 @@ As a work-around, I do now run a [Pi-hole] server, that also doubles as a DNS se
 [project huisinstallatie naslagwerk]: https://www.plantyn.com/webshop/product/project-huisinstallatie-naslagwerk-9789030142942
 [residual-current devices]: https://en.wikipedia.org/wiki/Residual-current_device
 [three-phase connection]: https://en.wikipedia.org/wiki/Three-phase_electric_power
-[WAGO rail-mount terminal blocks]: https://www.wago.com/global/electrical-interconnections/discover-rail-mount-terminal-blocks
 [DALI]: https://en.wikipedia.org/wiki/Digital_Addressable_Lighting_Interface
-[unipi relay outputs KB]: https://kb.unipi.technology/en:hw:02-neuron:description-of-io:03-description-of-ro
 [unipi relay outputs img]: https://kb.unipi.technology/_media/en:hw:010_connection_of_io.png
 [unipi hardware]: /assets/2021-05-09/unipi-hardware.png
 [unipi module]: https://kb.unipi.technology/_media/en:hw:neuron_m103-top.jpg
-[unipi KB]: https://kb.unipi.technology/en:hw:02-neuron
 [unipi]: https://www.unipi.technology/
 [SPI]: https://en.wikipedia.org/wiki/Serial_Peripheral_Interface
 [unipi community forum]: https://forum.unipi.technology/
