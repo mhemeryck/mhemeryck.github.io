@@ -150,5 +150,5 @@ My initial goal was to find a way of completely automating my initial installs, 
 [raspberry pi 400]: https://www.raspberrypi.org/products/raspberry-pi-400/
 [arch for arm]: https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-4
 [arch installation guide]: https://wiki.archlinux.org/index.php/installation_guide
-[gnome3]: https://www.gnome.org/gnome-3/
+[gnome3]: https://www.gnome.org
 [gdm]: https://wiki.gnome.org/Projects/GDM
