@@ -6,11 +6,12 @@ cover-img:
 readtime: true
 tags:
   - home automation
+  - wiring
   - tech
 ---
 
-The [architecture post] laid out the rationale and principles behind a wired home automation setup.
-It also focussed on the different _layers_ to consider in such a setup.
+This post is a part of a larger series of posts on my home automation setup.
+See the [home automation overview post], to learn about the rationale and a description of the other posts!
 
 In this post, I will take a deeper dive into the bottom layer, the **wiring**.
 Different kinds of inputs and outputs can be discussed, but for the sake of simplicity, I shall focus on a push button operating a lamp.
@@ -20,8 +21,6 @@ I will cover:
 - caution: safety first
 - principle: operating principle behind a light push button and relay
 - conductors: the physical wires and cables themselves
-- schematics: one-wire diagram and floor plan
-- inside the cabinet: bringing everything together while keeping mental sanity
 
 # A mandatory word of caution (!)
 
@@ -74,14 +73,14 @@ While these observations might be rather trivial, for the purposes of modeling t
 
 ## Relays
 
-The following image shows a typical tube containing 3 wires with diameters of 1.5mm2, fit for lights.
+The following image shows a typical tube containing 3 wires with diameters of 1.5mm², fit for lights.
 
 ![cable 3G 1.5mm2]
 
 For the cables carrying mains voltage, the following **rules** are relevant (non-exhaustive see e.g.[^1][^2][project huisinstallatie naslagwerk]):
 
-- for circuits up to 16A (typically lights), a min 1.5 mm2 cross-section wire is to be used
-- for circuits up to 20A (lights and / or others like power sockets), a min 2.5 mm2 cross-section wire is to be used
+- for circuits up to 16A (typically lights), a min 1.5 mm² cross-section wire is to be used
+- for circuits up to 20A (lights and / or others like power sockets), a min 2.5 mm² cross-section wire is to be used
 - each of the circuits need to have proper matching circuit breakers
 - all cables consist of neutral wire, live wire and a earth wire
 - color coding:
@@ -98,13 +97,13 @@ Keep in mind:
 ## Push buttons
 
 Contrary to the cabling for the lights, the push buttons run on the lower, safer voltage of 24VDC.
-Consequently, the wire diameter can be a lot smaller.
+Consequently, the wire diameter can be a lot smaller and there is no strict requirement on the use of circuit breakers.
 
 The following image shows an _SVV_ **signal cable**, which is typically used in Belgium for analog signaling applications.
 I did some online research into the international naming for this type of cable, but there does not seem to be any.
 For the sake of the discussion here however, the characteristics are actually more important:
 
-- small diameters, on the order of 0.8mm2
+- small diameters, on the order of 0.8mm²
 - solid core, as this makes connecting to the push buttons easier as they mostly have screw connectors
 - multiple wires in 1 cable (as shown in the picture). These cables mostly come with either 4, 8, 12 or 16 wires.
 - visually clearly differing wires, i.e. highly contrasting colors for the wires
@@ -124,44 +123,35 @@ I would always use the red wire for the positive (24V) level.
 The remainder of the wires would then be assigned according to the [colors on the visible electromagnetic spectrum].
 For example, you could go from black, grey, brown, orange, green, blue, ... all the way to white.
 
+The following image shows the **wiring diagram** for a simple NO [push button from Niko], a Belgian manufacturer of electrical switches and sockets.
+
+![push-button-wiring]
+
+The diagram indicates the push can be used to switch voltages up the 230VAC, but since we're only interested in for the signaling application, it might just as well be a lower voltage.
+Also visible is the optional LED light.
+
 # Conclusion
 
-The goal of this post was first describe in generic terms what kind of wiring is required for a simple push button-to-lamp setup.
-Additionally, I have also attempted to provide a great level of detail for things I have found challenging myself during the course of the installation.
-Some of these details might be very specific to my house (and local regulations), but I still hope someone else might learn from it!
+The goal of this post was first describe the basic principle of the relay and the push button.
+Additionally, I also did describe the wiring you would typically use for connecting those.
+While the regulations pertaining to the wiring are specific to my country's regulations, I still hope someone else might learn from it!
 
 [^1]: ISBN/EAN 9789030142942
 [^2]: the official regulation is the [AREI]
-[^3]: the voltage between each phase wire and the neutral wire is 240V
-[^4]: although it _could_ be wired in series, e.g. for a series of current-controlled LED fixtures
-[^5]: DALI is a bus system for digital light control. In theory, you could do full light control with DALI only (removing the need for relay-based control), but this means all of your light fixtures need to be DALI-aware.
-[^6]: not quite visible, but a similar connection can be made for the other wire (blue, neutral)
 
-[architecture post]: {% post_url 2021-04-22-home_automation_architecture %}
+[home automation overview post]: {% post_url 2021-04-18-home_automation_why %}
 [AREI]: https://economie.fgov.be/nl/publicaties/algemeen-reglement-op-de
 [principle relay]: /assets/2021-05-25/principle.png
 [principle push button]: /assets/2021-05-25/principle_push_button.png
 [push button]: https://en.wikipedia.org/wiki/Push-button
 [danger]: /assets/2021-05-25/danger.jpg
-[onewire]: /assets/2021-05-25/onewire.png
-[layout]: /assets/2021-05-25/layout.png
-[cabinet-wip]: /assets/2021-05-25/cabinet-wip.jpg
-[cabinet-clamps]: /assets/2021-05-25/cabinet-clamps.jpg
-[cabinet-clamps-svv]: /assets/2021-05-25/cabinet-clamps-svv.jpg
-[cabinet-unipi]: /assets/2021-05-25/cabinet-unipi.jpg
 [relay]: https://en.wikipedia.org/wiki/Relay
 [project huisinstallatie naslagwerk]: https://www.plantyn.com/webshop/product/project-huisinstallatie-naslagwerk-9789030142942
 [residual-current devices]: https://en.wikipedia.org/wiki/Residual-current_device
-[three-phase connection]: https://en.wikipedia.org/wiki/Three-phase_electric_power
-[WAGO rail-mount terminal blocks]: https://www.wago.com/global/electrical-interconnections/discover-rail-mount-terminal-blocks
-[DALI]: https://en.wikipedia.org/wiki/Digital_Addressable_Lighting_Interface
-[unipi relay outputs img]: https://kb.unipi.technology/_media/en:hw:010_connection_of_io.png
-[unipi digital inputs img]: https://kb.unipi.technology/_media/en:hw:001_connection_of_io.png
 [arduino]: https://www.arduino.cc/en/Tutorial/Foundations/DigitalPins
 [raspberry pi]: https://www.raspberrypi.org/documentation/hardware/raspberrypi/gpio/README.md
 [cable 3G 1.5mm2]: /assets/2021-05-25/cable-3g15.jpg
 [cable SVV]: /assets/2021-05-25/cable-svv.jpg
-[unipi relay outputs KB]: https://kb.unipi.technology/en:hw:02-neuron:description-of-io:03-description-of-ro
-[unipi digital input KB]: https://kb.unipi.technology/en:hw:02-neuron:description-of-io:01-description-of-di
 [colors on the visible electromagnetic spectrum]: https://en.wikipedia.org/wiki/Electromagnetic_spectrum
-[cabinet-unipi-di]: /assets/2021-05-25/cabinet-unipi-di.jpg
+[push-button-wiring]: /assets/2021-05-25/push-button-wiring.png
+[push button from Niko]: https://www.niko.eu/en/products/switching-material-and-socket-outlets/switches-and-sockets/push-button-with-three-connection-terminals-no-productmodel-niko-025f93c2-c921-59b0-b204-af07ed3ee2a8/170-00005
