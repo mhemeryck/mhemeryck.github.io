@@ -2,7 +2,7 @@
 title: "Wiring"
 subtitle: "Groundwork for a wired home automation setup"
 cover-img:
-  - "assets/2021-05-25/wiring-push-buttons.jpg": "SVV wires connecting to a 4-touch push button"
+  - "assets/2021-06-29/wiring-push-buttons.jpg": "SVV wires connecting to a 4-touch push button"
 readtime: true
 tags:
   - home automation
@@ -141,17 +141,17 @@ While the regulations pertaining to the wiring are specific to my country's regu
 
 [home automation overview post]: {% post_url 2021-06-15-home_automation_why %}
 [AREI]: https://economie.fgov.be/nl/publicaties/algemeen-reglement-op-de
-[principle relay]: /assets/2021-05-25/principle.png
-[principle push button]: /assets/2021-05-25/principle_push_button.png
+[principle relay]: /assets/2021-06-29/principle.png
+[principle push button]: /assets/2021-06-29/principle_push_button.png
 [push button]: https://en.wikipedia.org/wiki/Push-button
-[danger]: /assets/2021-05-25/danger.jpg
+[danger]: /assets/2021-06-29/danger.jpg
 [relay]: https://en.wikipedia.org/wiki/Relay
 [project huisinstallatie naslagwerk]: https://www.plantyn.com/webshop/product/project-huisinstallatie-naslagwerk-9789030142942
 [residual-current devices]: https://en.wikipedia.org/wiki/Residual-current_device
 [arduino]: https://www.arduino.cc/en/Tutorial/Foundations/DigitalPins
 [raspberry pi]: https://www.raspberrypi.org/documentation/hardware/raspberrypi/gpio/README.md
-[cable 3G 1.5mm2]: /assets/2021-05-25/cable-3g15.jpg
-[cable SVV]: /assets/2021-05-25/cable-svv.jpg
+[cable 3G 1.5mm2]: /assets/2021-06-29/cable-3g15.jpg
+[cable SVV]: /assets/2021-06-29/cable-svv.jpg
 [colors on the visible electromagnetic spectrum]: https://en.wikipedia.org/wiki/Electromagnetic_spectrum
-[push-button-wiring]: /assets/2021-05-25/push-button-wiring.png
+[push-button-wiring]: /assets/2021-06-29/push-button-wiring.png
 [push button from Niko]: https://www.niko.eu/en/products/switching-material-and-socket-outlets/switches-and-sockets/push-button-with-three-connection-terminals-no-productmodel-niko-025f93c2-c921-59b0-b204-af07ed3ee2a8/170-00005

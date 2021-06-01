@@ -2,12 +2,19 @@
 title: "Electrical cabinet"
 subtitle: "A quick tour inside"
 cover-img:
-  - "/assets/2021-05-25/cover.jpg": "Top row from my electric cabinet"
+  - "/assets/2021-07-13/cover.jpg": "Top row from my electric cabinet"
 readtime: true
 tags:
   - home automation
   - tech
+  - wiring
+  - cabinet
 ---
+
+This post is a part of a larger series of posts on my home automation setup.
+See the [home automation overview post], to learn about the rationale and a description of the other posts!
+
+The focus of this post is a quick glance into my central electrical cabinet.
 
 # Inside the cabinet
 
@@ -19,13 +26,13 @@ The following picture shows a work-in-progress view while laying out the cables:
 Be sure you have a consistent _labelling scheme_ while pulling all of the cable.
 Looking back at these pictures, I think it is a bit of miracle I did not miss anything ...
 
-Besides from labelling the cables during the pulling of the cables, I also did use terminal clamps, like the [WAGO rail-mount terminal blocks].
+Besides from labelling the cables during the pulling of the cables, I also did use **terminal clamps**, like the [WAGO rail-mount terminal blocks].
 On one end of such a block, you have one or more terminals where you can connect your wires.
 The other end on this block can then later be used to connect whatever you need.
 
 Functionally, it does not do all that much.
 In terms of costs, a single block is not that expensive but since the amount of blocks you need quickly adds up, so do the costs.
-Nonetheless, I would still recommend it keep a clear overview while inside of your cabinet.
+Nonetheless, **I would still recommend it** to keep a clear overview while inside of your cabinet.
 
 ## Relays
 
@@ -34,13 +41,13 @@ The next picture shows 2 DIN-rails with all of the terminal blocks for my lights
 ![cabinet-clamps]
 
 - top row: termination of line (brown) and neutral (blue) wires.
-- bottom row: termination of 2 more wires which I intend to use as a [DALI] bus[^5]; DALI+ (grey) and DALI- (black).
-- jumpers: middle of terminal blocks: some of the terminal blocks have "jumpers" in them, i.e. another advantage in the sense that you can easily add (parallel) connections[^6].
+- bottom row: termination of 2 more wires which I intend to use as a [DALI] bus[^1]; DALI+ (grey) and DALI- (black).
+- jumpers: middle of terminal blocks: some of the terminal blocks have "jumpers" in them, i.e. another advantage in the sense that you can easily add (parallel) connections[^2].
 - orange spacers: each set of blocks between these spacers represent a single electric circuit. This makes it easier to map the one-wire diagram to the actual wiring inside the cabinet.
 - green / yellow wires: these are terminated separately on the copper bar (visible between the two DIN rails) and directly connected to the main earth wire.
 - two-level terminal blocks: the terminal blocks used here have 2 levels, i.e. the outer 2 terminals are connected as well as the inner 2. A multitude of such terminal blocks exists, ranging for single to multiple levels as well as different functionalities (built-in diodes, resistors, ...). Here, two-level terminal blocks were used mostly because of space constraints.
 
-Note that at this point that the wires from the light fixtures in the house were just connected to these terminal blocks: having these blocks there means you can later still have all flexibility for connecting them elsewhere.
+Note that at this point that the wires from the light fixtures in the house were just connected to these terminal blocks: having these blocks there means you can later still have all **flexibility** for connecting them elsewhere.
 
 The next part is connecting them to the unit that contains the relays themselves.
 The [unipi relay outputs KB] lists all of the details for connecting a single relay:
@@ -48,7 +55,7 @@ The [unipi relay outputs KB] lists all of the details for connecting a single re
 ![unipi relay outputs img]
 
 This connection in itself is not all that complex for a _single_ relay.
-Since multiple lights on the same circuit are connected to the same circuit breaker, there is the practical concern of how to ensure these are all properly connected in parallel while still maintaining again a good overview.
+Since multiple lights on the same circuit are connected to the same **circuit breaker**, there is the practical concern of how to ensure these are all properly connected in parallel while still maintaining again a good overview.
 The following picture shows another set of terminal blocks that I did use for this:
 
 ![cabinet-unipi]
@@ -59,7 +66,7 @@ The following picture shows another set of terminal blocks that I did use for th
 
 ## Push buttons
 
-Next to the series of clamps for terminating the cables for the lights, I also did add clamps for terminating the SVV analog signaling cable:
+Next to the series of clamps for terminating the cables for the lights, I also did add clamps for **terminating the SVV analog signaling cable**:
 
 ![cabinet-clamps-svv]
 
@@ -85,3 +92,27 @@ There is no need to have dedicated circuit breakers for the different signal wir
 Also, since the wire diameter is much lower, the screw connectors can just be used directly to terminate multiple wires and effectively provide electrical parallel connections.
 Since each of the green screw connectors could have up to 4 signal wire connections and 1 ground level, I did use 4-wire SVV cable to connect them to terminal clamps higher up in the cabinet.
 Note that I also did use my color coding again here (red / yellow / blue / white).
+
+# Conclusion
+
+I started this post with some scary pictures of electrical wiring spaghetti.
+
+However, it turns out that with proper planning, schematics and some determination, it was actually quite doable to wire the full cabinet together.
+Terminal blocks also help a lot in this process: it makes it easier to visually separate everything, removes the need to do all of the wiring in the beginning and enables rewiring at some later point in time.
+
+Finally, I did also discuss for both the input / output examples (push buttons / relays) how to wire them up to their respective unipi neuron units.
+
+[^1]: DALI is a bus system for digital light control. In theory, you could do full light control with DALI only (removing the need for relay-based control), but this means all of your light fixtures need to be DALI-aware.
+[^2]: not quite visible, but a similar connection can be made for the other wire (blue, neutral)
+
+[home automation overview post]: {% post_url 2021-06-15-home_automation_why %}
+[cabinet-wip]: /assets/2021-07-13/cabinet-wip.jpg
+[cabinet-clamps]: /assets/2021-07-13/cabinet-clamps.jpg
+[cabinet-clamps-svv]: /assets/2021-07-13/cabinet-clamps-svv.jpg
+[cabinet-unipi]: /assets/2021-07-13/cabinet-unipi.jpg
+[cabinet-unipi-di]: /assets/2021-07-13/cabinet-unipi-di.jpg
+[unipi relay outputs img]: https://kb.unipi.technology/_media/en:hw:010_connection_of_io.png
+[unipi digital inputs img]: https://kb.unipi.technology/_media/en:hw:001_connection_of_io.png
+[wago rail-mount terminal blocks]: https://www.wago.com/global/electrical-interconnections/discover-rail-mount-terminal-blocks
+[unipi relay outputs KB]: https://kb.unipi.technology/en:hw:02-neuron:description-of-io:03-description-of-ro
+[unipi digital input KB]: https://kb.unipi.technology/en:hw:02-neuron:description-of-io:01-description-of-di

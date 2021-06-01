@@ -2,7 +2,7 @@
 title: Architecture
 subtitle: My home automation layout
 cover-img:
-  - "/assets/2021-04-22/cover.jpg": "Photo by Maarten Deckers on Unsplash"
+  - "/assets/2021-06-22/cover.jpg": "Photo by Maarten Deckers on Unsplash"
 readtime: true
 tags:
   - home automation
@@ -93,7 +93,7 @@ For the majority of commercially available IoT devices, you would get something 
 Wiring mostly isn't an issue (it is typically wireless) and the hardware and software are part of the package that you buy.
 In this wired layout with custom components however, all of these layers need to be addressed.
 
-By means of example, have a look at the wiring required for my cover control:
+As an example, have a look at the wiring required for my cover control:
 
 ![wiring]
 
@@ -128,10 +128,10 @@ Also, the different applications themselves, such as push buttons, lighting fixt
 Finally, I did also point the different layers of abstraction to consider when laying out a wired home automation system, which shall also make for an interesting future topic to dive into.
 
 [home automation overview post]: {% post_url 2021-06-15-home_automation_why %}
-[architecture]: /assets/2021-04-22/architecture.png
-[flow]: /assets/2021-04-22/flow.png
-[layers]: /assets/2021-04-22/layers.png
-[wiring]: /assets/2021-04-22/wiring.jpg
+[architecture]: /assets/2021-06-22/architecture.png
+[flow]: /assets/2021-06-22/flow.png
+[layers]: /assets/2021-06-22/layers.png
+[wiring]: /assets/2021-06-22/wiring.jpg
 [mosquitto mqtt broker]: https://hub.docker.com/_/eclipse-mosquitto
 [unipi]: https://www.unipi.technology/
 [home assistant]: https://www.home-assistant.io/
