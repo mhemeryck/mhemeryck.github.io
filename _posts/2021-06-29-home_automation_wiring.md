@@ -10,11 +10,11 @@ tags:
   - tech
 ---
 
-This post is a part of a larger series of posts on my home automation setup.
-See the [home automation overview post], to learn about the rationale and a description of the other posts!
-
 In this post, I will take a deeper dive into the bottom layer, the **wiring**.
 Different kinds of inputs and outputs can be discussed, but for the sake of simplicity, I shall focus on a push button operating a lamp.
+
+This post is a part of a larger series of posts on my home automation setup.
+See the [home automation overview post], to learn about the rationale and a description of the other posts!
 
 I will cover:
 

@@ -10,14 +10,14 @@ tags:
   - tech
 ---
 
-This post is a part of a larger series of posts on my home automation setup.
-See the [home automation overview post], to learn about the rationale and a description of the other posts!
-
 Prior to actually building anything, it is important to think on a higher level what the various components are and how they can interact with each other, i.e. the _architecture_.
 There is a huge amount of different possible setups to choose from, each with their pros and cons.
 Here, I will not give an exhaustive overview of those, but rather outline the final choice I did make.
 
 Once the architecture has been decided, it is important to realize there are a couple of different _layers of abstraction_ to reason about these, which will be covered in the second part of this post.
+
+This post is a part of a larger series of posts on my home automation setup.
+See the [home automation overview post], to learn about the rationale and a description of the other posts!
 
 Let's discuss!
 
