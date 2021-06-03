@@ -11,10 +11,10 @@ tags:
   - cabinet
 ---
 
+The focus of this post is a quick glance into my central electrical cabinet.
+
 This post is a part of a larger series of posts on my home automation setup.
 See the [home automation overview post], to learn about the rationale and a description of the other posts!
-
-The focus of this post is a quick glance into my central electrical cabinet.
 
 # Inside the cabinet
 

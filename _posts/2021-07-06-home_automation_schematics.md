@@ -10,10 +10,10 @@ tags:
   - tech
 ---
 
+Here, I'd like to focus on two types of schematics which are not only very useful, but also mandatory for doing the electrical wiring for a Belgian house: the _one-wire diagram_ and the _floor plan_.
+
 This post is a part of a larger series of posts on my home automation setup.
 See the [home automation overview post], to learn about the rationale and a description of the other posts!
-
-Here, I'd like to focus on two types of schematics which are not only very useful, but also mandatory for doing the electrical wiring for a Belgian house: the _one-wire diagram_ and the _floor plan_.
 
 # One-wire diagram
 
