@@ -2,7 +2,7 @@
 title: "Service"
 subtitle: "Home assistant as the service layer"
 cover-img:
-  - "/assets/home_assistant_logo.svg": "home assistant logo"
+  - "/assets/2021-08-03/home_assistant_logo.svg": "home assistant logo"
 readtime: true
 tags:
   - home automation
@@ -136,7 +136,291 @@ My current approach is based on k3s -- but this is better left as the topic of a
 All of the theoretical babble about containers and orchestration is just to come to this point where I can actually show something to run.
 For this sample setup, I will build part of the service layer using only `docker-compose` and a set of related home assistant configuration files.
 
+The folder structure will look like this:
+
+```
+├── automations.yaml
+├── blueprints
+│   ├── automation
+│   │   └── homeassistant
+│   │       ├── motion_light.yaml
+│   │       └── notify_leaving_zone.yaml
+│   └── script
+│       └── homeassistant
+│           └── confirmable_notification.yaml
+├── configuration.yaml
+├── deps
+├── docker-compose.yaml
+├── groups.yaml
+├── home-assistant.log
+├── scenes.yaml
+├── scripts.yaml
+├── secrets.yaml
+├── tts
+└── ui-lovelace.yaml
+```
+
+Most of these files were actually generated automatically when home assistant started the first time.
+The format for all of the most relevant files is YAML, which stands for "Yet Another Markup Language".
+YAML is fairly widespread nowadays as a format for configuration files.
+To me, one of the most obvious advantages of the format is its conciseness and readability.
+Indentation matters though, so be sure you use a proper (plain text) editor when editing in this format.
+
+I will go over the most important ones:
+
+- `docker-compose.yaml`
+- `configuration.yaml`
+- `ui-lovelace.yaml`
+
+## `docker-compose.yaml`
+
+This the main file that will start all of the required containers.
+
+```yaml
+version: "3.8"
+services:
+  homeassistant:
+    image: homeassistant/home-assistant:2021.6.3
+    ports:
+      - "8123:8123"
+    volumes:
+      - .:/config
+    links:
+      - mosquitto
+      - db
+  mosquitto:
+    image: eclipse-mosquitto:1.6.14
+    ports:
+      - "1883:1883"
+  db:
+    image: postgres:13.3-alpine
+    environment:
+      POSTGRES_DB: hass
+      POSTGRES_USER: hass
+      POSTGRES_PASSWORD: hass
+    volumes:
+      - hass-db:/var/lib/postgresql/data
+
+volumes:
+  hass-db:
+```
+
+This file defines 3 _services_, `homeassistant` (the main home assistant service), `mosquitto` (an MQTT broker) and `db` (a database -- although this isn't strictly required).
+Some notes on the keys used in the configuration:
+
+- **ports**: this is a mapping of the ports within the container to the outside world, e.g. `"8123:8123"` means "maps the port 8123 inside the container to the host on port 812 ". Port 8123 is the port home assistant runs on by default.
+- **volumes**: this is mapping of the folder structure inside the container to the outside host. For the `homeassistant` service, this means to map the map configuration folder to the location where `docker-compose` is executed. This also means it's easy to put your own configuration inside the container this way. Volumes needn't be mapped to an explicit host folder though, see the example for the `db` service where there's just a named volume called `hass-db`, managed by docker.
+- **links**: links take care of the networking between containers. A link from `homeassistant` to `mosquitto` means that the home assistant instance will be able to reach that other service with the named `mosquitto`. `docker-compose` takes care of creating the proper docker network for that. It also means that if the `homeassistant` service is started, the other 2 services are also automatically started.
+
+At this point, you can actually already just fire up home assistant using `docker-compose up`!
+
+```bash
+$ docker-compose up
+Starting hass_mosquitto_1 ... done
+Starting hass_db_1        ... done
+Starting hass_homeassistant_1 ... done
+Attaching to hass_mosquitto_1, hass_db_1, hass_homeassistant_1
+db_1             |
+db_1             | PostgreSQL Database directory appears to contain a database; Skipping initialization
+db_1             |
+db_1             | 2021-06-10 19:19:56.893 UTC [1] LOG:  starting PostgreSQL 13.3 on x86_64-pc-linux-musl, compiled by gcc (Alpine 10.2.1_pre1) 10.2.1 20201203, 64-bit
+db_1             | 2021-06-10 19:19:56.893 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+db_1             | 2021-06-10 19:19:56.893 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+db_1             | 2021-06-10 19:19:56.902 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db_1             | 2021-06-10 19:19:56.912 UTC [21] LOG:  database system was interrupted; last known up at 2021-06-08 20:37:13 UTC
+mosquitto_1      | 1623352796: mosquitto version 1.6.14 starting
+mosquitto_1      | 1623352796: Config loaded from /mosquitto/config/mosquitto.conf.
+mosquitto_1      | 1623352796: Opening ipv4 listen socket on port 1883.
+mosquitto_1      | 1623352796: Opening ipv6 listen socket on port 1883.
+mosquitto_1      | 1623352796: mosquitto version 1.6.14 running
+db_1             | 2021-06-10 19:19:57.219 UTC [21] LOG:  database system was not properly shut down; automatic recovery in progress
+db_1             | 2021-06-10 19:19:57.227 UTC [21] LOG:  redo starts at 0/1920BF0
+db_1             | 2021-06-10 19:19:57.231 UTC [21] LOG:  invalid record length at 0/1931478: wanted 24, got 0
+db_1             | 2021-06-10 19:19:57.231 UTC [21] LOG:  redo done at 0/1931450
+homeassistant_1  | [s6-init] making user provided files available at /var/run/s6/etc...exited 0.
+db_1             | 2021-06-10 19:19:57.298 UTC [1] LOG:  database system is ready to accept connections
+homeassistant_1  | [s6-init] ensuring user provided files have correct perms...exited 0.
+homeassistant_1  | [fix-attrs.d] applying ownership & permissions fixes...
+homeassistant_1  | [fix-attrs.d] done.
+homeassistant_1  | [cont-init.d] executing container initialization scripts...
+homeassistant_1  | [cont-init.d] udev.sh: executing...
+homeassistant_1  | [cont-init.d] udev.sh: exited 0.
+homeassistant_1  | [cont-init.d] done.
+homeassistant_1  | [services.d] starting services
+homeassistant_1  | [services.d] done.
+```
+
+This should actually have created the other configuration files for you.
+
+## `configuration.yaml`
+
+The next file to discuss is the main home assistant configuration file.
+
+Here is my final adapted version:
+
+```yaml
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+lovelace:
+  mode: yaml
+
+recorder:
+  db_url: postgresql://hass:hass@db/hass
+
+mqtt:
+  broker: mosquitto
+
+# Entities representing push buttons
+switch:
+  - platform: mqtt
+    name: study room
+    command_topic: tesla/input/2_01/set
+    state_topic: tesla/input/2_01/state
+
+# Entities representing lights
+light:
+  - platform: mqtt
+    name: study room
+    command_topic: edison/relay/2_05/set
+    state_topic: edison/relay/2_05/state
+    optimistic: true # only needed because of demo now
+
+# Automation to link the two together
+automation:
+  - alias: Toggle study room
+    trigger:
+      platform: state
+      entity_id: switch.study_room
+      from: "off"
+      to: "on"
+    action:
+      service: light.toggle
+      entity_id: light.study_room
+```
+
+The top part of the file contains mostly **boilerplate code** that was added by homeassistant itself, e.g. the `default_config` and `tts`.
+The `group`, `script` and `scene` blocks were also added automatically and use the `!include` keyword, which home assistant would interpret as including those other yaml files within this main configuration file.
+When you have a large number of entities to add, this would be the typical way to structure them.
+For the discussion here, I did not do that though.
+
+The **`recorder`** part is about the [home assistant database integration].
+This contains the connection URL (including the credentials).
+If you compare this again with the `docker-compose.yaml` file, you will see those credentials which were set from the `environment` key for the `db` postgres service.
+In a proper setup, you'd use the [secrets system], but as the database integration isn't that important here, I did not do that.
+
+The **`mqtt`** integration is quite relevant here.
+This should point to your MQTT broker.
+Checking `docker-compose.yaml`, this service was called `mosquitto` and should be reachable with just thus name from inside the docker container network[^1].
+
+The following entry is a configuration for a **push button** using the [home assistant MQTT switch] integration.
+It minimally needs the integration platform, the name (which is relevant for later referring to the entity) and a command and state topic, the meaning of which was described earlier.
+
+Next would be the matching **light** which we would like to have triggered whenever the push button is toggled, based on the [home assistant MQTT light] integration.
+It also has the MQTT platform, name (which matches now, but needn't really), command and state topic.
+I also configured the light to be in `optimistic` mode.
+This means the that the state of the light internally in home assistant is updated regardless of changes on the state topic.
+I did this because this is a dummy setup and this light is not linked to an actual device that will acknowledge commands with a matching update on the state topic.
+In my real setup, this is obviously omitted.
+
+At this point, both push button and light are known to home assistant, but they are not linked.
+The **automation** takes care of that.
+The general outline of an [home assistant automation] is:
+
+```
+| trigger   | when the switch state changes |
+| condition | and it's nighttime            |
+| action    | then toggle the light         |
+```
+
+The `condition` part is optional for the automation, and for the example given here quite nonsensical indeed.
+Important here is that we only allow toggles when the push buttons gets toggled from off to on, not the other way around -- otherwise if would follow the push buttons state, which means the light would only be on for the duration the button is pressed.
+The `light.toggle` is an action that is built-in to home assistant and does just take: if the light was off, it will turn it on, and vice versa.
+
+Check the [home assistant configuration] for more extensive documentation and further links.
+
+## `ui-lovelace.yaml`
+
+This file contains the visual outline for home assistant.
+
+```yaml
+views:
+  - title: Home
+    icon: mdi:home
+    cards:
+      - type: entities
+        title: Entities
+        entities:
+          - switch.study_room
+          - light.study_room
+          - automation.toggle_study_room
+```
+
+This just makes the demo a bit easier to look at.
+
+# Demo
+
+Let's see it in action!
+
+![demo]
+
+The top left terminal just shows the `docker-compose` output, containing the aggregated log output of the different services.
+The right hand part shows the simplified home assistant UI, containing (top to bottom) the switch state, the light state and the automation.
+The middle left terminal uses the [`mosquitto_sub`] tool to read all events from the broker; the left one subscribes to `tesla/#` meaning any topic below `tesla/` (for the push button) and the right for `edison/` (the light).
+
+The bottom left terminal is used to simulate the push of a button by sending out events directly to the push button's state topic, using another tool called [`mosquitto_pub`]
+
+The commands themselves are:
+
+```
+mosquitto_pub -h localhost -t tesla/input/2_01/state -m ON
+mosquitto_pub -h localhost -t tesla/input/2_01/state -m OFF
+```
+
+Each of the lines represent a push to _host_ "`h`" `localhost`, on _topic_ "`t`" `tesla/input/2_01/state` with _message_ "`m`" `ON` or `OFF`.
+By rapidly firing them off shortly after each other, this simulates the push of a button (first on, then off again).
+
+When the push button state updates are pushed:
+
+1. home assistant updates the internal state of the push button entity
+1. the automation kicks in, and updates the matching light entity is toggled
+1. the light entity sends out the update on the command topic
+
+Apart from controlling the light with the push button, it can also be controlled directly from home assistant; when toggling the light entity directly in home assistant, it just sends out the command on the MQTT topic directly.
+
 # Closing thoughts
+
+This concludes my approach to using (abusing?) home assistant and the MQTT integration as the central part of my home automation setup.
+
+I did use MQTT as the standard to centralize all my components on, have a look at the other posts presented in the [home automation overview post] of how to get there.
+Examples of other components that use MQTT in the same fashion are window contacts, PIR, smoke and water detectors, automated blinds, etc.
+
+The advantage of home assistant though is that it does not need to all be the same protocol, so it is quite easy to add other integrations in the mix as well.
+A notable example of this is an automation where I link one of these push buttons to a [Philips Hue light]; as far as home assistant is concerned, both of these are light entities.
+
+A disadvantage of using home assistant this way and by extent the overall approach is the _centralized_ nature of it.
+Home assistant needs to be online all the time for everything to work.
+Initially, I did run home assistant using `docker-compose`, which was quite stable.
+However, doing updates was never fun, since it meant that one container needs to go down before the next comes up, leaving in a short (but stressful) period of downtime.
+Using k3s as the supervisor certainly fixed that.
+Given that the majority of my interfacing hardware is actually all on MQTT, I might at some point add another service in the mix that mimics the automation engine as a backup.
+
+A similar argument can be made about the `mosquitto` broker.
+Currently, I actually run that as a dedicated service on the host itself.
+Alternative solutions such as [emqx] exist though, which would run MQTT in a high-availability mode (multiple, load balanced instances).
+
+Currently though, the system works quite fine and everyone at home has gotten so accustomed to it, they only really notice when not being at home.
+The backlog of improvements and extra bells and whistles is still quite long, so I'll hope to write more on this later!
+
+[^1]: the `mosquitto` version used in the `docker-compose.yaml` version was explicitly pinned to a version < 2.x, which did not enforce authentication, hence why the broker configuration just needs a host name to connect to.
 
 [home automation architecture post]: {% post_url 2021-06-22-home_automation_architecture %}
 [home automation overview post]: {% post_url 2021-06-15-home_automation_why %}
@@ -156,3 +440,12 @@ For this sample setup, I will build part of the service layer using only `docker
 [docker-compose]: https://docs.docker.com/compose/
 [kubernetes]: https://kubernetes.io/
 [k3s]: https://k3s.io/
+[home assistant configuration]: https://www.home-assistant.io/docs/configuration/
+[home assistant database integration]: https://www.home-assistant.io/integrations/recorder/#custom-database-engines
+[secrets system]: https://www.home-assistant.io/docs/configuration/secrets/
+[home assistant automation]: https://www.home-assistant.io/docs/automation/basics/
+[demo]: /assets/2021-08-03/demo.gif
+[`mosquitto_pub`]: https://mosquitto.org/man/mosquitto_pub-1.html
+[`mosquitto_sub`]: https://mosquitto.org/man/mosquitto_sub-1.html
+[Philips Hue light]: https://www.home-assistant.io/integrations/hue/
+[emqx]: https://www.emqx.io/blog/emqx-mqtt-broker-k8s-cluster
