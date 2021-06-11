@@ -70,13 +70,14 @@ Essentially, this means that the provisioning and deployment of the overall setu
 
 In the following series of blog posts, I will outline more of the details of the actual setup that I did design and build.
 
-1. [why]({% post_url 2021-06-15-home_automation_why %}): introduction to the series
-1. [architecture]({% post_url 2021-06-22-home_automation_architecture %}): topology of the home automation components and different levels of abstraction
-1. [wiring]({% post_url 2021-06-29-home_automation_wiring %}): details about basic components (relays and push buttons) and the related wiring
-1. [schematics]({% post_url 2021-07-06-home_automation_schematics %}): how to represent the electrical wiring in a one-wire diagram and floor plan
-1. [cabinet]({% post_url 2021-07-13-home_automation_cabinet %}): a peek inside my electrical cabinet
-1. [hardware]({% post_url 2021-07-20-home_automation_hardware %}): details about the central unipi units I did use
-1. [software]({% post_url 2021-07-27-home_automation_software %}): different layers of interfacing software
-1. [service]({% post_url 2021-08-03-home_automation_service %}): bringing it all together with home assistant
+1. [why] introduction to the series
+1. architecture: topology of the home automation components and different levels of abstraction
+1. wiring: details about basic components (relays and push buttons) and the related wiring
+1. schematics: how to represent the electrical wiring in a one-wire diagram and floor plan
+1. cabinet: a peek inside my electrical cabinet
+1. hardware: details about the central unipi units I did use
+1. software: different layers of interfacing software
+1. service: bringing it all together with home assistant
 
+[why]: {% post_url 2021-06-15-home_automation_why %}
 [home assistant's vision]: https://www.home-assistant.io/blog/2016/01/19/perfect-home-automation/
