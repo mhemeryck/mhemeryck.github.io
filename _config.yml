@@ -19,7 +19,7 @@ share-links-active:
   linkedin: true
   facebook: true
 
-future: true
+future: false
 
 timezone: "Europe/Brussels"
 highlighter: rouge
