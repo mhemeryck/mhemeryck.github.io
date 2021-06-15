@@ -9,10 +9,10 @@ navbar-links:
   About Me: "https://cv.mhemeryck.com"
 
 social-network-links:
-  email: "martijn.hemeryck@gmail.com"
   github: mhemeryck
   twitter: MartijnHemeryck
   linkedin: martijn-hemeryck-67896245
+  reddit: mhemeryck
 
 share-links-active:
   twitter: true
