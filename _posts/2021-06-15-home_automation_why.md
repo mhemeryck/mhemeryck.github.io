@@ -62,7 +62,7 @@ Ideally though, the majority of communications the home automations needs to do 
 
 ## Low cost
 
-Home automation systems have been around for quite some time, but was has changed the latest years is the availability of both hardware and software that allows to mix and match.
+Home automation systems have been around for quite some time, but what has changed the latest years is the availability of both hardware and software that allows to mix and match.
 Also open hardware platforms like the raspberry pi have made it much easier to develop own platforms.
 The disadvantage of such DIY platforms is the lower intrinsic robustness, compared to an off-the-shelf commercial solution.
 
