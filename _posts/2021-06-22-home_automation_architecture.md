@@ -10,33 +10,47 @@ tags:
   - tech
 ---
 
-Prior to actually building anything, it is important to think on a higher level what the various components are and how they can interact with each other, i.e. the _architecture_.
-There is a huge amount of different possible setups to choose from, each with their pros and cons.
-Here, I will not give an exhaustive overview of those, but rather outline the final choice I did make.
+Prior to actually building anything, it is important to think on a higher level what the various components are and how they will interact with each other, i.e. the _architecture_.
+Over the process of doing my own setup, I came across a large number of different possible configurations, each with their own benefits and downsides.
+For the first part of this post, I will focus on the final layout.
 
-Once the architecture has been decided, it is important to realize there are a couple of different _layers of abstraction_ to reason about these, which will be covered in the second part of this post.
+While discussing the architecture, it is important to realize there are a number of different _layers of abstraction_ to reason about these.
+This will be the topic of the second part of this post.
+
+To make everything more tangible, I did add a third section _detailing toggling a light with push button_.
 
 This post is a part of a larger series of posts on my home automation setup.
-See the [home automation overview post], to learn about the rationale and a description of the other posts!
-
-Let's discuss!
+See the [home automation overview post], to learn about the rationale and a description of the other posts.
 
 # Architecture
 
+The following diagram gives an high-level overview of the overall architecture.
+
 ![architecture]
+
+Its main characteristics are:
+
+- distributed communication:
+  - communication is (mostly) done via an event-based system, MQTT
+- centralized wiring:
+  - all I/O (push buttons, relays for lights, ...) is connected to modules which fit in a centralized electric cabinet
+  - there is a central service with automations connecting the different modules (home assistant)
+
+Let's elaborate a bit more on the constituent components.
 
 ## MQTT broker
 
-**Central** to the drawing is a [mosquitto MQTT broker].
+In the center of the drawing is a [mosquitto MQTT broker].
 MQTT is a _publish-subscribe_ protocol:
 
 - there is one central instance, called the _broker_, which manages different _topics_
-- different clients can _publish_ updates, _events_, to the topics
+- different clients can _publish_ updates, called _events_, to the topics
 - in addition, all clients can also _subscribe_ to topics to receive the events
 
-MQTT is a popular choice for IoT since the event-based model fits well for a lot of problems (e.g. a push button toggle).
-Another advantage is that the each of the different clients only need to be aware of their connection to the broker.
-A disadvantage however is that all connections rely on the availability of the central broker.
+MQTT is a popular choice for IoT since its event-based model fits well for a lot of problems (e.g. a push button toggle).
+Another advantage is that the each of the different clients only needs to maintain a connection to the broker and the topics they want to be subscribed to.
+This makes for a very _loosely coupled_ and _scalable_ architecture: it is quite easy to add new components.
+A disadvantage however is that all connections rely on the availability of the central broker.[^1]
 
 ## MQTT clients
 
@@ -53,10 +67,14 @@ The clients in this setup can provide (a combination of):
 
 ### unipi
 
-For the sensors and actors I did use hardware from [unipi].
-In essence the unipi units are DIN-rail mountable units housing a raspberry pi and a couple of I/O boards depending on the model you have.
+For the **sensors** and **actors** I did use hardware from [unipi].
+In essence the unipi neuron units are DIN-rail mountable units housing a raspberry pi and a couple of I/O boards depending on the model you have.
+The role of the unipi units is thus to provide an MQTT event-based interface for all home automation I/O: reading push buttons, toggling lights, controlling shades, reading smoke and movement detectors, etc.
 
 ### home assistant
+
+Whereas the I/O modules themselves are distributed both physically and logically, I did want to **centralize the controlling logic** in a dedicated service.
+Cue in home assistant.
 
 [home assistant] is an open source software project which aims to integrate all sorts of smart home devices.
 Given my choice of MQTT as an interfacing protocol throughout my setup, I heavily rely on the [home assistant MQTT integration].
@@ -65,14 +83,14 @@ From a high level, all sensors and actors which are available as MQTT topics can
 The home assistant instance itself connects to the central MQTT broker and listens to those MQTT topics for which it has entities.
 Automations, which are also part of the configuration, can then link actions from one entity to another.
 An obvious example is the push of a button that switches a light on.
-The rationale behind this way of working is that nothing is really hard-wired in this setup!
+The rationale behind using automations to link inputs with outputs, is that nothing is really hard-wired in this setup!
 
 Note that home assistant supports a wide range of integrations beyond MQTT.
 The thermostat in the schematic for instance has an integration based on REST / HTTP.
 
 # Layers of abstraction
 
-Planning for a DIY wired open home automation setup requires some other specific thinking in terms of the different layers of abstraction.
+Planning for a DIY wired open home automation setup requires some other specific thinking in terms of the different **layers of abstraction**.
 The following diagram focuses on these different layers.
 
 ![layers]
@@ -93,17 +111,30 @@ For the majority of commercially available IoT devices, you would get something 
 Wiring mostly isn't an issue (it is typically wireless) and the hardware and software are part of the package that you buy.
 In this wired layout with custom components however, all of these layers need to be addressed.
 
-As an example, have a look at the wiring required for my cover control:
+As an example, have a look at the wiring I did for my cover control:
 
 ![wiring]
 
 Most of my wiring was done in a [star topology].
-The upside is that it is very flexible towards the future.
-The (visible) downside is that the amount of wires piles up rapidly and you will need _some_ kind of system to keep a sane overview of this.
+This means for example that you do need a single cable run for _each_ of the individual (group of) lights you want to control.
+The upside is that this is very flexible towards the future, since physical rewiring is still possible from the electrical cabinet.
+The (visible) downside is that the amount of wires piles up rapidly and you will need to think of some kind of system to keep a sane overview of this.
+
+## Bus-based systems
+
+Alternatively, the wiring could have been done with a **bus-based system** like [KNX] or [DALI].
+The advantage of systems like these is that the wiring would have been a lot easier and they can also provide some of the functionalities on other parts of the stack.
+For the case of KNX for instance, each of the components (push buttons, light control, ...) are provisioned individually, resulting in a fully distributed, more fault-tolerant system.
+Note that there is a [home assistant KNX integration], so even in this case, it could fit the proposed architecture (but obviously less reliant on MQTT).
+
+At this point, I did not choose for a bus-based system though.
+The first reason was one of cost, notably in the case of KNX.
+Also, I did want the possibility to easily (re)program my setup using general purpose programming languages, whereas KNX relies on (costly, vendor-restricted) visual programming tools.
+All of my light sockets are wired with 5-wire cable, so at some point I might have another look at using DALI for controlling my lights.
 
 # Toggling a light switch ...
 
-To conclude, let's just walk through all the steps of toggling a push button:
+To illustrate the theory, let's just walk through all the steps of toggling a push button:
 
 ![flow]
 
@@ -116,16 +147,21 @@ To conclude, let's just walk through all the steps of toggling a push button:
 1. the unipi unit toggles a relay, switching on the light
 1. finally, after the light has turned on, a state update is also pushed out from the unipi unit, which updates the internal state on home assistant
 
-# Conclusion
+# Closing thoughts
 
-The focus of this post was to simply outline the main components and links in my home automation setup, principally based on MQTT and home assistant as the brains behind it all.
+The focus of this post was to outline the main components and links in my home automation setup, principally based on MQTT and home assistant as the brains behind it all.
 
 The main advantage of this setup is the flexibility if offers since everything is configurable from within home assistant.
 On the other side of the equation, once home assistant breaks down, the entire system can break down, which poses high reliability constraints on such central components.
 
 I did not yet dive down into the details of the different components i.e. the sensors and actuators, most notably the unipi platform.
 Also, the different applications themselves, such as push buttons, lighting fixtures, DALI, shades, an alarm system, ... all merit their own discussion.
-Finally, I did also point the different layers of abstraction to consider when laying out a wired home automation system, which shall also make for an interesting future topic to dive into.
+Finally, I did also point the different layers of abstraction to consider when laying out a wired home automation system.
+
+This should conclude the "theoretical" part of the home automation series.
+Check the [home automation overview post] for the more "practical" upcoming posts.
+
+[^1]: although even this could be mitigated using a highly available MQTT broker. [EMQX](https://www.emqx.io/blog/emqx-mqtt-broker-k8s-cluster) seems to be an example of this, but I haven't tried it myself yet.
 
 [home automation overview post]: {% post_url 2021-06-15-home_automation_why %}
 [architecture]: /assets/2021-06-22/architecture.png
@@ -138,3 +174,6 @@ Finally, I did also point the different layers of abstraction to consider when l
 [home assistant mqtt integration]: https://www.home-assistant.io/integrations/mqtt/
 [evok2mqtt]: https://github.com/mhemeryck/evok2mqtt
 [star topology]: https://en.wikipedia.org/wiki/Network_topology#Star
+[KNX]: https://knx.org
+[DALI]: https://en.wikipedia.org/wiki/Digital_Addressable_Lighting_Interface
+[home assistant KNX integration]: https://www.home-assistant.io/integrations/knx/
