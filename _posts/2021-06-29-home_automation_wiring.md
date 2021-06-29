@@ -11,7 +11,8 @@ tags:
 ---
 
 In this post, I will take a deeper dive into the bottom layer, the **wiring**.
-Different kinds of inputs and outputs can be discussed, but for the sake of simplicity, I shall focus on a push button operating a lamp.
+Different kinds of inputs and outputs can be discussed, but for the sake of simplicity, I will focus on a push button operating a lamp.
+These components will also come back later on in the series.
 
 This post is a part of a larger series of posts on my home automation setup.
 See the [home automation overview post], to learn about the rationale and a description of the other posts!
@@ -55,7 +56,7 @@ There are two **types of contacts**: a _normally open_ (NO) contact or a _normal
 Normally open means that the mechanical contact maintains an open electrical contact for the majority of the time, unless the button is pressed.
 Normally closed is then the opposite situation, meaning a closed electrical contact whenever the button is _not_ pressed.
 For push buttons, such as those to operate lamps, an NO contact would typically be used.
-NC contacts make sense for situation where you want to be sure that the electrical contact is always guaranteed, e.g. a sensor for an alarm system.
+NC contacts make sense for situations where you want to be sure that the electrical contact is always guaranteed, e.g. a sensor for an alarm system.
 Loss of signal for an NC contact might indicate the sensor has been tampered with.
 
 The **voltage** used for a push button is typically not mains voltage (240VAC), but rather a lower, safer voltage like 24VDC.
@@ -82,7 +83,7 @@ For the cables carrying mains voltage, the following **rules** are relevant (non
 - for circuits up to 16A (typically lights), a min 1.5 mm² cross-section wire is to be used
 - for circuits up to 20A (lights and / or others like power sockets), a min 2.5 mm² cross-section wire is to be used
 - each of the circuits need to have proper matching circuit breakers
-- all cables consist of neutral wire, live wire and a earth wire
+- all cables consist of neutral wire, live wire and an earth wire
 - color coding:
   - neutral: blue
   - live: brown
@@ -94,10 +95,14 @@ Keep in mind:
 - _circuit breakers_ protect _your wires_ from burning up
 - _[residual-current devices]_ protect _living things_!
 
+Note that this is only a subset of the rules and pointers to keep into account while doing the physical wiring.
+Other things to consider are the type of cable (in a plastic tube or as a cable), solid vs stranded wire, stiff vs flexible wire, etc. ...
+
 ## Push buttons
 
 Contrary to the cabling for the lights, the push buttons run on the lower, safer voltage of 24VDC.
 Consequently, the wire diameter can be a lot smaller and there is no strict requirement on the use of circuit breakers.
+An additional advantage in terms of safety compared to a more "traditional" installation is that the push button itself is never connected to the consumer on the higher mains voltage.
 
 The following image shows an _SVV_ **signal cable**, which is typically used in Belgium for analog signaling applications.
 I did some online research into the international naming for this type of cable, but there does not seem to be any.
@@ -110,7 +115,7 @@ For the sake of the discussion here however, the characteristics are actually mo
 
 ![cable SVV]
 
-The idea of having this multitude of wires in the signal cable is that you would ideally need **one cable run** for e.g. the push buttons of one floor.
+The idea of having this multitude of wires in one signal cable is that you would ideally need **one cable run** for e.g. the push buttons for one floor.
 Each push button contact then uses one of the wires of the signal cable.
 Apart from the push button contacts, you also need to reserve one of the wires for the positive level.
 Essentially, the push buttons thus internally connect 1 signal wire (on ground level) to the common positive level -- which can be detected by your digital input readout.
@@ -127,17 +132,24 @@ The following image shows the **wiring diagram** for a simple NO [push button fr
 
 ![push-button-wiring]
 
-The diagram indicates the push can be used to switch voltages up the 230VAC, but since we're only interested in for the signaling application, it might just as well be a lower voltage.
+The diagram indicates the push button can be used to switch voltages up the 230VAC, but since we're only interested in for the signaling application, it might just as well be a lower voltage.
 Also visible is the optional LED light.
 
-# Conclusion
+# Closing thoughts
 
-The goal of this post was first describe the basic principle of the relay and the push button.
-Additionally, I also did describe the wiring you would typically use for connecting those.
+The focus of this post was first to describe the **basic principle of some key components**, the relay and the push button.
+I did want to highlight what exactly they are and also how the operating principle relates to the modelling higher up in the stack, e.g. the fact that I mostly consider the push button to be stateless.
+
+The second part of the post dealt with the details of the **physical electrical conductors** connecting to and from these components.
+Relays, for lights, use 3 x 1.5mm², whereas higher loads require a higher wire gauge of 3 x 2.5mm².
+The push buttons can use a lower wire gauge of e.g. 0.8mm² since you would run these on a safer, lower voltage of 24VDC.
 While the regulations pertaining to the wiring are specific to my country's regulations, I still hope someone else might learn from it!
 
+Finally, always keep safety into account!
+Even you feel you are really knowledgeable, I still think it was an added value for me to involve a local professional electrician to get proper hands-on advice.
+
 [^1]: ISBN/EAN 9789030142942
-[^2]: the official regulation is the [AREI]
+[^2]: the official Belgian regulation is the [AREI]
 
 [home automation overview post]: {% post_url 2021-06-15-home_automation_why %}
 [AREI]: https://economie.fgov.be/nl/publicaties/algemeen-reglement-op-de
