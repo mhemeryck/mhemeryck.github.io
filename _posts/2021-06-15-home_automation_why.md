@@ -79,7 +79,7 @@ In the following series of blog posts, I will outline more of the details of the
 1. [architecture] topology of the home automation components and different levels of abstraction
 1. [wiring] details about basic components (relays and push buttons) and the related wiring
 1. [schematics] how to represent the electrical wiring in a one-wire diagram and floor plan
-1. cabinet: a peek inside my electrical cabinet
+1. [cabinet] a peek inside my electrical cabinet
 1. hardware: details about the central hardware units I did use
 1. software: different layers of interfacing software
 1. service: bringing it all together with home assistant
@@ -88,5 +88,6 @@ In the following series of blog posts, I will outline more of the details of the
 [architecture]: {% post_url 2021-06-22-home_automation_architecture %}
 [wiring]: {% post_url 2021-06-29-home_automation_wiring %}
 [schematics]: {% post_url 2021-07-06-home_automation_schematics %}
+[cabinet]: {% post_url 2021-07-13-home_automation_cabinet %}
 [home assistant]: https://www.home-assistant.io/
 [home assistant's vision]: https://www.home-assistant.io/blog/2016/01/19/perfect-home-automation/
