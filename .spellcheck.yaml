@@ -1,0 +1,8 @@
+matrix:
+  - name: blog posts
+    sources:
+      - _posts/**/*.md
+    dictionary:
+      wordlists:
+        - .wordlist.txt
+      output: .wordlist.dic
