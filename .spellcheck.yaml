@@ -1,5 +1,11 @@
 matrix:
   - name: blog posts
+    pipeline:
+      - pyspelling.filters.markdown
+      - pyspelling.filters.html:
+          ignores:
+            - code
+            - pre
     sources:
       - _posts/**/*.md
     dictionary:

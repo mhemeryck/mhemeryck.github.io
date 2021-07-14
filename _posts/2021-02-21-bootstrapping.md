@@ -55,7 +55,7 @@ Update password
 
     passwd $USER
 
-## Install pikaur
+## Install `pikaur`
 
     git clone https://aur.archlinux.org/pikaur.git
     cd pikaur
@@ -103,7 +103,7 @@ Update the trust of the key
     > 5
     > quit
 
-Enable ssh-agent using gpg-agent (temporarily; the final zshrc file will contain the proper setup)
+Enable ssh-agent using gpg-agent (temporarily; the final `zshrc` file will contain the proper setup)
 
     export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 
@@ -135,7 +135,7 @@ At this point, I have all the minimum tools I would use for my daily work.
 
 Even though I would spend most of my life on the command line, I also a graphical environment to work in.
 
-I'm not going to delve to deeply into that, since I mostly prefer vanilla [gnome3] for that, combined with [gdm] for a login manager.
+I'm not going to delve to deeply into that, since I mostly prefer vanilla [gnome3] for that, combined with [`gdm`] for a login manager.
 
 ## Closing thoughts
 
@@ -151,4 +151,4 @@ My initial goal was to find a way of completely automating my initial installs, 
 [arch for arm]: https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-4
 [arch installation guide]: https://wiki.archlinux.org/index.php/installation_guide
 [gnome3]: https://www.gnome.org
-[gdm]: https://wiki.gnome.org/Projects/GDM
+[`gdm`]: https://wiki.gnome.org/Projects/GDM
