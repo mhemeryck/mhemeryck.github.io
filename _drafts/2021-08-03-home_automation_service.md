@@ -78,7 +78,7 @@ In relation to the flow diagram above:
 1. home assistant updates the matching [home assistant MQTT switch] entity
 1. home assistant triggers an _automation_ which connects a state update for the push button entity to a match light entity
 1. to update the light entity, an event is published on that [home assistant MQTT light] entity
-1. the MQTT borker pushed the command to the subscribed I/O module
+1. the MQTT broker pushed the command to the subscribed I/O module
 1. the I/O module takes in the command to update its state and toggles the light accordingly
 1. after that the I/O module triggers the relay, it pushes back an update on its state topic
 1. the MQTT broker forwards the state update again to home assistant
