@@ -27,7 +27,6 @@ RO
 RSA
 SVV
 Secci
-Syu
 TLS
 TOPJOB
 TTY
@@ -77,8 +76,6 @@ evok
 fgov
 fpr
 fsri
-fzf
-gdm
 github
 gitlab
 gpg
@@ -124,7 +121,6 @@ passwordstore
 pcscd
 php
 pid
-pikaur
 plantyn
 png
 priv
@@ -140,22 +136,18 @@ reglement
 repo
 reprovision
 reprovisioning
-ripgrep
 ro
 scalable
 skel
 specificities
 subkey
 subkeys
-sudo
 sudoers
 svv
 systemctl
 systemd
 tls
 tlsv
-tmux
-txt
 unipi
 updatestartuptty
 url
@@ -168,5 +160,3 @@ wip
 www
 yadm
 yubikey
-zsh
-zshrc
