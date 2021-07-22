@@ -65,7 +65,7 @@ I have number of different unipi units in my setup, since I have a large amount 
 While you can have both inputs and outputs on the same unipi unit, I did decide to dedicate a bigger unipi unit for the push button control and another one for the lights:
 
 - lights, relay control: [unipi neuron l403], which has up to 56 relay outputs
-- push button read-out: the unipi neuron m303. This was an upgraded version of the [unipi neuron m303] with up to 64 digital inputs, but at the time of writing, it seems this model is no longer supported.
+- push button read-out: the [unipi neuron l303]. This was an upgraded version of the [unipi neuron m303] with up to 64 digital inputs, but at the time of writing, it seems this model is no longer supported.
 
 # Unipi axon
 
@@ -114,6 +114,7 @@ On the technical side, checkout the [unipi kb].
 [spi]: https://en.wikipedia.org/wiki/Serial_Peripheral_Interface
 [unipi module]: https://kb.unipi.technology/_media/en:hw:neuron_m103-top.jpg
 [unipi neuron m303]: https://www.unipi.technology/unipi-neuron-m303-p98
+[unipi neuron l303]: https://www.unipi.technology/unipi-neuron-l303-p101
 [unipi neuron l403]: https://www.unipi.technology/unipi-neuron-l403-p102
 [unipi kb]: https://kb.unipi.technology/en:hw:02-neuron
 [unipi community forum]: https://forum.unipi.technology/
