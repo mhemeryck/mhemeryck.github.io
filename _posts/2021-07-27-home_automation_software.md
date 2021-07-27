@@ -11,11 +11,13 @@ tags:
   - unipi
 ---
 
-After connecting everything on the different "physical" layers, it is time to have a look at how to connect everything on the software side of things.
+After connecting everything on the different "physical" layers, it is time to have a look at how to connect all on the **software** side of things.
 This post shall describe my current setup, specifically the different software components and the protocols they rely on for the unipi hardware.
 
 This post is a part of a larger series of posts on my home automation setup.
 See the [home automation overview post], to learn about the rationale and a description of the other posts!
+
+Particularly relevant is the [hardware] post, since I my software builds on the unipi neuron platform.
 
 # Software
 
@@ -242,3 +244,4 @@ Nonetheless, this current setup has been working quite OK for me thus far.
 [`paho-mqtt`]: https://pypi.org/project/paho-mqtt/
 [asyncio]: https://docs.python.org/3/library/asyncio.html
 [golang]: https://golang.org/
+[hardware]: {% post_url 2021-07-20-home_automation_hardware %}
