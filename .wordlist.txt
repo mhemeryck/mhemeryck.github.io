@@ -111,6 +111,7 @@ gpgconf
 gpio
 grey
 groupadd
+hashicorp
 hass
 homeassistant
 homeautomation
