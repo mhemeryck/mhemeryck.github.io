@@ -7,6 +7,7 @@ Automations
 Bolshakov
 DIGND
 DIY
+DIs
 Deckers
 DigitalPins
 EAN
@@ -15,6 +16,7 @@ Florian
 GDM
 GPG
 Hasselmann
+IOs
 Init
 IoT
 JSON
@@ -23,6 +25,8 @@ KEYID
 KNX
 MQTT
 Maarten
+ModbusRTU
+ModbusTCP
 Mosquitto
 NOPASSWD
 Niko
@@ -32,10 +36,12 @@ PLCs
 POSTGRES
 README
 RO
+RPC
 RSA
 SPI
 SVV
 Secci
+TCP
 TLS
 TOPJOB
 TTY
