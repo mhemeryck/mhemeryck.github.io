@@ -82,7 +82,7 @@ In the following series of blog posts, I will outline more of the details of the
 1. [cabinet] a peek inside my electrical cabinet
 1. [hardware] details about the central hardware units I did use
 1. [software] different layers of interfacing software
-1. service: bringing it all together with home assistant
+1. [service] bringing it all together with home assistant
 
 [why]: {% post_url 2021-06-15-home_automation_why %}
 [architecture]: {% post_url 2021-06-22-home_automation_architecture %}
@@ -91,5 +91,6 @@ In the following series of blog posts, I will outline more of the details of the
 [cabinet]: {% post_url 2021-07-13-home_automation_cabinet %}
 [hardware]: {% post_url 2021-07-20-home_automation_hardware %}
 [software]: {% post_url 2021-07-27-home_automation_software %}
+[service]: {% post_url 2021-08-03-home_automation_service %}
 [home assistant]: https://www.home-assistant.io/
 [home assistant's vision]: https://www.home-assistant.io/blog/2016/01/19/perfect-home-automation/

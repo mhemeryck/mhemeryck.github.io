@@ -11,7 +11,7 @@ tags:
   - home assistant
 ---
 
-Up to this point, I did already lay out all of the tidbits concerning the electricity, the I/O hardware units, even some custom software to provide an event-based API to reach address all of the various components in the overall system.
+Up to this point, I did already lay out all of the tidbits concerning the electricity, the I/O hardware units, even some custom software to provide an event-based API to address all of the various components in the overall system.
 The final fundamental piece to bring everything together is what I call the _service_ layer, and specifically [home assistant].
 
 This post is a part of a larger series of posts on my home automation setup.
@@ -29,7 +29,7 @@ In summary:
 - all the unipi units: can take in any MQTT event to handle as _commands_ and pushes out events as _state_ updates.
 - home assistant: has logic to trigger specific events on other events incoming
 
-Note that for a pub / sub system, all of the clients can (and will) function as both publisher and subscriber.
+Note that for this publish / subscribe system, all of the clients can (and will) function as both publisher and subscriber.
 
 # home assistant
 
@@ -44,11 +44,11 @@ The home assistant community would typically encourage new contributors to put t
 The added value of this approach is twofold:
 
 1. the community rapidly gets more of these open source libraries
-1. the home assistant installation only needs to pull in the source libraries it needs, instead of being a big code base
+1. the home assistant installation only needs to pull in the source libraries it needs, instead of having of a big blob of code.
 
-The advantage of rolling your own platform is that you are more in control of your own hardware, less reliant on cloud solutions.
+The advantage of running your own platform is that you are more in control of your own hardware, less reliant on cloud solutions.
 
-Though not required, I did find it interesting to learn about more about the way it was setup, check the [home assistant architecture dev docs].
+Though not required, I did find it interesting to learn about more about the way home assistant itself is structured, check the [home assistant architecture dev docs].
 
 The integration I have been mostly using is [home assistant MQTT integration].
 At this point, this means that all of the I/O that is provided by the unipi units via an MQTT interface can now be readily represented as entities directly in home assistant!
@@ -74,13 +74,13 @@ With this pair of topics for each entity, a typical flow combining command and s
 In relation to the flow diagram above:
 
 1. on the push of the button, an MQTT event is pushed out to the _state_ topic
-1. the MQTT broker pushes the state update home assistant
+1. the MQTT broker pushes the state update to home assistant
 1. home assistant updates the matching [home assistant MQTT switch] entity
-1. home assistant triggers an _automation_ which connects a state update for the push button entity to a match light entity
+1. home assistant triggers an _automation_ which connects a state update for the push button entity to a matching light entity
 1. to update the light entity, an event is published on that [home assistant MQTT light] entity
-1. the MQTT broker pushed the command to the subscribed I/O module
+1. the MQTT broker pushes the command to the subscribed I/O module
 1. the I/O module takes in the command to update its state and toggles the light accordingly
-1. after that the I/O module triggers the relay, it pushes back an update on its state topic
+1. after that, the I/O module triggers the relay, it pushes back an update on its state topic
 1. the MQTT broker forwards the state update again to home assistant
 1. home assistant sees the state update for that light entity and updates its internal state
 
@@ -112,14 +112,15 @@ The orchestrator is responsible for e.g. starting the containers, making sure th
 
 As mentioned, home assistant has its own orchestrator; the supervisor.
 An orchestrator I often use for quick-and-dirty local development is [docker-compose].
-The current de-facto standard is the google-backed [kubernetes], abbreviated to k8s.
+The current de-facto industry standard is the google-backed [kubernetes], abbreviated to k8s.
 The lightweight version of this is [k3s].
+This probably not the end of the list, others like [hashicorp nomad] also exist.
 
 All of these have their own merits and disadvantages:
 
 | orchestrator              | pros                                                    | cons                                                                                                   |
 | ------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| home assistant supervisor | built-in the eco-system of home assistant               | container orchestration is _hard_ to do right, why roll your own?                                      |
+| home assistant supervisor | built into the eco-system of home assistant             | container orchestration is _hard_ to do right, why roll your own?                                      |
 |                           | allows extra functionality in the same UI               | to me, this indicates a bad design, where a supervisor is responsible for more than what it's intended |
 |                           | supposedly more suited for embedded platforms (raspi 3) | low-memory footprint k8s alternatives exist, like the k3s mentioned before.                            |
 | docker-compose            | simple syntax                                           | only supports a subset of features                                                                     |
@@ -136,7 +137,7 @@ My current approach is based on k3s -- but this is better left as the topic of a
 All of the theoretical babble about containers and orchestration is just to come to this point where I can actually show something to run.
 For this sample setup, I will build part of the service layer using only `docker-compose` and a set of related home assistant configuration files.
 
-The folder structure will look like this:
+The final folder structure will look like this:
 
 ```
 ├── automations.yaml
@@ -160,13 +161,15 @@ The folder structure will look like this:
 └── ui-lovelace.yaml
 ```
 
+For those interested, have a look at [`hass.zip`] for all of the source files.
+
 Most of these files were actually generated automatically when home assistant started the first time.
 The format for all of the most relevant files is YAML, which stands for "Yet Another Markup Language".
 YAML is fairly widespread nowadays as a format for configuration files.
 To me, one of the most obvious advantages of the format is its conciseness and readability.
 Indentation matters though, so be sure you use a proper (plain text) editor when editing in this format.
 
-I will go over the most important ones:
+I will go over the most important files in here:
 
 - `docker-compose.yaml`
 - `configuration.yaml`
@@ -209,8 +212,8 @@ This file defines 3 _services_, `homeassistant` (the main home assistant service
 Some notes on the keys used in the configuration:
 
 - **ports**: this is a mapping of the ports within the container to the outside world, e.g. `"8123:8123"` means "maps the port 8123 inside the container to the host on port 812 ". Port 8123 is the port home assistant runs on by default.
-- **volumes**: this is mapping of the folder structure inside the container to the outside host. For the `homeassistant` service, this means to map the map configuration folder to the location where `docker-compose` is executed. This also means it's easy to put your own configuration inside the container this way. Volumes needn't be mapped to an explicit host folder though, see the example for the `db` service where there's just a named volume called `hass-db`, managed by docker.
-- **links**: links take care of the networking between containers. A link from `homeassistant` to `mosquitto` means that the home assistant instance will be able to reach that other service with the named `mosquitto`. `docker-compose` takes care of creating the proper docker network for that. It also means that if the `homeassistant` service is started, the other 2 services are also automatically started.
+- **volumes**: this is mapping of the folder structure inside the container to the outside host. For the `homeassistant` service, this means to map the configuration folder to the location where `docker-compose` is executed. This also means it's easy to put your own configuration inside the container this way. Volumes needn't be mapped to an explicit host folder though, see the example for the `db` service where there's just a named volume called `hass-db`, managed by docker.
+- **links**: links take care of the networking between containers. A link from `homeassistant` to `mosquitto` means that the home assistant instance will be able to reach that other service with the name `mosquitto`. `docker-compose` takes care of creating the proper docker network for that. It also means that if the `homeassistant` service is started, the other 2 services are also automatically started.
 
 At this point, you can actually already just fire up home assistant using `docker-compose up`!
 
@@ -401,7 +404,7 @@ Apart from controlling the light with the push button, it can also be controlled
 This concludes my approach to using (abusing?) home assistant and the MQTT integration as the central part of my home automation setup.
 
 I did use MQTT as the standard to centralize all my components on, have a look at the other posts presented in the [home automation overview post] of how to get there.
-Examples of other components that use MQTT in the same fashion are window contacts, PIR, smoke and water detectors, automated blinds, etc.
+Examples of other components that use MQTT in the same fashion are window contacts, PIR, smoke and water detectors, motorized blinds, etc.
 
 The advantage of home assistant though is that it does not need to all be the same protocol, so it is quite easy to add other integrations in the mix as well.
 A notable example of this is an automation where I link one of these push buttons to a [Philips Hue light]; as far as home assistant is concerned, both of these are light entities.
@@ -449,3 +452,5 @@ The backlog of improvements and extra bells and whistles is still quite long, so
 [`mosquitto_sub`]: https://mosquitto.org/man/mosquitto_sub-1.html
 [Philips Hue light]: https://www.home-assistant.io/integrations/hue/
 [emqx]: https://www.emqx.io/blog/emqx-mqtt-broker-k8s-cluster
+[hashicorp nomad]: https://www.nomadproject.io/
+[`hass.zip`]: /assets/2021-08-03/hass.zip
