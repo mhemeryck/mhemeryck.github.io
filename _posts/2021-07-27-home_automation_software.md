@@ -4,6 +4,7 @@ subtitle: "Connecting the pieces together"
 cover-img:
   - "/assets/2021-07-27/carbon.png": "Code snippet from evok2mqtt"
 readtime: true
+last-updated: 2021-08-03
 tags:
   - home automation
   - mqtt
@@ -225,7 +226,45 @@ However, if performance is key, I will more likely have a look again at the sysf
 
 Nonetheless, this current setup has been working quite OK for me thus far.
 
+# Update from unipi
+
+A while after this post went live, I did get some [friendly](https://forum.unipi.technology/post/5807) [feedback](https://forum.unipi.technology/post/5824) on [my unipi forum post].
+
+Some selected parts of the notes I think I should share[^2]:
+
+`evok` might get an update, _including MQTT support_!
+
+> The Evok is planned (well, maybe "wished" is a better word:)) to be rewritten to Python 3 and to a multi-threaded application.
+> Along with that, major changes to the API will happen.
+> We will abandon some of the less used APIs (RPC and SOAP probably) and definitely add native MQTT support since it is a driving force in the industry.
+
+Missed state changes should be possible to detect with the digital input counter:
+
+> The missed state changes of the DI can be detected by checking the state of the DI counter.
+> The counter is implemented in the HW and can count as fast as 10kHz signals.
+
+The low-level communication I did outline using SPI and modbus is slightly different from what I did present above:
+
+> And a bit of explanation of the low level communication:
+>
+> - The HW boards are connected over SPI
+> - The protocol on the SPI level is modified ModbusRTU
+> - The Unipi kernel module (part of the `unipi-kernel-modules` package) exposes this communication channel as `/dev/unipispi device`
+> - The Unipi ModbusTCP server (part of the `unipi-modbus-tools`) exposes this as a ModbusTCP server running on TCP/502
+> - The rest is correct. Evok polls the ModbusTCP server as fast as it can. And creates a "system image" of the HW state.
+
+The IO boards might also get a firmware-level upgrade!
+
+> And in the firmware of the IOs we plan to introduce a "latching" state of the DIs.
+> Those will be registers and coils which will hold the leading edge of the DIs until they are read from the software. That will prevent the losing of the edge altogether.
+
+I really appreciate this kind of feedback from the unipi team.
+It is nice to see how they are continuously improving their product (e.g. the idea of including native MQTT support).
+More importantly, I think this company really understands well the value of their product as an open platform and is actively working on community-building.
+Like I did mention in some of my earlier posts in this series, this openness is one of the reasons I am really glad about their products!
+
 [^1]: this could actually also be solved using configuration on the MQTT client setup, by only registering callbacks to certain topics.
+[^2]: mostly literal, some formatting changes mine.
 
 [home automation overview post]: {% post_url 2021-06-15-home_automation_why %}
 [evok api docs]: https://evok.api-docs.io/1.0/jkctke5arbcnjt8az
@@ -245,3 +284,4 @@ Nonetheless, this current setup has been working quite OK for me thus far.
 [asyncio]: https://docs.python.org/3/library/asyncio.html
 [golang]: https://golang.org/
 [hardware]: {% post_url 2021-07-20-home_automation_hardware %}
+[my unipi forum post]: https://forum.unipi.technology/topic/1410/home-assistant-diy-setup-blog
