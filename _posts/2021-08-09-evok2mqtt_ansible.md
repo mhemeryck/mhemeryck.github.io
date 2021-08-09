@@ -2,7 +2,7 @@
 title: "evok2mqtt ansible"
 subtitle: "Automating an evok2mqtt install"
 cover-img:
-  - "/assets/2021-08-10/automation_robot.jpg": "Photo by Alex Knight on Unsplash"
+  - "/assets/2021-08-09/automation_robot.jpg": "Photo by Alex Knight on Unsplash"
 readtime: true
 tags:
   - home automation
@@ -21,7 +21,7 @@ The focus of this post is the **automated provisioning of a unipi unit using [an
 
 # Rationale
 
-Earlier, I did discuss all of the software running on each of my [unipi] units, each responsible for a layer in the overall process:
+Earlier, I did discuss all of the software running on each of my [unipi] units, where each part is responsible for a layer in the overall process:
 
 - the linux-based OS: for capturing and sending I/O events
 - `evok`: for exposing this I/O information in various formats and protocols (of which I did use websockets)
@@ -43,9 +43,9 @@ Many different kinds of tooling can be used, e.g.:
 - scripting like [bash]:
 - declarative-style recipes like [ansible] and [puppet]
 - immutable builds like [packer] or [docker]
-- infrastructure as code like [terraform]
+- infrastructure-as-code like [terraform]
 
-**Scripting** is the oldest and most widespread approaches to automation.
+**Scripting** is one of the oldest and most widespread approaches to automation.
 In scripting, you define a list of commands that each run in sequence after each other, generally from the top of the script to the bottom.
 Scripting is _procedural_, meaning you define _how_ a specific action is to be carried out, like a recipe.
 The advantage of scripting is that it is simple and ubiquitous.
@@ -53,7 +53,7 @@ On the other side of the equation are all issues related to state manipulation.
 As a script runs through its sequence of steps, it changes the state to end up in a desired target state.
 In theory, you can write your scripts in such a way that they can adapt for any kind of initial or in-between state.
 Also, you could attempt to write some parts of your scripts in an _idempotent_ way, meaning that they perform the same action regardless of their input.
-At larger scales however, scripting quickly becomes unwieldy of this state manipulation it needs to take into account and idempotency is simply not always possible.
+At larger scale however, scripting quickly becomes unwieldy of this state manipulation it needs to take into account and idempotency is simply not always possible.
 
 **Declarative** tools take a different approach, not by defining _how_ the provisioning should take place, but rather _what_ the end-result needs to be.
 Particularly in the case of provisioning, this makes for an interesting programming paradigm since ideally after running the provisioning tool, it will always result in the same end state, regardless of any initial state the node was in.
@@ -74,7 +74,7 @@ All of these have their place, but for now, I did focus on using [ansible] as a 
 
 Some basic _ansible-lingo_ before we dive into the details:
 
-- `ansible` is the tool you involve on your local machine to perform actions on a remote system
+- `ansible` is the tool you run on your local machine to perform actions on a remote system
 - an action on a remote machine is a _task_
 - a set of tasks can be combined into a _role_
 - a set of roles can be further combined into a _playbook_
@@ -89,7 +89,7 @@ Ansible has some basic initial conditions for it to be run on the target host:
 
 - the target host needs to be reachable via SSH (ideally key-based)
 - the target host should run some version of python (as ansible itself is based on python)
-- depending on the permissions you need to execute, the connecting user needs to be root access
+- depending on the permissions you need to execute, the connecting user needs to have root access
 
 Fortunately, unipi does provides such an image that already satisfies these constraints (most modern linux-based OS images would do, actually): the [Neuron OpenSource OS].
 
