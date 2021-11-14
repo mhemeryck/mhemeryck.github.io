@@ -4,7 +4,9 @@ ARMv
 AUTH
 Allwinner
 Automations
+Baumeister
 Bolshakov
+CallbackDataBlock
 DIGND
 DIY
 DIs
@@ -26,6 +28,8 @@ KNX
 MQTT
 Maarten
 ModbusRTU
+ModbusSlaveContext
+ModbusSparseDataBlock
 ModbusTCP
 Mosquitto
 NOPASSWD
@@ -34,10 +38,12 @@ OpenSource
 PIR
 PLCs
 POSTGRES
+PyModbus
 README
 RO
 RPC
 RSA
+RTU
 SPI
 SVV
 Secci
@@ -46,6 +52,7 @@ TLS
 TOPJOB
 TTY
 UI
+UTP
 Unsplash
 VDC
 WAGO
@@ -56,8 +63,10 @@ YAML
 addkey
 addkeytocard
 af
+ai
 algemeen
 ansible
+ao
 api
 archlinux
 archlinuxarm
@@ -69,7 +78,9 @@ asyncio
 aur
 automations
 awk
+baudrate
 bluetooth
+bool
 boum
 broadcom
 cafile
@@ -82,6 +93,7 @@ conf
 config
 crt
 ctags
+datastore
 de
 declaratively
 decrypting
@@ -133,6 +145,7 @@ init
 integrations
 io
 ip
+ir
 jpg
 json
 kb
@@ -143,6 +156,7 @@ labelling
 lan
 libfido
 linux
+localhost
 lovelace
 luctor
 mA
@@ -150,6 +164,7 @@ makepkg
 md
 mhemeryck
 modbus
+modbusbackup
 modelling
 mosquitto
 motd
@@ -178,6 +193,7 @@ proces
 productmodel
 publicaties
 py
+pymodbus
 racoonlab
 raspberrypi
 raspbian
@@ -193,6 +209,7 @@ scalable
 skel
 specificities
 ssd
+str
 subkey
 subkeys
 sudoers
