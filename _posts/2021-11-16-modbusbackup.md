@@ -11,11 +11,11 @@ tags:
 ---
 
 Another home automation post!
-In the earlier [home automation series], I did outline my full setup.
+Please check out my earlier [home automation series] first to get an idea what I am talking about.
 
-This post details some changes I did make.
+Recently, I figured to rework some part of it to be able to deal better with certain kind of failures, while at the same time still being able to offer all the automation abilities as before.
 
-# The problem: centralized point of failure
+# Recap
 
 First, let's **recap the architecture** that was already in place:
 
@@ -30,43 +30,42 @@ For more details, refer to the [architecture post].
 
 Although this approach has worked fairly well for me, it inherently holds some potential issues.
 
-Firstly, **all connections need to run through home assistant and the MQTT broker**.
+# Problem: centralized points of failure
+
+Firstly, on the **software level**, all connections need to run through home assistant and the MQTT broker.
 An advantage of this is that everything is configurable from a centralized place, in software.
-However, this also requires a higher level of reliability on those home assistant and MQTT instances.
+However, this also requires a higher level of reliability on those software instances.
 As an example, initially, doing any updates to this software component was a bit more involved since any downtime here, effectively translated into non-functioning light push buttons.
 Downtime is fortunately a lot less common since I did start using [k3s] for orchestrating the deployment.
 Nevertheless, it is (currently) not possible to run home assistant in an "high availability" (HA) mode.
-HA mode means that multiple home assistant instances can run at the same time, where one instance sits stand-by as a fail-over for the main running instance.
+HA mode means that multiple home assistant instances can run at the same time, where one instance sits idle as a fail-over for the main running instance.
 
-In addition, **the links between the components all depend on the local network**.
+In addition, on the **network level**, the links between the components all depend on the local network.
 Any downtime at this level of the stack again translates into the non-availability of my light push buttons.
 
-Recently, I wanted to do some upgrades to the wiring of my central network switch.
-Considering that a basic functionality such as being able to toggle a light would no longer work because of this, prompted me to look for an alternate solution.
-
-This solution would need to be **more robust** against issues on to the **software** and **network** layers.
-At the same time, I would still like to **control the lights from home assistant**.
+This solution would need to be **more robust** against issues on both **software** and **network** layers.
+At the same time, I would still like to keep **centralized control from home assistant**.
 
 # Solution: direct link
 
-I did start to dig around and got some helpful feedback on the unipi forum from this [post on connecting 2 unipi units together].
+I did start digging around and got some helpful feedback on the unipi forum from this [post on connecting 2 unipi units together].
 
 The first issue of the **dependency on the home assistant instance** could be mitigated by moving the automation logic out of home assistant.
 This would mean that some other component could listen to the input events and do the required actions on the outputs.
-The unipi units could easily run such extra software.
+The unipi units could easily run such extra software themselves.
 
 The second issue related to the **network layer** could be solved by finding a way to connect to the involved unipi units directly together.
 This post on [unipi connections] provided some inspiration in that respect: the third option details using the RS-485 bus which is available on most unipi units to connect devices together.
 
 Control from home assistant will still be possible: either the update should come from the toggle of an input button (via the direct connection) or from an MQTT event.
-There should be no issue in having both options at the same time.
+There should be no issue in having both options at the same time.[^1]
 
 The new architecture now changes into the following:
 
 ![proposal architecture]
 
 - inputs / outputs: the edges of the diagram just again show the inputs and output
-- unipi units: 1 unipi unit is drawn for inputs, 1 for outputs
+- unipi units: 1 unipi unit is shown for inputs, 1 for outputs
 - home assistant: state updates on inputs and outputs still come in over MQTT. State changes on the outputs can still be pushed using MQTT.
 - MQTT broker: sits between the unipi units and home assistant.
 
@@ -75,11 +74,12 @@ Instead, there is a direct link over RS-485 using the [Modbus] protocol.
 
 # Hardware
 
-The following image (take from the post on [unipi connections]) shows conceptually the wiring diagram to connect one or more unipi units together.
+The following image (taken from the post on [unipi connections]) shows a conceptual wiring diagram to connect one or more unipi units together.
+Essentially, it is a 2-wire connection, [daisy-chaining] all units.
 
 ![wiring]
 
-As the photo shows,the wiring I did use was a simple piece of leftover **CAT6 UTP** (the grey piece of cable behind the black ethernet connector in the front).
+As the photo shows, the wiring I did use was a simple piece of leftover **CAT6 UTP** (the grey piece of cable behind the black ethernet connector in the front).
 In fact, I only did use 2 of the 8 wires.
 
 ![hardware]
@@ -96,10 +96,12 @@ As the unipi units readily expose the RS-485 interface, this step turned out to 
 The **protocol** you would typically run on this wiring setup is **[Modbus]**.
 Within Modbus, there is one server and all the other clients are daisy-chained on the same bus.
 All clients provide their own set of inputs and outputs ("coils", "discrete inputs", "input registers" and "holding registers") in a predefined range.
-The control is fully managed by the server.
+Read and write control is fully managed by the server.
 To read specific values, the server will just poll those values from the client.
 To write updates, the server can similarly just put the values where they need to be on the clients.
 The speed at which updates from a client are propagated thus also depend on the polling speed the server uses.
+In case any communications needs to occur between clients, this is only possible from the server.
+The server would then first read those values from one client (by polling) and later on write them to the other client.
 
 The unipi OS exposes the RS-485 connection via a specific linux device; see the [unipi serial port map].
 For my neuron L403 and L303 I would need to use the `/dev/ttyNS0` devices.
@@ -123,8 +125,6 @@ To illustrate, let's again go through toggling a light:
 1. the relay is toggled; the light is turned on
 
 ## Client code
-
-This section features the full [client code].
 
 The key function is `ws_process`:
 
@@ -161,11 +161,11 @@ This is part is quite close to the earlier solution presented in the [software p
 The `circuit_map` function is singleton wrapper around a dictionary mapping the unipi digital inputs to Modbus addresses.
 Similarly, the `_modbus_client` function is also a singleton wrapper to avoid having to constantly recreate the Modbus connection to the other unit.
 
+See this link for the full [client code].
+
 ## Server code
 
-This section details the [server code].
-
-The key to get this to work for me was having a Modbus instance being able to accept incoming messages and handling those directly, i.e. in a sort of event-based way.
+The key to get this to work for me was having a Modbus instance being able to accept incoming messages and handling those directly, i.e. in an event-based way.
 After digging through some PyModbus examples, I did find this [callback server example].
 I did end up with the following set of functions, definitions:
 
@@ -205,9 +205,10 @@ def _run_server(port: str, timeout: float, baudrate: int) -> None:
 The `_run_server` code wraps starting up a serial, RTU, Modbus server.
 The port to be provided to the server is simple the Linux device mentioned above, `/dev/ttyNS0`.
 As part of a Modbus server configuration, you need to provide the outline of the various Modbus addresses it exposes for the main Modbus instance to poll.
-In this, case we I did pass in a custom block, the `CallbackDataBlock`.
+In this, case I did pass in a custom block, the `CallbackDataBlock`.
 
-The `CallbackDataBlock` constructor sets up all required addresses based on the configuration (through the `relay_map` function).
+The `CallbackDataBlock` constructor sets up all required addresses based on the configuration (through the `_relay_map` function).
+The `_relay_map` function keeps a (singleton) mapping of the relays for the given Modbus address.
 In order to have callback-like handlers, you can override the `setValues` method.
 This method is called for any Modbus message for the address that is part of the function arguments.
 At this point, I do have the message handled by another `_trigger` function.
@@ -254,6 +255,8 @@ The `_trigger` function simply takes in the Modbus message and maps it again to 
 For the purposes of light control, a simple toggle is enough, so the value is just used to see if the incoming event is actually for a rising edge, i.e. a `True` value.
 The current value is read first using evok; the new value is the toggled value (by XOR).
 
+Refer to this section for the full [server code].
+
 ## Configuration format
 
 As configuration format, I did use YAML, similar to what I had before on home assistant.
@@ -283,7 +286,7 @@ This also means that this configuration file needs to be shared between both the
 
 While my home automation setup described in the [home automation series] has been running OK for me for quite some time, I did want to be less dependent on the correct functioning of the home assistant instance and the network.
 
-To get there, I did impose 2 changes.
+To get there, I made changes on 2 levels.
 On the **hardware-side**, I did make use of the already existing RS-485 connection, removing any network-related issues.
 On the **software-side**, I did add a custom script to run on both the input and output side that essentially notifies the output-side of any input-related events.
 The actual link between the input and output is through a simple configuration file, shared by both sides.
@@ -298,6 +301,8 @@ However, once I would start to expand my DALI-bus based setup, I'm not yet sure 
 
 The **transition** between the fully home assistant-based outline and my current "modbusbackup" solution has gone pretty well though, to that extent that it's not really clear to others in my home what I have actually been working on.
 The main advantage I now see is being able to more easily make any changes on the home assistant / network side.
+
+[^1]: the automation that was already in place in home assistant to link input to output would need to be removed though.
 
 [home automation series]: {% post_url 2021-06-15-home_automation_why %}
 [current architecture]: /assets/2021-06-22/architecture.png
@@ -319,3 +324,4 @@ The main advantage I now see is being able to more easily make any changes on th
 [PyModbus]: https://pymodbus.readthedocs.io/en/latest/index.html
 [callback server example]: https://pymodbus.readthedocs.io/en/latest/source/example/callback_server.html
 [sample configuration file]: https://github.com/mhemeryck/modbusbackup/blob/master/config.yaml
+[daisy-chaining]: https://en.wikipedia.org/wiki/Daisy_chain_(electrical_engineering)
