@@ -94,7 +94,7 @@ where N is the count in the list of keys (visually not that obvious)
 
 Add the key to the card
 
-    addkeytocard
+    keytocard
 
 select the slot to save to (encryption for encryption, signing for signing ...)
 
