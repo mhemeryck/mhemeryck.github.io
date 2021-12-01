@@ -1,3 +1,4 @@
+AEDE
 APIs
 AREI
 ARMv
@@ -27,6 +28,8 @@ KEYID
 KNX
 MQTT
 Maarten
+Markus
+Martijn
 ModbusRTU
 ModbusSlaveContext
 ModbusSparseDataBlock
@@ -47,6 +50,7 @@ RTU
 SPI
 SVV
 Secci
+Spiske
 TCP
 TLS
 TOPJOB
@@ -83,6 +87,7 @@ bluetooth
 bool
 boum
 broadcom
+browserpass
 cafile
 ccid
 cd
@@ -92,13 +97,16 @@ cmdline
 conf
 config
 crt
+cryptographic
 ctags
 datastore
 de
 declaratively
+decrypt
 decrypting
 defaultBranch
 dest
+deux
 dev
 devel
 di
@@ -123,6 +131,7 @@ frontend
 fsri
 github
 gitlab
+gnupg
 golang
 gpg
 gpgconf
@@ -149,6 +158,7 @@ ir
 jpg
 json
 kb
+kbx
 keyfile
 knx
 kubernetes
@@ -174,6 +184,7 @@ niko
 nl
 noconfirm
 onewire
+openkeychain
 openssh
 orchestrator
 pSLC
@@ -192,6 +203,7 @@ priv
 proces
 productmodel
 publicaties
+pubring
 py
 pymodbus
 racoonlab
@@ -205,9 +217,11 @@ repo
 reprovision
 reprovisioning
 ro
+rsa
 scalable
 skel
 specificities
+ssb
 ssd
 str
 subkey
@@ -224,6 +238,7 @@ testpi
 tls
 tlsv
 tts
+uid
 unipi
 unipitt
 updatestartuptty
