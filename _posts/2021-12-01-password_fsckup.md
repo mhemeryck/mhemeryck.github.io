@@ -127,7 +127,7 @@ Ultimately, after a couple of days of re-requesting logins, I'm back to before, 
 
 [previous password management post]: {% post_url 2019-07-09-updating_gpg_subkeys %}
 [openkeychain]: https://www.openkeychain.org/
-[password store]: https://play.google.com/store/apps/details?id=com.zeapo.pwdstore
+[password store]: https://play.google.com/store/apps/details?id=dev.msfjarvis.aps
 [`pass`]: https://www.passwordstore.org/
 [browserpass]: https://github.com/browserpass/browserpass-extension
 [U2F]: https://www.yubico.com/authentication-standards/fido-u2f/
