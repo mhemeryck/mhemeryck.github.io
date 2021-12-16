@@ -1,0 +1,362 @@
+{
+	"info": {
+		"_postman_id": "c2cadaa6-0d71-41ba-ada3-4172ed5e6d74",
+		"name": "cloudkey",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"{{username}}\",\n    \"password\": \"{{password}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/login",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "self",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/s/{{site}}/self",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"s",
+						"{{site}}",
+						"self"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/s/{{site}}/rest/user",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"s",
+						"{{site}}",
+						"rest",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list firewallgroup",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/s/{{site}}/rest/firewallgroup",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"s",
+						"{{site}}",
+						"rest",
+						"firewallgroup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list firewall rules",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/s/default/rest/firewallrule",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"s",
+						"default",
+						"rest",
+						"firewallrule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list site stats",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/stat/sites",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"stat",
+						"sites"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list devices",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/s/{{site}}/stat/device",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"s",
+						"{{site}}",
+						"stat",
+						"device"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list WLAN groups",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/s/{{site}}/list/wlangroup",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"s",
+						"{{site}}",
+						"list",
+						"wlangroup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list network conf",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/s/{{site}}/rest/networkconf",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"s",
+						"{{site}}",
+						"rest",
+						"networkconf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list wlan conf",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/s/{{site}}/rest/wlanconf",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"s",
+						"{{site}}",
+						"rest",
+						"wlanconf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list usergroup",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/s/{{site}}/rest/usergroup",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"s",
+						"{{site}}",
+						"rest",
+						"usergroup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list apgroup",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/v2/api/site/{{site}}/apgroups",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"v2",
+						"api",
+						"site",
+						"{{site}}",
+						"apgroups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sys info",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/s/{{site}}/stat/sysinfo",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"s",
+						"{{site}}",
+						"stat",
+						"sysinfo"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "username",
+			"value": "foo"
+		},
+		{
+			"key": "password",
+			"value": "bar"
+		},
+		{
+			"key": "host",
+			"value": "https://cloudkey.lan"
+		},
+		{
+			"key": "site",
+			"value": "default"
+		}
+	]
+}
