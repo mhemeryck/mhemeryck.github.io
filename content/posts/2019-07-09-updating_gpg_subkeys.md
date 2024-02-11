@@ -1,14 +1,9 @@
----
-title: Updating GPG subkeys
-subtitle: My yearly yubikey GPG subkey rotation process
-cover-img:
-  - "/assets/2019-07-09/keys.jpg": "Photo by Florian Berger on Unsplash"
-readtime: true
-tags:
-  - gpg
-  - yubikey
-  - note-to-self
----
++++
+title = "Updating GPG subkeys"
+subtitle = "My yearly yubikey GPG subkey rotation process"
+date = "2019-07-09"
+tags = ["gpg", "yubikey", "note-to-self"]
++++
 
 This is just a list of things to consider when updating my GPG subkeys (encryption, signing, authentication) for the particular setup I use on a daily basis:
 
