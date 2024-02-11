@@ -1,14 +1,9 @@
----
-title: Architecture
-subtitle: My home automation layout
-cover-img:
-  - "/assets/2021-06-22/cover.jpg": "Photo by Maarten Deckers on Unsplash"
-readtime: true
-tags:
-  - home automation
-  - mqtt
-  - tech
----
++++
+title = "Architecture"
+subtitle = "My home automation layout"
+date = "2021-06-22"
+tags = ["home automation", "mqtt", "tech"]
++++
 
 Prior to actually building anything, it is important to think on a higher level what the various components are and how they will interact with each other, i.e. the _architecture_.
 Over the process of doing my own setup, I came across a large number of different possible configurations, each with their own benefits and downsides.
@@ -163,11 +158,11 @@ Check the [home automation overview post] for the more "practical" upcoming post
 
 [^1]: although even this could be mitigated using a highly available MQTT broker. [EMQX](https://www.emqx.io/blog/emqx-mqtt-broker-k8s-cluster) seems to be an example of this, but I haven't tried it myself yet.
 
-[home automation overview post]: {% post_url 2021-06-15-home_automation_why %}
-[architecture]: /assets/2021-06-22/architecture.png
-[flow]: /assets/2021-06-22/flow.png
-[layers]: /assets/2021-06-22/layers.png
-[wiring]: /assets/2021-06-22/wiring.jpg
+[home automation overview post]: {{< ref "2021-06-15-home_automation_why" >}}
+[architecture]: /2021-06-22/architecture.png
+[flow]: /2021-06-22/flow.png
+[layers]: /2021-06-22/layers.png
+[wiring]: /2021-06-22/wiring.jpg
 [mosquitto mqtt broker]: https://hub.docker.com/_/eclipse-mosquitto
 [unipi]: https://www.unipi.technology/
 [home assistant]: https://www.home-assistant.io/
