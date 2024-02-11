@@ -1,13 +1,8 @@
----
-subtitle: bootstrapping a raspberry pi4 with arch for ARM
-cover-img:
-  - "/assets/2021-02-21/boots.jpg": "Photo by Ivan Bolshakov on Unsplash"
-readtime: true
-tags:
-  - tech
-  - raspberry pi 4
-  - note-to-self
----
++++
+subtitle = "bootstrapping a raspberry pi4 with arch for ARM"
+date = "2021-02-21"
+tags = ["tech", "raspberry pi 4", "note-to-self"]
++++
 
 I've recently bought myself a [raspberry pi 400], a small form factor keyboard with a _raspberry pi 4 4GB RAM_ built into it.
 In hindsight, there are probably very few scenarios in which such a computer makes actually makes sense to me, but it still looks quite nice.
