@@ -1,13 +1,9 @@
----
-title: Why
-subtitle: My vision for a modern home automation system
-cover-img:
-  - "/assets/2021-06-15/cover.jpg": "Photo by Simone Secci on Unsplash"
-readtime: true
-tags:
-  - homeautomation
-  - tech
----
++++
+title = "Why"
+subtitle = "My vision for a modern home automation system"
+date = "2021-06-15"
+tags =["homeautomation", "tech"]
++++
 
 This post shall be the first in a series of blog posts where I intend to outline my home automation setup.
 
@@ -84,13 +80,13 @@ In the following series of blog posts, I will outline more of the details of the
 1. [software] different layers of interfacing software
 1. [service] bringing it all together with home assistant
 
-[why]: {% post_url 2021-06-15-home_automation_why %}
-[architecture]: {% post_url 2021-06-22-home_automation_architecture %}
-[wiring]: {% post_url 2021-06-29-home_automation_wiring %}
-[schematics]: {% post_url 2021-07-06-home_automation_schematics %}
-[cabinet]: {% post_url 2021-07-13-home_automation_cabinet %}
-[hardware]: {% post_url 2021-07-20-home_automation_hardware %}
-[software]: {% post_url 2021-07-27-home_automation_software %}
-[service]: {% post_url 2021-08-03-home_automation_service %}
+[why]: {{< ref "2021-06-15-home_automation_why" >}}
+[architecture]: {{< ref "2021-06-22-home_automation_architecture" >}}
+[wiring]: {{< ref "2021-06-29-home_automation_wiring" >}}
+[schematics]: {{< ref "2021-07-06-home_automation_schematics" >}}
+[cabinet]: {{< ref "2021-07-13-home_automation_cabinet" >}}
+[hardware]: {{< ref "2021-07-20-home_automation_hardware" >}}
+[software]: {{< ref "2021-07-27-home_automation_software" >}}
+[service]: {{< ref "2021-08-03-home_automation_service" >}}
 [home assistant]: https://www.home-assistant.io/
 [home assistant's vision]: https://www.home-assistant.io/blog/2016/01/19/perfect-home-automation/
