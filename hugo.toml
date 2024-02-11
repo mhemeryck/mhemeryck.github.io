@@ -1,0 +1,4 @@
+baseURL = 'https://blog.mhemeryck.com/'
+languageCode = 'en-us'
+title = "Martijn's musings"
+theme = 'beautifulhugo'

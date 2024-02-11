@@ -1,13 +1,17 @@
++++
+title = "modbusbackup"
+subtitle = "An alternative approach to connecting unipi units"
+date = "2021-11-16"
+tags = ["home automation", "tech", "modbus"]
++++
+
 ---
-title: "modbusbackup"
-subtitle: "An alternative approach to connecting unipi units"
+
 cover-img:
-  - "/assets/2021-11-16/ribbon.jpg": "Photo by Mike Baumeister on Unsplash"
-readtime: true
-tags:
-  - home automation
-  - tech
-  - modbus
+
+- "/assets/2021-11-16/ribbon.jpg": "Photo by Mike Baumeister on Unsplash"
+  readtime: true
+
 ---
 
 Another home automation post!
@@ -305,7 +309,7 @@ The main advantage I now see is being able to more easily make any changes on th
 [^1]: the automation that was already in place in home assistant to link input to output would need to be removed though.
 
 [home automation series]: {% post_url 2021-06-15-home_automation_why %}
-[current architecture]: /assets/2021-06-22/architecture.png
+[current architecture]: /2021-06-22/architecture.png
 [architecture post]: {% post_url 2021-06-22-home_automation_architecture %}
 [proposal architecture]: /assets/2021-11-16/arch.png
 [k3s]: https://k3s.io/

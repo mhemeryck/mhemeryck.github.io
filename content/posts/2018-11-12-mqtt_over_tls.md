@@ -1,14 +1,8 @@
----
-layout: post
-title: "MQTT over TLS"
-author: "mhemeryck"
-cover-img:
-  - "/assets/2018-11-12/mosquito.jpg": "Photo by Wolfgang Hasselmann on Unsplash"
-readtime: true
-tags:
-  - mqtt
-  - note-to-self
----
++++
+title = "MQTT over TLS"
+date = "2018-11-12"
+tags = ["mqtt", "note-to-self"]
++++
 
 [MQTT] is a popular lightweight protocol for use in home automation.
 If features a central broker where each of the clients can communicate with in a pub / sub fashion.
