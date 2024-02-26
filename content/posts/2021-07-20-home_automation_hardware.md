@@ -1,15 +1,9 @@
----
-title: "Hardware"
-subtitle: "Unipi units"
-cover-img:
-  - "/assets/2021-07-20/neuron-cover.jpg": "unipi neuron unit"
-readtime: true
-tags:
-  - home automation
-  - hardware
-  - unipi
-  - tech
----
++++
+title = "Hardware"
+subtitle = "Unipi units"
+date = "2021-07-20"
+tags = ["home automation", "hardware", "unipi", "tech"]
++++
 
 In this post, I will give some more details about the rationale for the **hardware** that I had chosen for interpreting the input signals and controlling the outputs, specifically the [unipi neuron series].
 Note that I am in no way affiliated with unipi, nor do I intend to do an in-depth description of their hardware.
@@ -101,15 +95,15 @@ Check the [unipi SD card reference] for more details.
 Overall, I have been very happy with the unipi hardware platform though!
 
 For more commercial details check the [unipi] main website.
-On the technical side, checkout the [unipi kb].
+On the technical side, check out the [unipi kb].
 
 [^1]: the HDMI interface isn't readily exposed
 [^2]: for highly inductive loads, like motors, it is recommended to switch the loads not directly, but instead via an intermediary set of relays
 
-[home automation overview post]: {% post_url 2021-06-15-home_automation_why %}
+[home automation overview post]: {{< ref "2021-06-15-home_automation_why" >}}
 [unipi neuron series]: https://www.unipi.technology/products/unipi-neuron-3?categoryId=2&categorySlug=unipi-neuron
 [unipi axon series]: https://www.unipi.technology/products/unipi-axon-135?categoryId=13&categorySlug=unipi-axon
-[unipi inside]: /assets/2021-07-20/unipi-hardware.png
+[unipi inside]: /2021-07-20/unipi-hardware.png
 [unipi]: https://www.unipi.technology/
 [spi]: https://en.wikipedia.org/wiki/Serial_Peripheral_Interface
 [unipi module]: https://kb.unipi.technology/_media/en:hw:neuron_m103-top.jpg

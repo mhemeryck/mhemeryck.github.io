@@ -2,7 +2,7 @@
 title = "Why"
 subtitle = "My vision for a modern home automation system"
 date = "2021-06-15"
-tags =["homeautomation", "tech"]
+tags = ["homeautomation", "tech"]
 +++
 
 This post shall be the first in a series of blog posts where I intend to outline my home automation setup.

@@ -1,16 +1,10 @@
----
-title: "Software"
-subtitle: "Connecting the pieces together"
-cover-img:
-  - "/assets/2021-07-27/carbon.png": "Code snippet from evok2mqtt"
-readtime: true
-last-updated: 2021-08-03
-tags:
-  - home automation
-  - mqtt
-  - tech
-  - unipi
----
++++
+title = "Software"
+subtitle = "Connecting the pieces together"
+date = "2021-07-27"
+last-updated = 2021-08-03
+tags = ["home automation", "mqtt", "tech", "unipi"]
++++
 
 After connecting everything on the different "physical" layers, it is time to have a look at how to connect all on the **software** side of things.
 This post shall describe my current setup, specifically the different software components and the protocols they rely on for the unipi hardware.
@@ -266,13 +260,13 @@ Like I did mention in some of my earlier posts in this series, this openness is 
 [^1]: this could actually also be solved using configuration on the MQTT client setup, by only registering callbacks to certain topics.
 [^2]: mostly literal, some formatting changes mine.
 
-[home automation overview post]: {% post_url 2021-06-15-home_automation_why %}
+[home automation overview post]: {{< ref "2021-06-15-home_automation_why" >}}
 [evok api docs]: https://evok.api-docs.io/1.0/jkctke5arbcnjt8az
 [evok websockets interface]: https://evok.api-docs.io/1.0/mpqzDwPwirsoq7i5A/websocket
 [evok2mqtt]: https://github.com/mhemeryck/evok2mqtt
 [evok]: https://github.com/UniPiTechnology/evok
 [home assistant]: https://www.home-assistant.io/
-[software layers]: /assets/2021-07-27/software.png
+[software layers]: /2021-07-27/software.png
 [sysfs interface]: https://kb.unipi.technology/en:sw:02-apis:04-sysfs
 [raspbian]: https://www.raspberrypi.org/software/operating-systems/
 [spi]: https://en.wikipedia.org/wiki/Serial_Peripheral_Interface
@@ -283,5 +277,5 @@ Like I did mention in some of my earlier posts in this series, this openness is 
 [`paho-mqtt`]: https://pypi.org/project/paho-mqtt/
 [asyncio]: https://docs.python.org/3/library/asyncio.html
 [golang]: https://golang.org/
-[hardware]: {% post_url 2021-07-20-home_automation_hardware %}
+[hardware]: {{< ref "2021-07-20-home_automation_hardware" >}}
 [my unipi forum post]: https://forum.unipi.technology/topic/1410/home-assistant-diy-setup-blog

@@ -1,15 +1,9 @@
----
-title: "Service"
-subtitle: "Home assistant as the service layer"
-cover-img:
-  - "/assets/2021-08-03/home_assistant_logo.svg": "home assistant logo"
-readtime: true
-tags:
-  - home automation
-  - mqtt
-  - tech
-  - home assistant
----
++++
+title = "Service"
+subtitle = "Home assistant as the service layer"
+date = "2021-08-03"
+tags = ["home automation", "mqtt", "tech", "home assistant"]
++++
 
 Up to this point, I did already lay out all of the tidbits concerning the electricity, the I/O hardware units, even some custom software to provide an event-based API to address all of the various components in the overall system.
 The final fundamental piece to bring everything together is what I call the _service_ layer, and specifically [home assistant].
@@ -425,15 +419,15 @@ The backlog of improvements and extra bells and whistles is still quite long, so
 
 [^1]: the `mosquitto` version used in the `docker-compose.yaml` version was explicitly pinned to a version < 2.x, which did not enforce authentication, hence why the broker configuration just needs a host name to connect to.
 
-[home automation architecture post]: {% post_url 2021-06-22-home_automation_architecture %}
-[home automation overview post]: {% post_url 2021-06-15-home_automation_why %}
+[home automation architecture post]: {{< ref "2021-06-22-home_automation_architecture" >}}
+[home automation overview post]: {{< ref "2021-06-15-home_automation_why" >}}
 [home assistant]: https://www.home-assistant.io/
-[architecture]: /assets/2021-06-22/architecture.png
+[architecture]: /2021-06-22/architecture.png
 [home assistant integrations]: https://www.home-assistant.io/integrations/
 [entities]: https://developers.home-assistant.io/docs/core/entity/
 [home assistant architecture dev docs]: https://developers.home-assistant.io/docs/architecture_index
 [home assistant MQTT integration]: https://www.home-assistant.io/integrations/mqtt/
-[flow]: /assets/2021-06-22/flow.png
+[flow]: /2021-06-22/flow.png
 [home assistant MQTT switch]: https://www.home-assistant.io/integrations/switch.mqtt/
 [home assistant MQTT light]: https://www.home-assistant.io/integrations/light.mqtt/
 [home assistant installation]: https://www.home-assistant.io/installation/
@@ -447,10 +441,10 @@ The backlog of improvements and extra bells and whistles is still quite long, so
 [home assistant database integration]: https://www.home-assistant.io/integrations/recorder/#custom-database-engines
 [secrets system]: https://www.home-assistant.io/docs/configuration/secrets/
 [home assistant automation]: https://www.home-assistant.io/docs/automation/basics/
-[demo]: /assets/2021-08-03/demo.gif
+[demo]: /2021-08-03/demo.gif
 [`mosquitto_pub`]: https://mosquitto.org/man/mosquitto_pub-1.html
 [`mosquitto_sub`]: https://mosquitto.org/man/mosquitto_sub-1.html
 [Philips Hue light]: https://www.home-assistant.io/integrations/hue/
 [emqx]: https://www.emqx.io/blog/emqx-mqtt-broker-k8s-cluster
 [hashicorp nomad]: https://www.nomadproject.io/
-[`hass.zip`]: /assets/2021-08-03/hass.zip
+[`hass.zip`]: /2021-08-03/hass.zip

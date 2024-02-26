@@ -1,14 +1,9 @@
----
-title: "Wiring"
-subtitle: "Groundwork for a wired home automation setup"
-cover-img:
-  - "assets/2021-06-29/wiring-push-buttons.jpg": "SVV wires connecting to a 4-touch push button"
-readtime: true
-tags:
-  - home automation
-  - wiring
-  - tech
----
++++
+title = "Wiring"
+subtitle = "Groundwork for a wired home automation setup"
+date = "2021-06-29"
+tags = ["home automation", "wiring", "tech"]
++++
 
 In this post, I will take a deeper dive into the bottom layer, the **wiring**.
 Different kinds of inputs and outputs can be discussed, but for the sake of simplicity, I will focus on a push button operating a lamp.
@@ -78,7 +73,7 @@ The following image shows a typical tube containing 3 wires with diameters of 1.
 
 ![cable 3G 1.5mm2]
 
-For the cables carrying mains voltage, the following **rules** are relevant (non-exhaustive see e.g.[^1][^2][project huisinstallatie naslagwerk]):
+For the cables carrying mains voltage, the following **rules** are relevant (non-exhaustive see e.g. [^1], [^2], [project huisinstallatie naslagwerk]):
 
 - for circuits up to 16A (typically lights), a min 1.5 mm² cross-section wire is to be used
 - for circuits up to 20A (lights and / or others like power sockets), a min 2.5 mm² cross-section wire is to be used
@@ -151,19 +146,19 @@ Even you feel you are really knowledgeable, I still think it was an added value 
 [^1]: ISBN/EAN 9789030142942
 [^2]: the official Belgian regulation is the [AREI]
 
-[home automation overview post]: {% post_url 2021-06-15-home_automation_why %}
+[home automation overview post]: {{< ref "2021-06-15-home_automation_why" >}}
 [AREI]: https://economie.fgov.be/nl/publicaties/algemeen-reglement-op-de
-[principle relay]: /assets/2021-06-29/principle.png
-[principle push button]: /assets/2021-06-29/principle_push_button.png
+[principle relay]: /2021-06-29/principle.png
+[principle push button]: /2021-06-29/principle_push_button.png
 [push button]: https://en.wikipedia.org/wiki/Push-button
-[danger]: /assets/2021-06-29/danger.jpg
+[danger]: /2021-06-29/danger.jpg
 [relay]: https://en.wikipedia.org/wiki/Relay
 [project huisinstallatie naslagwerk]: https://www.plantyn.com/webshop/product/project-huisinstallatie-naslagwerk-9789030142942
 [residual-current devices]: https://en.wikipedia.org/wiki/Residual-current_device
 [arduino]: https://www.arduino.cc/en/Tutorial/Foundations/DigitalPins
 [raspberry pi]: https://www.raspberrypi.org/documentation/hardware/raspberrypi/gpio/README.md
-[cable 3G 1.5mm2]: /assets/2021-06-29/cable-3g15.jpg
-[cable SVV]: /assets/2021-06-29/cable-svv.jpg
+[cable 3G 1.5mm2]: /2021-06-29/cable-3g15.jpg
+[cable SVV]: /2021-06-29/cable-svv.jpg
 [colors on the visible electromagnetic spectrum]: https://en.wikipedia.org/wiki/Electromagnetic_spectrum
-[push-button-wiring]: /assets/2021-06-29/push-button-wiring.png
+[push-button-wiring]: /2021-06-29/push-button-wiring.png
 [push button from Niko]: https://www.niko.eu/en/products/switching-material-and-socket-outlets/switches-and-sockets/push-button-with-three-connection-terminals-no-productmodel-niko-025f93c2-c921-59b0-b204-af07ed3ee2a8/170-00005

@@ -1,14 +1,9 @@
----
-title: "Schematics"
-subtitle: "One-wire diagram and floor plan"
-cover-img:
-  - "/assets/2021-07-06/cover.png": "Work-in-progress one-wire diagram"
-readtime: true
-tags:
-  - home automation
-  - schematics
-  - tech
----
++++
+title = "Schematics"
+subtitle = "One-wire diagram and floor plan"
+date = "2021-07-06"
+tags = ["home automation", "schematics", "tech"]
++++
 
 In previous posts, I did discuss the importance of [planning and design] as well as details on the [physical wires] to be used.
 
@@ -74,9 +69,9 @@ Even though these diagrams only represent part of the information, they proved t
 [^1]: the voltage between each phase wire and the neutral wire is 240V
 [^2]: although it _could_ be wired in series, e.g. for a series of current-controlled LED fixtures
 
-[home automation overview post]: {% post_url 2021-06-15-home_automation_why %}
-[planning and design]: {% post_url 2021-06-22-home_automation_architecture %}
-[physical wires]: {% post_url 2021-06-29-home_automation_wiring %}
-[onewire]: /assets/2021-07-06/onewire.png
-[layout]: /assets/2021-07-06/layout.png
+[home automation overview post]: {{< ref "2021-06-15-home_automation_why" >}}
+[planning and design]: {{< ref "2021-06-22-home_automation_architecture" >}}
+[physical wires]: {{< ref "2021-06-29-home_automation_wiring" >}}
+[onewire]: /2021-07-06/onewire.png
+[layout]: /2021-07-06/layout.png
 [three-phase connection]: https://en.wikipedia.org/wiki/Three-phase_electric_power

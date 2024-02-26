@@ -1,14 +1,9 @@
----
-title: cloud key reset
-subtitle: unifi cloud key factory reset
-cover-img:
-  - "/assets/2021-12-08/cover.jpg": "Photo by C Dustin on Unsplash"
-readtime: true
-tags:
-  - unifi
-  - homelab
-  - note-to-self
----
++++
+title = "cloud key reset"
+subtitle = "unifi cloud key factory reset"
+date = "2021-12-08"
+tags = ["unifi", "homelab", "note-to-self"]
++++
 
 After my [last password issues post], I still had some places for which I didn't have an easy approach to reset the login.
 For my local network, I still use a unifi cloud key gen 1, to keep an overview of the network.
@@ -154,7 +149,7 @@ A final small change would be for me to **change DNS provider** from digital oce
 
 Still a lot of home lab ideas, so little time, let's see what's next!
 
-[last password issues post]: {% post_url 2021-12-01-password_fsckup %}
+[last password issues post]: {{< ref "2021-12-01-password_fsckup" >}}
 [ubiquiti unifi cloud key]: https://unifi-protect.ui.com/cloud-key-gen2
 [openWrt]: https://openwrt.org/
 [dockerized controller software]: https://hub.docker.com/r/linuxserver/unifi-controller

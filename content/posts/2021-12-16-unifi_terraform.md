@@ -1,16 +1,9 @@
----
-title: unifi terraform
-subtitle: unifi cloud key infrastructure-as-code
-cover-img:
-  - "/assets/2021-12-16/cover.jpg": "Photo by Karin Kloosterman on Unsplash"
-readtime: true
-tags:
-  - unifi
-  - homelab
-  - infrastructure-as-code
-  - terraform
-  - note-to-self
----
++++
+title = "unifi terraform"
+subtitle = "unifi cloud key infrastructure-as-code"
+date = "2021-12-16"
+tags = ["unifi", "homelab", "infrastructure-as-code", "terraform", "note-to-self"]
++++
 
 Last week, I did write about [resetting my unifi cloud key].
 
@@ -205,7 +198,6 @@ vary: Origin
         "rc": "ok"
     }
 }
-
 ```
 
 This call will perform the login on the login endpoint and set a cookie for subsequent calls.
@@ -328,14 +320,14 @@ Another change I'd like to make, is to use a **[remote state back-end]** instead
 
 ... but that's for another time!
 
-[resetting my unifi cloud key]: {% post_url 2021-12-08-cloudkey_reset %}
+[resetting my unifi cloud key]: {{< ref "2021-12-08-cloudkey_reset" >}}
 [terraform]: https://www.terraform.io/
 [unifi-terraform]: https://registry.terraform.io/providers/paultyng/unifi/latest/docs
 [`terraform import`]: https://www.terraform.io/cli/import
 [terraform docs]: https://www.terraform.io/docs
 [blog post from the original module author]: https://thenewstack.io/how-to-manage-a-home-network-with-infrastructure-as-code/
 [unifi PHP client code]: https://github.com/Art-of-WiFi/UniFi-API-client/blob/fbfd6a824628d2d45f7b5dadb211cb1191335156/src/Client.php
-[cloud key postman collection]: /assets/2021-12-16/cloudkey.postman_collection.json
+[cloud key postman collection]: /2021-12-16/cloudkey.postman_collection.json
 [postman]: https://www.postman.com/
 [`httpie`]: https://httpie.io/
 [powerdns]: https://registry.terraform.io/providers/pan-net/powerdns/latest/docs

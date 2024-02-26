@@ -1,16 +1,9 @@
----
-title: "evok2mqtt ansible"
-subtitle: "Automating an evok2mqtt install"
-cover-img:
-  - "/assets/2021-08-09/automation_robot.jpg": "Photo by Alex Knight on Unsplash"
-readtime: true
-tags:
-  - home automation
-  - evok2mqtt
-  - tech
-  - mqtt
-  - ansible
----
++++
+title = "evok2mqtt ansible"
+subtitle = "Automating an evok2mqtt install"
+date = "2021-08-09"
+tags = ["home automation", "evok2mqtt", "tech", "mqtt", "ansible"]
++++
 
 As part of my [home automation series], I did write about a small interfacing library that I did write, called [evok2mqtt].
 
@@ -228,7 +221,7 @@ Alternative **future solutions** could consist of changing the software required
 [^2]: a platform that could mimic infrastructure-as-code for local development would be really cool, though!
 [^3]: I did not include my own file, since this could contain sensitive information ...
 
-[home automation series]: {% post_url 2021-06-15-home_automation_why %}
+[home automation series]: {{< ref "2021-06-15-home_automation_why" >}}
 [evok2mqtt]: https://github.com/mhemeryck/evok2mqtt
 [evok]: https://github.com/UniPiTechnology/evok
 [mqtt]: https://mqtt.org/

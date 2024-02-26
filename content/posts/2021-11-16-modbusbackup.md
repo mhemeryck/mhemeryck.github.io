@@ -5,15 +5,6 @@ date = "2021-11-16"
 tags = ["home automation", "tech", "modbus"]
 +++
 
----
-
-cover-img:
-
-- "/assets/2021-11-16/ribbon.jpg": "Photo by Mike Baumeister on Unsplash"
-  readtime: true
-
----
-
 Another home automation post!
 Please check out my earlier [home automation series] first to get an idea what I am talking about.
 
@@ -308,22 +299,22 @@ The main advantage I now see is being able to more easily make any changes on th
 
 [^1]: the automation that was already in place in home assistant to link input to output would need to be removed though.
 
-[home automation series]: {% post_url 2021-06-15-home_automation_why %}
+[home automation series]: {{< ref "2021-06-15-home_automation_why" >}}
 [current architecture]: /2021-06-22/architecture.png
-[architecture post]: {% post_url 2021-06-22-home_automation_architecture %}
+[architecture post]: {{< ref "2021-06-22-home_automation_architecture" >}}
 [proposal architecture]: /assets/2021-11-16/arch.png
 [k3s]: https://k3s.io/
 [unipi connections]: https://www.unipi.technology/news/the-four-ways-to-set-up-your-automation-project-257
 [RS-485]: https://en.wikipedia.org/wiki/RS-485
 [Modbus]: https://www.simplymodbus.ca/FAQ.htm
 [post on connecting 2 unipi units together]: https://forum.unipi.technology/topic/1434/connecting-2-unipi-controllers-over-rs485/7
-[hardware]: /assets/2021-11-16/hardware.jpg
-[wiring]: /assets/2021-11-16/wiring.png
+[hardware]: /2021-11-16/hardware.jpg
+[wiring]: /2021-11-16/wiring.png
 [unipi serial port map]: https://kb.unipi.technology/en:hw:02-neuron:portmap
 [`modbusbackup.py`]: https://github.com/mhemeryck/modbusbackup
 [evok]: https://github.com/UniPiTechnology/evok
 [client code]: https://github.com/mhemeryck/modbusbackup/blob/90a74da444bf514f59d68bc32d61c83ac9667e87/modbusbackup.py#L31-L112
-[software post]: {% post_url 2021-07-27-home_automation_software %}
+[software post]: {{< ref "2021-07-27-home_automation_software" >}}
 [server code]: https://github.com/mhemeryck/modbusbackup/blob/90a74da444bf514f59d68bc32d61c83ac9667e87/modbusbackup.py#L113-L216
 [PyModbus]: https://pymodbus.readthedocs.io/en/latest/index.html
 [callback server example]: https://pymodbus.readthedocs.io/en/latest/source/example/callback_server.html

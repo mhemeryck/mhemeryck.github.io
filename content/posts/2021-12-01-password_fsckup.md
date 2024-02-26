@@ -1,16 +1,9 @@
----
-title: Password troubles
-subtitle: gpg + pass part deux
-cover-img:
-  - "/assets/2021-12-01/cover.jpg": "Photo by Markus Spiske on Unsplash"
-readtime: true
-tags:
-  - gpg
-  - pass
-  - git
-  - yubikey
-  - note-to-self
----
++++
+title = "Password troubles"
+subtitle = "gpg + pass part deux"
+date = "2021-12-01"
+tags = ["gpg", "pass", "git", "yubikey", "note-to-self"]
++++
 
 Last Saturday, my new phone arrived in the mail.
 As a techie, I was naturally delighted to get my new treat up and running.
@@ -125,7 +118,7 @@ I also like the fact I'm myself in complete control of the data instead of relyi
 
 Ultimately, after a couple of days of re-requesting logins, I'm back to before, this time with a proper backup (fingers crossed!).
 
-[previous password management post]: {% post_url 2019-07-09-updating_gpg_subkeys %}
+[previous password management post]: {{< ref "2019-07-09-updating_gpg_subkeys" >}}
 [openkeychain]: https://www.openkeychain.org/
 [password store]: https://play.google.com/store/apps/details?id=dev.msfjarvis.aps
 [`pass`]: https://www.passwordstore.org/

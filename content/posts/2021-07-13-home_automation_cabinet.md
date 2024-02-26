@@ -1,15 +1,9 @@
----
-title: "Electrical cabinet"
-subtitle: "A quick tour inside"
-cover-img:
-  - "/assets/2021-07-13/cover.jpg": "Top row from my electric cabinet"
-readtime: true
-tags:
-  - home automation
-  - tech
-  - wiring
-  - cabinet
----
++++
+title = "Electrical cabinet"
+subtitle = "A quick tour inside"
+date = "2021-07-13"
+tags = ["home automation", "tech", "wiring", "cabinet"]
++++
 
 In earlier posts, I did provide an overview of the architecture of my custom-made home automation system.
 I also did describe some specificities related to a _wired_ home automation setup.
@@ -134,13 +128,13 @@ With that in mind, at some point in the future I will surely have a closer look 
 [^1]: DALI is a bus system for digital light control. In theory, you could do full light control with DALI only (removing the need for relay-based control), but this means all of your light fixtures need to be DALI-aware.
 [^2]: not quite visible, but a similar connection can be made for the other wire (blue, neutral)
 
-[home automation overview post]: {% post_url 2021-06-15-home_automation_why %}
-[cabinet-wip]: /assets/2021-07-13/cabinet-wip.jpg
-[wago]: /assets/2021-07-13/wago.png
-[cabinet-clamps]: /assets/2021-07-13/cabinet-clamps.jpg
-[cabinet-clamps-svv]: /assets/2021-07-13/cabinet-clamps-svv.jpg
-[cabinet-unipi]: /assets/2021-07-13/cabinet-unipi.jpg
-[cabinet-unipi-di]: /assets/2021-07-13/cabinet-unipi-di.jpg
+[home automation overview post]: {{< ref "2021-06-15-home_automation_why" >}}
+[cabinet-wip]: /2021-07-13/cabinet-wip.jpg
+[wago]: /2021-07-13/wago.png
+[cabinet-clamps]: /2021-07-13/cabinet-clamps.jpg
+[cabinet-clamps-svv]: /2021-07-13/cabinet-clamps-svv.jpg
+[cabinet-unipi]: /2021-07-13/cabinet-unipi.jpg
+[cabinet-unipi-di]: /2021-07-13/cabinet-unipi-di.jpg
 [unipi relay outputs img]: https://kb.unipi.technology/_media/en:hw:010_connection_of_io.png
 [unipi digital inputs img]: https://kb.unipi.technology/_media/en:hw:001_connection_of_io.png
 [wago rail-mount terminal blocks]: https://www.wago.com/global/electrical-interconnections/discover-rail-mount-terminal-blocks
