@@ -14,13 +14,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Install prettier
-        run: |
-          sudo npm install --global prettier
-      - name: Check markdown formatting
-        run: |
-          prettier -c **/*.md
+      - uses: actions/checkout@v3
+      - uses: dprint/check@v2.2
 
   markdown-link-check:
     runs-on: ubuntu-latest
