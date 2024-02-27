@@ -1,9 +1,9 @@
-baseURL = 'https://blog.mhemeryck.com/'
-languageCode = 'en-us'
+baseURL = "https://blog.mhemeryck.com/"
+languageCode = "en-us"
 title = "Martijn's musings"
-theme = 'beautifulhugo'
+theme = "beautifulhugo"
 
-[Params]
+[params]
 favicon = "favicon.ico"
 readingTime = true
 wordCount = true
