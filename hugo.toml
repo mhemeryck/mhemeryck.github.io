@@ -24,3 +24,7 @@ strava = "26120201"
 
 [[module.imports]]
 path = "github.com/halogenica/beautifulhugo"
+
+[[menu.main]]
+name = "About me"
+url = "https://mhemeryck.com"
