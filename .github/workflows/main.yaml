@@ -14,18 +14,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: dprint/check@v2.2
 
   markdown-link-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v4
       - uses: gaurav-nelson/github-action-markdown-link-check@v1
 
   spellcheck:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: rojopolis/spellcheck-github-actions@0.36.0
         name: Spellcheck
