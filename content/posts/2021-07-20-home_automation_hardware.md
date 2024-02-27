@@ -114,4 +114,4 @@ On the technical side, check out the [unipi kb].
 [unipi community forum]: https://forum.unipi.technology/
 [star topology]: https://en.wikipedia.org/wiki/Network_topology#Star
 [unipi SD card reference]: https://kb.unipi.technology/en:hw:02-neuron:suitable-sd-card
-[raspberry pi 3B+]: https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/
+[raspberry pi 3B+]: https://www.raspberrypi.com/products/raspberry-pi-3-model-b-plus/

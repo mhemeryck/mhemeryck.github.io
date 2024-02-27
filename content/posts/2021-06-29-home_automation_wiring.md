@@ -156,9 +156,9 @@ Even you feel you are really knowledgeable, I still think it was an added value 
 [project huisinstallatie naslagwerk]: https://www.plantyn.com/webshop/product/project-huisinstallatie-naslagwerk-9789030142942
 [residual-current devices]: https://en.wikipedia.org/wiki/Residual-current_device
 [arduino]: https://www.arduino.cc/en/Tutorial/Foundations/DigitalPins
-[raspberry pi]: https://www.raspberrypi.org/documentation/hardware/raspberrypi/gpio/README.md
+[raspberry pi]: https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#gpio-and-the-40-pin-header
 [cable 3G 1.5mm2]: /2021-06-29/cable-3g15.jpg
 [cable SVV]: /2021-06-29/cable-svv.jpg
 [colors on the visible electromagnetic spectrum]: https://en.wikipedia.org/wiki/Electromagnetic_spectrum
 [push-button-wiring]: /2021-06-29/push-button-wiring.png
-[push button from Niko]: https://www.niko.eu/en/products/switching-material-and-socket-outlets/switches-and-sockets/push-button-with-three-connection-terminals-no-productmodel-niko-025f93c2-c921-59b0-b204-af07ed3ee2a8/170-00005
+[push button from Niko]: https://www.niko.eu/en/products/switching-material-and-socket-outlets/switches-and-sockets/push-button-with-3-connection-terminals-n-o-productmodel-niko-025f93c2-c921-59b0-b204-af07ed3ee2a8

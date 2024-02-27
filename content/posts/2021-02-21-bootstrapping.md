@@ -143,7 +143,7 @@ My initial goal was to find a way of completely automating my initial installs, 
 
 [pass]: https://www.passwordstore.org/
 [yadm]: https://yadm.io/
-[raspberry pi 400]: https://www.raspberrypi.org/products/raspberry-pi-400/
+[raspberry pi 400]: https://www.raspberrypi.com/products/raspberry-pi-400/
 [arch for arm]: https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-4
 [arch installation guide]: https://wiki.archlinux.org/index.php/installation_guide
 [gnome3]: https://www.gnome.org

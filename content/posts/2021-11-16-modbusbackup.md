@@ -317,6 +317,6 @@ The main advantage I now see is being able to more easily make any changes on th
 [software post]: {{< ref "2021-07-27-home_automation_software" >}}
 [server code]: https://github.com/mhemeryck/modbusbackup/blob/90a74da444bf514f59d68bc32d61c83ac9667e87/modbusbackup.py#L113-L216
 [PyModbus]: https://pymodbus.readthedocs.io/en/latest/index.html
-[callback server example]: https://pymodbus.readthedocs.io/en/latest/source/example/callback_server.html
+[callback server example]: https://github.com/pymodbus-dev/pymodbus/blob/7c2aa3953951fe2caf10500210dbf424c70a67cd/examples/server_callback.py
 [sample configuration file]: https://github.com/mhemeryck/modbusbackup/blob/master/config.yaml
 [daisy-chaining]: https://en.wikipedia.org/wiki/Daisy_chain_(electrical_engineering)

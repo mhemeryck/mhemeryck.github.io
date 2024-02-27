@@ -445,6 +445,6 @@ The backlog of improvements and extra bells and whistles is still quite long, so
 [`mosquitto_pub`]: https://mosquitto.org/man/mosquitto_pub-1.html
 [`mosquitto_sub`]: https://mosquitto.org/man/mosquitto_sub-1.html
 [Philips Hue light]: https://www.home-assistant.io/integrations/hue/
-[emqx]: https://www.emqx.io/blog/emqx-mqtt-broker-k8s-cluster
+[emqx]: https://www.emqx.com/en/blog/emqx-mqtt-broker-k8s-cluster
 [hashicorp nomad]: https://www.nomadproject.io/
 [`hass.zip`]: /2021-08-03/hass.zip

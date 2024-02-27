@@ -268,7 +268,7 @@ Like I did mention in some of my earlier posts in this series, this openness is 
 [home assistant]: https://www.home-assistant.io/
 [software layers]: /2021-07-27/software.png
 [sysfs interface]: https://kb.unipi.technology/en:sw:02-apis:04-sysfs
-[raspbian]: https://www.raspberrypi.org/software/operating-systems/
+[raspbian]: https://www.raspberrypi.com/software/operating-systems/
 [spi]: https://en.wikipedia.org/wiki/Serial_Peripheral_Interface
 [rs-485]: https://en.wikipedia.org/wiki/RS-485
 [modbus]: https://simplymodbus.ca/

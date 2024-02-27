@@ -156,7 +156,7 @@ Finally, I did also point the different layers of abstraction to consider when l
 This should conclude the "theoretical" part of the home automation series.
 Check the [home automation overview post] for the more "practical" upcoming posts.
 
-[^1]: although even this could be mitigated using a highly available MQTT broker. [EMQX](https://www.emqx.io/blog/emqx-mqtt-broker-k8s-cluster) seems to be an example of this, but I haven't tried it myself yet.
+[^1]: although even this could be mitigated using a highly available MQTT broker. [EMQX](https://www.emqx.com/en/blog/emqx-mqtt-broker-k8s-cluster) seems to be an example of this, but I haven't tried it myself yet.
 
 [home automation overview post]: {{< ref "2021-06-15-home_automation_why" >}}
 [architecture]: /2021-06-22/architecture.png

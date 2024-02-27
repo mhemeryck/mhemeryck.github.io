@@ -234,7 +234,7 @@ Alternative **future solutions** could consist of changing the software required
 [docker]: https://www.docker.com/
 [terraform]: https://www.terraform.io/
 [Neuron OpenSource OS]: https://kb.unipi.technology/en:files:software:os-images:00-start#neuron_opensource_os
-[headless raspberry pi wifi install]: https://www.raspberrypi.org/documentation/configuration/wireless/headless.md
+[headless raspberry pi wifi install]: https://www.raspberrypi.com/documentation/computers/configuration.html#connect-to-a-wireless-network
 [evok2mqtt-ansible]: https://github.com/mhemeryck/evok2mqtt-ansible
 [`pass`]: https://www.passwordstore.org/
 [`pass` plugin]: https://docs.ansible.com/ansible/latest/collections/community/general/passwordstore_lookup.html
