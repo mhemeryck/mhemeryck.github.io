@@ -1,4 +1,5 @@
 +++
+title = "Bootstrapping a pi4"
 subtitle = "bootstrapping a raspberry pi4 with arch for ARM"
 date = "2021-02-21"
 tags = ["tech", "raspberry pi 4", "note-to-self"]

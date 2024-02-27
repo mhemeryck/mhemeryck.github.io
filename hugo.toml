@@ -2,3 +2,18 @@ baseURL = 'https://blog.mhemeryck.com/'
 languageCode = 'en-us'
 title = "Martijn's musings"
 theme = 'beautifulhugo'
+
+[Params]
+favicon = "favicon.ico"
+readingTime = true
+wordCount = true
+
+[author]
+name = "Martijn Hemeryck"
+website = "https://blog.mhemeryck.com"
+github = "mhemeryck"
+twitter = "MartijnHemeryck"
+mastodon = "@mhemeryck@mastodon.mhemeryck.com"
+linkedin = "martijn-hemeryck-67896245"
+reddit = "mhemeryck"
+strava = "26120201"
