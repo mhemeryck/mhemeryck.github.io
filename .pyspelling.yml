@@ -7,8 +7,7 @@ matrix:
             - code
             - pre
     sources:
-      - _posts/**/*.md
-      - _drafts/**/*.md
+      - content/**/*.md
     dictionary:
       wordlists:
         - .wordlist.txt
