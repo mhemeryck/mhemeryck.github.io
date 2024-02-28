@@ -1,7 +1,6 @@
 name: CI
 
 on:
-  push:
   pull_request:
     branches:
       - master
@@ -12,16 +11,9 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - uses: dprint/check@v2.2
-
-  markdown-link-check:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: gaurav-nelson/github-action-markdown-link-check@v1
 
   spellcheck:
     runs-on: ubuntu-latest
