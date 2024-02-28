@@ -1,0 +1,30 @@
+baseURL = "https://blog.mhemeryck.com/"
+languageCode = "en-us"
+title = "Martijn's musings"
+theme = "github.com/halogenica/beautifulhugo"
+
+[params]
+favicon = "favicon.ico"
+readingTime = true
+wordCount = true
+socialShare = true
+
+[[params.author]]
+name = "Martijn Hemeryck"
+
+[author]
+name = "Martijn Hemeryck"
+website = "https://mhemeryck.com"
+github = "mhemeryck"
+linkedin = "martijn-hemeryck-67896245"
+mastodon = "@mhemeryck@mastodon.mhemeryck.com"
+twitter = "MartijnHemeryck"
+reddit = "mhemeryck"
+strava = "26120201"
+
+[[module.imports]]
+path = "github.com/halogenica/beautifulhugo"
+
+[[menu.main]]
+name = "About me"
+url = "https://mhemeryck.com"

@@ -1,0 +1,14 @@
+matrix:
+  - name: blog posts
+    pipeline:
+      - pyspelling.filters.markdown
+      - pyspelling.filters.html:
+          ignores:
+            - code
+            - pre
+    sources:
+      - content/**/*.md
+    dictionary:
+      wordlists:
+        - .wordlist.txt
+      output: .wordlist.dic
