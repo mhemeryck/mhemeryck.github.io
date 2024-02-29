@@ -97,6 +97,7 @@ dnsmasq
 dockerized
 dotfile
 dotfiles
+dprint
 EAN
 eb
 eco
@@ -182,6 +183,7 @@ kubernetes
 labelling
 lan
 libfido
+linter
 linux
 localhost
 lovelace
@@ -258,6 +260,7 @@ pubring
 py
 pymodbus
 PyModbus
+pyspelling
 QyVip
 racoonlab
 raspberrypi
@@ -295,6 +298,7 @@ ssd
 ssl
 SSL
 str
+strava
 subkey
 subkeys
 subnet
@@ -313,10 +317,12 @@ testpi
 tls
 TLS
 tlsv
+TOML
 TOPJOB
 tts
 TTY
 ubiquiti
+ubuntu
 uFvBLta
 ui
 UI
