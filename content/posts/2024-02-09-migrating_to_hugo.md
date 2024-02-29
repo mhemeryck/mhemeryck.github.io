@@ -11,11 +11,11 @@ It has been a long time since I have dedicated some time to posting something on
 Over the past years, I think I have spent quite some of my spare time examining things, coding, etc..
 The main reason I would want to write again is that I believe it should help me scope things a bit more.
 
-I have had this idea already a couple of times before, but whole blogging setup had become a bit of a nuisance to me.
+I have had this idea already a couple of times before, but the whole blogging setup had become a bit of a nuisance to me.
 
 Up to this post, I had been using [jekyll], a ruby-based blogging framework, which has been the standard framework used by [github pages].
 Since github pages directly deploys the generated content after a merge to the main branch, I figured a way to preview the rendered result is quite important to me.
-This was perfectly possible before , using a dockerized / docker compose based setup, see e.g. this link with the old [docker compose setup].
+This was perfectly possible before, using a dockerized / docker compose based setup, see e.g. this link with the old [docker compose setup].
 However, for some reason -- probably related to a newer version of jekyll (v4), I could no longer reliably preview the generated site content.
 
 I did attempt a couple of ways to get a proper jekyll setup again:
@@ -37,20 +37,20 @@ Since it is also based on markdown content, migrating my existing blog content w
 The blogging engine itself is written in go, which seemed already simpler for me to install and maintain.
 The actual process of building a website generally is also faster, which makes for faster feedback loops.
 
-Overall, the following where some things I did need to go through while migrating everything
+Overall, the following where some things I did need to go through while migrating everything.
 
 ## Theme
 
 Hugo doesn't seem to come with a true built-in theme.
 There are quite a lot of websites which do list some free themes, such as [hugo themes] and it is even possible to write your own.
 I did not want to bother that much with the theme itself, so I just went for [beautiful hugo] -- which is in the end just a port of [beautiful jekyll theme].
-The pretty header images I had collected for each of my posts were not supported by this theme though, so these had to go.
+The pretty header images I had collected for each of my posts were not supported by this theme though, so these sadly had to go.
 
 ## Preamble format
 
 Each jekyll post had a YAML-like preamble containing some metadata.
 Since the default in hugo seems to be to use a TOML-based preamble and since not all keys were still supported (e.g. the header image), I did reformat all of those.
-In hindsight, I did find out YAML might actually also supported, but TOML since to be the default anyway.
+In hindsight, I did find out YAML might actually also supported, but TOML seemed to be the default way of doing things anyway.
 
 ## Syntax
 
@@ -101,7 +101,7 @@ For more details, check the [github repo actions folder].
 
 # Conclusions
 
-Hugo is overall a lot simpler to me than my earlier setup with jekyll and its blazing fast.
+Hugo is overall a lot simpler to me than my earlier setup with jekyll and it's blazing fast.
 I might even consider moving more things here, like my [CV] since github than posts it for me.
 
 With this out of the way, let's do some actual blogging!
