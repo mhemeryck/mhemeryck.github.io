@@ -75,6 +75,8 @@ deststorepass
 deux
 dev
 devel
+devops
+devoteam
 df
 dfcwZvHcpBwc
 dfeee
@@ -120,6 +122,8 @@ frontend
 fsckup
 fsri
 fullchain
+gcp
+GCP
 GDM
 github
 gitlab
