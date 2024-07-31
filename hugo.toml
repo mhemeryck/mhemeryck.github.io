@@ -1,4 +1,4 @@
-baseURL = "https://blog.mhemeryck.com/"
+baseURL = "https://blog.mhemeryck.xyz/"
 languageCode = "en-us"
 title = "Martijn's musings"
 theme = "github.com/halogenica/beautifulhugo"
@@ -14,10 +14,9 @@ name = "Martijn Hemeryck"
 
 [author]
 name = "Martijn Hemeryck"
-website = "https://mhemeryck.com"
+website = "https://mhemeryck.xyz"
 github = "mhemeryck"
 linkedin = "martijn-hemeryck-67896245"
-mastodon = "@mhemeryck@mastodon.mhemeryck.com"
 twitter = "MartijnHemeryck"
 reddit = "mhemeryck"
 strava = "26120201"
@@ -27,4 +26,4 @@ path = "github.com/halogenica/beautifulhugo"
 
 [[menu.main]]
 name = "About me"
-url = "https://mhemeryck.com"
+url = "https://mhemeryck.xyz"
