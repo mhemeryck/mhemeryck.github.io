@@ -14,11 +14,11 @@ Since I did use gnu pass + GPG for my password management as described in my [pr
 
 Unfortunately, the whole endeavor ended with me losing my current GPG sub keys and (again) _all_ my passwords.
 
-# Recap
+## Recap
 
 But first, let's explain the setup again.
 
-## GPG
+### GPG
 
 I have a main GPG public / private key pair, valid indefinitely, stored offline.
 From these, I generate 3 sub key pairs valid for the coming year:
@@ -27,7 +27,7 @@ From these, I generate 3 sub key pairs valid for the coming year:
 1. signing key
 1. authentication key: to be used for SSH.
 
-## `pass`
+### `pass`
 
 [`pass`] is essentially a wrapper around GPG.
 It manages a folder in your home folder containing an encrypted file using a previously defined GPG encryption key.
@@ -35,13 +35,13 @@ Typically, that's the GPG encryption sub key mentioned earlier.
 
 `pass` also wraps around `git`, meaning you can have remote (encrypted) versioned backup of your password storage using `git`.
 
-## Chrome integration: browserpass
+### Chrome integration: browserpass
 
 Chrome has an extension called [browserpass] which essentially allows you to fill in passwords by calling `pass`.
 Apart from the passwords, it's also possible to store the usernames (or any extra data, really) as part of the secret in `pass`, which browserpass will fill in for you.
 I'm using the extension for chrome, but I suppose there are similar integrations for other browsers as well.
 
-## Android integration: openkeychain + password store
+### Android integration: openkeychain + password store
 
 My phone setup is quite similar:
 
@@ -50,7 +50,7 @@ My phone setup is quite similar:
 
 Since `pass` has the possibility to sync the full password store based on `git`, it's actually quite easy to keep my laptop and phone in sync.
 
-## yubikey
+### yubikey
 
 The yubikey provides a suite of different cryptographic operations (e.g. [U2F]), but in this case, I use to also _physically_ contain aforementioned GPG private sub keys.
 
@@ -66,7 +66,7 @@ To mitigate this risk of losing the yubikey (and the GPG sub keys on them), I wo
 
 So, at this point, when there's a backup, nothing can go wrong anymore, right?
 
-# The problem
+## The problem
 
 Well, no.
 
@@ -108,7 +108,7 @@ The **key issue is that the `gpg` `keytocard` operation is a destructive one**.
 If you move the private key to the card, only the stub is left, never to be retrieved again.
 To make a proper back-up of the private key (sub key or full key), do it before you move it over to the key card!
 
-# Closing thoughts
+## Closing thoughts
 
 Since this was the second time in a relatively short time I had principally lost all my logins, I really felt like giving up altogether on this solution for password management.
 

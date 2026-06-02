@@ -12,11 +12,11 @@ The work is intentionally split between near-term application work and longer-te
 
 ## Checklist
 
-- [ ] [Phase 0: repository and tooling cleanup](#phase-0-repository-and-tooling-cleanup)
-- [ ] [Phase 1: application profile](#phase-1-application-profile)
-- [ ] [Phase 2: resume and content model](#phase-2-resume-and-content-model)
-- [ ] [Phase 3: visual and technical overhaul](#phase-3-visual-and-technical-overhaul)
-- [ ] [Phase 4: resume generation](#phase-4-resume-generation)
+- [ ] [Phase 0: repository and tooling cleanup](#Phase 0: Repository And Tooling Cleanup)
+- [ ] [Phase 1: application profile](#Phase 1: Application Profile)
+- [ ] [Phase 2: resume and content model](#Phase 2: Resume And Content Model)
+- [ ] [Phase 3: visual and technical overhaul](#Phase 3: Visual And Technical Overhaul)
+- [ ] [Phase 4: resume generation](#Phase 4: Resume Generation)
 
 ## Near-Term Scope
 

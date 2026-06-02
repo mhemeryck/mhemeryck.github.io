@@ -12,7 +12,7 @@ Here, I'd like to focus on two types of schematics which are not only very usefu
 This post is a part of a larger series of posts on my home automation setup.
 See the [home automation overview post], to learn about the rationale and a description of the other posts!
 
-# One-wire diagram
+## One-wire diagram
 
 The **one-wire diagram** is an easy representation of all of the circuits and its related consumers and actors in an electrical installation.
 As its name implies, it does not show each of the individual wires of the installation but rather how the cables are laid out logically.
@@ -48,7 +48,7 @@ To illustrate, here's a small annotated (red) part of my installation's one-wire
 1. This is a circuit exclusively containing lights: each of the branches indicates which lights are wired against the same control point. This means that each of the branches are switched using the same switch, or in this case relay. Note that this does not relate to how they are wired electrically: typically everything is wired in parallel[^2].
 1. This is another example of a circuit with lights.
 
-# Floor plan
+## Floor plan
 
 Next to the one-wire diagram, there's an additional diagram that lays out the circuits and their consumers on a floor plan.
 Low voltage wiring is also not required for the official floor plan, but it does make sense to have it mapped out somewhere, even if that would be on a separate diagram.
@@ -58,7 +58,7 @@ The push buttons are obviously also on this plan.
 
 Essentially, it just re-uses the numbering from the one-wire diagram presented earlier, so I won't discuss these further.
 
-# Closing thoughts
+## Closing thoughts
 
 Even though these diagrams only represent part of the information, they proved to be really valuable to me along the way:
 

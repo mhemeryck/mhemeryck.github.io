@@ -10,7 +10,7 @@ Please check out my earlier [home automation series] first to get an idea what I
 
 Recently, I figured to rework some part of it to be able to deal better with certain kind of failures, while at the same time still being able to offer all the automation abilities as before.
 
-# Recap
+## Recap
 
 First, let's **recap the architecture** that was already in place:
 
@@ -25,7 +25,7 @@ For more details, refer to the [architecture post].
 
 Although this approach has worked fairly well for me, it inherently holds some potential issues.
 
-# Problem: centralized points of failure
+## Problem: centralized points of failure
 
 Firstly, on the **software level**, all connections need to run through home assistant and the MQTT broker.
 An advantage of this is that everything is configurable from a centralized place, in software.
@@ -41,7 +41,7 @@ Any downtime at this level of the stack again translates into the non-availabili
 This solution would need to be **more robust** against issues on both **software** and **network** layers.
 At the same time, I would still like to keep **centralized control from home assistant**.
 
-# Solution: direct link
+## Solution: direct link
 
 I did start digging around and got some helpful feedback on the unipi forum from this [post on connecting 2 unipi units together].
 
@@ -67,7 +67,7 @@ The new architecture now changes into the following:
 The **key difference** over the previous architecture is that the link between the input push buttons and the output relays is no longer established using an automation in home assistant.
 Instead, there is a direct link over RS-485 using the [Modbus] protocol.
 
-# Hardware
+## Hardware
 
 The following image (taken from the post on [unipi connections]) shows a conceptual wiring diagram to connect one or more unipi units together.
 Essentially, it is a 2-wire connection, [daisy-chaining] all units.
@@ -86,7 +86,7 @@ I did not need to introduce any additional resistors nor change any of the DIP s
 
 As the unipi units readily expose the RS-485 interface, this step turned out to be really simple.
 
-# Software
+## Software
 
 The **protocol** you would typically run on this wiring setup is **[Modbus]**.
 Within Modbus, there is one server and all the other clients are daisy-chained on the same bus.
@@ -119,7 +119,7 @@ To illustrate, let's again go through toggling a light:
 1. evok handles the relay update
 1. the relay is toggled; the light is turned on
 
-## Client code
+### Client code
 
 The key function is `ws_process`:
 
@@ -158,7 +158,7 @@ Similarly, the `_modbus_client` function is also a singleton wrapper to avoid ha
 
 See this link for the full [client code].
 
-## Server code
+### Server code
 
 The key to get this to work for me was having a Modbus instance being able to accept incoming messages and handling those directly, i.e. in an event-based way.
 After digging through some PyModbus examples, I did find this [callback server example].
@@ -252,7 +252,7 @@ The current value is read first using evok; the new value is the toggled value (
 
 Refer to this section for the full [server code].
 
-## Configuration format
+### Configuration format
 
 As configuration format, I did use YAML, similar to what I had before on home assistant.
 The source code repository also holds a [sample configuration file] -- actually, my configuration file.
@@ -277,7 +277,7 @@ On the other end, the output-side will map the incoming Modbus address to the it
 
 This also means that this configuration file needs to be shared between both the input and output side.
 
-# Closing thoughts
+## Closing thoughts
 
 While my home automation setup described in the [home automation series] has been running OK for me for quite some time, I did want to be less dependent on the correct functioning of the home assistant instance and the network.
 
@@ -302,7 +302,7 @@ The main advantage I now see is being able to more easily make any changes on th
 [home automation series]: {{< ref "2021-06-15-home_automation_why" >}}
 [current architecture]: /2021-06-22/architecture.png
 [architecture post]: {{< ref "2021-06-22-home_automation_architecture" >}}
-[proposal architecture]: /assets/2021-11-16/arch.png
+[proposal architecture]: /2021-11-16/arch.png
 [k3s]: https://k3s.io/
 [unipi connections]: https://www.unipi.technology/news/the-four-ways-to-set-up-your-automation-project-257
 [RS-485]: https://en.wikipedia.org/wiki/RS-485

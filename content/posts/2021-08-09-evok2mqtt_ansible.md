@@ -12,7 +12,7 @@ If you'd like to get more details about the setup itself, check the blog post se
 
 The focus of this post is the **automated provisioning of a unipi unit using [ansible]**.
 
-# Rationale
+## Rationale
 
 Earlier, I did discuss all of the software running on each of my [unipi] units, where each part is responsible for a layer in the overall process:
 
@@ -28,7 +28,7 @@ Occasionally, there is a need to **update or reprovision** the unipi nodes, e.g.
 
 Considering all of these factors, having a way to automatically provision the unipi units in a predefined state is very helpful to have.
 
-# Automated provisioning
+## Automated provisioning
 
 Automated provisioning refers to tooling that can handle the tedious tasks related to setting up a client or server automatically.
 Many different kinds of tooling can be used, e.g.:
@@ -76,7 +76,7 @@ Some basic _ansible-lingo_ before we dive into the details:
 
 For my purposes, I did write a _playbook_.
 
-# Initial setup
+## Initial setup
 
 Ansible has some basic initial conditions for it to be run on the target host:
 
@@ -93,7 +93,7 @@ Practical next steps include:
 
 From here on, you can start running the playbook!
 
-# Running `evok2mqtt-ansible`
+## Running `evok2mqtt-ansible`
 
 The playbook can be found on github [evok2mqtt-ansible].
 
@@ -113,7 +113,7 @@ Run the playbook with
 
     ansible-playbook site.yaml -i hosts.yaml
 
-# A closer look
+## A closer look
 
 Taking a step back; what does this playbook actually do?
 Let's check the folder structure:
@@ -206,7 +206,7 @@ A quick look at the **different roles**:
 
 After running these tasks, the unipi unit should in theory be in my ideal end state!
 
-# Closing thoughts
+## Closing thoughts
 
 Given the central place my unipi units play in my home automations setup, **having any failures on them is, however rare, not fun**.
 With this in mind and also a general interest in learning infrastructure automation, I did set out to automate those tasks with ansible.

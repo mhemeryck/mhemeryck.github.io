@@ -5,7 +5,7 @@ date = "2024-02-29"
 tags = ["meta", "blog", "hugo", "jekyll", "github", "github-actions", "fluff"]
 +++
 
-# Why
+## Why
 
 It has been a long time since I have dedicated some time to posting something on this blog.
 Over the past years, I think I have spent quite some of my spare time examining things, coding, etc..
@@ -30,7 +30,7 @@ Since I am not really an expert in ruby and since overall the intent is to write
 
 Enter [hugo].
 
-# Hugo
+## Hugo
 
 Hugo is a similar blogging engine to jekyll in that it takes markdown content and using a theme, it generates static websites.
 Since it is also based on markdown content, migrating my existing blog content would also be fairly to do.
@@ -39,70 +39,70 @@ The actual process of building a website generally is also faster, which makes f
 
 Overall, the following where some things I did need to go through while migrating everything.
 
-## Theme
+### Theme
 
 Hugo doesn't seem to come with a true built-in theme.
 There are quite a lot of websites which do list some free themes, such as [hugo themes] and it is even possible to write your own.
 I did not want to bother that much with the theme itself, so I just went for [beautiful hugo] -- which is in the end just a port of [beautiful jekyll theme].
 The pretty header images I had collected for each of my posts were not supported by this theme though, so these sadly had to go.
 
-## Preamble format
+### Preamble format
 
 Each jekyll post had a YAML-like preamble containing some metadata.
 Since the default in hugo seems to be to use a TOML-based preamble and since not all keys were still supported (e.g. the header image), I did reformat all of those.
 In hindsight, I did find out YAML might actually also supported, but TOML seemed to be the default way of doing things anyway.
 
-## Syntax
+### Syntax
 
 Even though the main format of the posts is written in markdown, some "meta" tags, like linking to other posts is obviously different between the two frameworks.
 That also thus needed to be updated.
 
-## Dead links
+### Dead links
 
 Considering my [last post] had already been from 2021, there were bound to be some dead links in the posts.
 Based on some CI checks (more on that later), I cleaned those where possible.
 
-## Social links
+### Social links
 
 The new theme had some support for more social links, so I did update those as well, linking e.g. to my mastodon page and strava.
 
-## Deployment itself
+### Deployment itself
 
 Since github pages by default still uses jekyll, I did need to change the deployment setup.
 Fortunately, the "new way" of doing things for github pages nowadays seems to integrate quite easily with [github actions].
 
 Speaking of github actions, I also did take some time to update those
 
-### runners
+#### runners
 
 All runners, which were still using some older ubuntu version just got updated.
 
-### linter: from prettier to dprint
+#### linter: from prettier to dprint
 
 Before, I was using [`prettier`] to format my markdown files locally and them check in the CI if they were formatted correctly.
 With the proliferation of a lot of rust-based CLI tools, I also switched that one over to [`dprint`].
 
-### pyspelling
+#### pyspelling
 
 For [pyspelling], a CLI spellchecker, I just did update the setup.
 
-### Dead link check
+#### Dead link check
 
 As mentioned before, I did check the dead links through the [markdown-link-check] and overall, they still seemed quite up to date.
 I did update some of those where possible.
 I no longer made it a mandatory part of the CI though since it seemed quite brittle.
 Instead, it should now run on a schedule.
 
-### Hugo deploy itself
+#### Hugo deploy itself
 
 This was the easiest part actually: the github actions marketplace just suggested the workflow for me and it ran without issues on the first merge to the main branch!
 
 For more details, check the [github repo actions folder].
 
-# Conclusions
+## Conclusions
 
 Hugo is overall a lot simpler to me than my earlier setup with jekyll and it's blazing fast.
-I might even consider moving more things here, like my [CV] since github than posts it for me.
+I might even consider moving more things here, like my [CV], since GitHub then publishes it for me.
 
 With this out of the way, let's do some actual blogging!
 

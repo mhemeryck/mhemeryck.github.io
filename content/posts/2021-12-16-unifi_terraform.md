@@ -16,7 +16,7 @@ While it does offer DHCP (the fixed IPs) in this fashion, it does not offer buil
 Additionally, I also don't really like these point-and-click interfaces which are hard to put under version control except for a full snapshot.
 Coming from a software development background and with the current infrastructure-as-code movement, I wanted to look into an alternative.
 
-# infrastructure-as-code and HashiCorp terraform
+## infrastructure-as-code and HashiCorp terraform
 
 Nowadays, if you want to run some kind of software service, all the major cloud providers do provide web APIs to manage the (virtual) infrastructure for you.
 Managing infrastructure at this point becomes another **software problem** for interacting with these APIs, thus the term infrastructure-as-code.
@@ -30,7 +30,7 @@ At that point, the resource becomes managed by terraform.
 Destroying the resource is done by removing the entry from the configuration file and once again applying.
 Essentially, the configuration file will always reflect the state of the resources being managed and vice versa.
 
-# unifi-terraform
+## unifi-terraform
 
 What does any of that have to do with my tiny homelab setup?
 Enter **[unifi-terraform]**, which is a community provided terraform module that interacts with the API of the unifi cloud key.
@@ -38,7 +38,7 @@ This way, I could manage all the required fixed IPs.
 
 As I mentioned in my previous post, I did have some trouble getting started though, so let's walk a bit through the steps I had taken.
 
-## terraform configuration file
+### terraform configuration file
 
 The first step is creating a `main.tf` file containing the actual configuration.
 I'm not going to elaborate too much on this here, see the [terraform docs] for that.
@@ -151,7 +151,7 @@ There's a couple of interesting resources in there:
 
 Have a look at [unifi-terraform] for more resources that can be managed.
 
-## terraform import
+### terraform import
 
 At this point, you could in theory start creating all of the resources by applying it (with `terraform apply`).
 In reality, these resources are likely already recognized and managed by the cloud key itself.
@@ -161,7 +161,7 @@ The `{resource_name}` is just the name as you did provide it in the main configu
 The `{resource_id}` is an ID that's used in the API of the cloud key.
 This was for me the point for which it all broke down since I couldn't find any good documentation of this API.
 
-## cloud key API
+### cloud key API
 
 Fortunately, I did find some pointer into the cloud key API in a [blog post from the original module author].
 Another real help to me has been this [unifi PHP client code] which also lists most of the endpoints.
@@ -170,7 +170,7 @@ I did distill all my findings into this [cloud key postman collection].
 
 Let's walk through some of the API calls, built using [`httpie`].
 
-### login: `POST {host}/api/login`
+#### login: `POST {host}/api/login`
 
 ```bash
 printf '{
@@ -203,7 +203,7 @@ vary: Origin
 This call will perform the login on the login endpoint and set a cookie for subsequent calls.
 Note that all other calls will need this cookie and that it will expire.
 
-### self: `GET {host}/api/s/{site}/self`
+#### self: `GET {host}/api/s/{site}/self`
 
 ```bash
 http --follow --timeout 3600 GET 'https://cloudkey.lan:8443/api/s/default/self' \
@@ -237,7 +237,7 @@ vary: accept-encoding,origin,accept-encoding
 
 This just lists some generic information about the site (location), e.g. the `site_id` to be imported.
 
-### devices: `GET {host}/api/s/{site}/stat/device`
+#### devices: `GET {host}/api/s/{site}/stat/device`
 
 ```bash
 http --follow --timeout 3600 GET 'https://cloudkey.lan:8443/api/s/default/stat/device' \
@@ -269,7 +269,7 @@ http --follow --timeout 3600 GET 'https://cloudkey.lan:8443/api/s/default/stat/d
 
 This endpoint is interesting to get the IDs of the devices to import.
 
-### users: `GET {host}/api/s/{site}/rest/user`
+#### users: `GET {host}/api/s/{site}/rest/user`
 
 ```bash
 http --follow --timeout 3600 GET 'https://cloudkey.lan:8443/api/s/default/rest/user' \
@@ -304,7 +304,7 @@ At this point, the client should be managed by terraform.
 Refer to the [cloud key postman collection] for more resources.
 Note that I only really looked into the read-only endpoints (the `GET` operations) since I would have terraform do the actual operations (`POST`, `PATCH`).
 
-# Closing thoughts
+## Closing thoughts
 
 I was really pleased to see that after some crawling of the cloud key API I was able to get the unifi resources managed with terraform.
 At this point, I can **manage my unifi configuration under source control**, most notably the DHCP fixed IPs and some firewall rules.

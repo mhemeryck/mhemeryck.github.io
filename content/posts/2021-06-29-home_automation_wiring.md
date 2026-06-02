@@ -18,7 +18,7 @@ I will cover:
 - principle: operating principle behind a light push button and relay
 - conductors: the physical wires and cables themselves
 
-# A mandatory word of caution (!)
+## A mandatory word of caution (!)
 
 ![danger]
 
@@ -28,9 +28,9 @@ Also, some of the details really only apply to my local regulations (Belgium), s
 Related to this, some of the terminology used might be a poor translation of some term which would have been straightforward in my native language (Dutch).
 Even though I had a background as an electrical engineer, I still got a local professional electrician involved to ensure the overall safety ...
 
-# Principle
+## Principle
 
-## Relays
+### Relays
 
 ![principle relay]
 
@@ -39,7 +39,7 @@ The voltage over two of its terminals can then control (switch) the voltage over
 The control voltage will typically be on a safe, low voltage, whereas the other terminals can carry higher (mains) voltage.
 You can use it to control any other electrically switched device, e.g. lights or motors.
 
-## Push buttons
+### Push buttons
 
 ![principle push button]
 
@@ -65,9 +65,9 @@ Based on the position of the push button itself, you would not be able to tell t
 It differs from a rocker switch in that it only maintains the contact for the duration of the push of the button.
 While these observations might be rather trivial, for the purposes of modeling them higher up on the stack, they are relevant.
 
-# Conductors (Belgium only)
+## Conductors (Belgium only)
 
-## Relays
+### Relays
 
 The following image shows a typical tube containing 3 wires with diameters of 1.5mm², fit for lights.
 
@@ -93,7 +93,7 @@ Keep in mind:
 Note that this is only a subset of the rules and pointers to keep into account while doing the physical wiring.
 Other things to consider are the type of cable (in a plastic tube or as a cable), solid vs stranded wire, stiff vs flexible wire, etc. ...
 
-## Push buttons
+### Push buttons
 
 Contrary to the cabling for the lights, the push buttons run on the lower, safer voltage of 24VDC.
 Consequently, the wire diameter can be a lot smaller and there is no strict requirement on the use of circuit breakers.
@@ -130,7 +130,7 @@ The following image shows the **wiring diagram** for a simple NO [push button fr
 The diagram indicates the push button can be used to switch voltages up the 230VAC, but since we're only interested in for the signaling application, it might just as well be a lower voltage.
 Also visible is the optional LED light.
 
-# Closing thoughts
+## Closing thoughts
 
 The focus of this post was first to describe the **basic principle of some key components**, the relay and the push button.
 I did want to highlight what exactly they are and also how the operating principle relates to the modelling higher up in the stack, e.g. the fact that I mostly consider the push button to be stateless.

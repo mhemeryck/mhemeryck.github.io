@@ -2,7 +2,7 @@
 title = "Software"
 subtitle = "Connecting the pieces together"
 date = "2021-07-27"
-last-updated = 2021-08-03
+lastmod = 2021-08-03
 tags = ["home automation", "mqtt", "tech", "unipi"]
 +++
 
@@ -14,13 +14,13 @@ See the [home automation overview post], to learn about the rationale and a desc
 
 Particularly relevant is the [hardware] post, since I my software builds on the unipi neuron platform.
 
-# Software
+## Software
 
 The following diagram shows the different software _layers_, going from the kernel which polls the IO-boards to eventually pushing out / pulling in MQTT events.
 
 ![software layers]
 
-## Kernel: polling SPI
+### Kernel: polling SPI
 
 Unipi provides their own **[neuron open source OS]**, which is a modified version of [raspbian] including custom kernel drivers to poll the I/O boards over [SPI].
 The kernel driver makes the data available via the [modbus] protocol.
@@ -31,7 +31,7 @@ Note that the unipi units also have an [RS-485] connection, commonly used for da
 Apart from the modbus interface, unipi also provides a **[sysfs interface]**, which essentially maps the I/O states and controls to a number of files in a fixed file system structure.
 I have used this sysfs interface in another project, [unipitt], but since I am currently not using this one, I will not discuss this further.
 
-## Evok: modbus to web APIs
+### Evok: modbus to web APIs
 
 Unipi also provides an open source library called **[evok]** that will periodically poll the underlying modbus interface and make it available via all sorts of common web API formats and protocols: JSON / REST, JSONRPC, SOAP, ...
 See the [evok API docs] for an extensive overview of all possible interfaces.
@@ -85,7 +85,7 @@ ws.send('{"cmd":"set","dev":"relay","circuit":"3","value":"1"}')
 ws.close()
 ```
 
-## `evok2mqtt`: websocket to MQTT
+### `evok2mqtt`: websocket to MQTT
 
 The final layer is to **translate the websocket "events" from and to MQTT events**.
 This translation is required since this is the standard message-based system interface that was chosen to interface with [home assistant].
@@ -205,7 +205,7 @@ The operations it does, are quite straightforward:
 There you have it: translation from-and-to websockets / MQTT.
 Note that this translation covers both inputs (push buttons) as well as outputs (relays).
 
-# Closing thoughts
+## Closing thoughts
 
 At this point, with all of these layers of software in between, the unipi neuron unit provides a standard MQTT-based interface to home assistant.
 
@@ -220,7 +220,7 @@ However, if performance is key, I will more likely have a look again at the sysf
 
 Nonetheless, this current setup has been working quite OK for me thus far.
 
-# Update from unipi
+## Update from unipi
 
 A while after this post went live, I did get some [friendly](https://forum.unipi.technology/post/5807) [feedback](https://forum.unipi.technology/post/5824) on [my unipi forum post].
 

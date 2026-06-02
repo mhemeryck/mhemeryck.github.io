@@ -20,7 +20,8 @@ This repository contains a Hugo-based personal website and blog.
 
 - Use `[ ]` and `[x]` for checkbox lists.
 - Keep Markdown simple and readable.
-- Use one sentence per line in project planning documents.
+- Use one sentence per line in all Markdown documents to keep diffs coherent.
+- Prefer reference-style Markdown links and collect link definitions at the bottom of the document.
 
 ## Deployment
 

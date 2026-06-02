@@ -16,7 +16,7 @@ This is just a list of things to consider when updating my GPG subkeys (encrypti
 1. the subkeys are always valid for a period of one year
 1. the yubikey I use also has NFC, which makes it possible to use it on my android phone as well
 
-I recently needed to go through this proces and did forget to re-encrypt ...
+I recently needed to go through this process and did forget to re-encrypt ...
 
 The main steps are:
 
@@ -25,11 +25,11 @@ The main steps are:
 1. move the new keys to the card
 1. backup the master key again and remove all keys from the local machine
 
-# Generate the new subkeys
+## Generate the new subkeys
 
 First, put the master key back on the local machine, such that we can generate new subkeys.
 
-If you're really paranoid, you should consider something like [tails] to have a safe life OS for doing all these operations, but
+If you're really paranoid, you should consider something like [tails] to have a safe live OS for doing all these operations.
 
 Add the key again:
 
@@ -59,7 +59,7 @@ You can now list all the keys:
 
     gpg -K
 
-# Re-encrypt all passwords
+## Re-encrypt all passwords
 
 This is really important (I messed up big time here): before you remove any older keys, make sure that they are re-encrypted with the new subkey!
 
@@ -75,7 +75,7 @@ Optionally, already push them out
 
     pass git push
 
-# Push the new subkeys to the card
+## Push the new subkeys to the card
 
 Again edit the key
 
@@ -95,7 +95,7 @@ select the slot to save to (encryption for encryption, signing for signing ...)
 
 and save
 
-# Remove the keys from the local computer again
+## Remove the keys from the local computer again
 
 First, make a backup of everything again; see [gpg backup tutorial]
 

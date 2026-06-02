@@ -12,7 +12,7 @@ For more details from unipi themselves, have a look at the [unipi] website.
 This post is a part of a larger series of posts on my home automation setup.
 See the [home automation overview post], to learn about the rationale and a description of the other posts!
 
-# Inside
+## Inside
 
 The following picture shows what is actually **inside such a unit**: a [raspberry pi 3B+] main controller board and then (depending on the neuron series you have), 1 to 3 I/O boards, connected via [SPI] -- Serial Peripheral Interface.
 
@@ -30,7 +30,7 @@ The main controller board has all the other **functionalities** the raspberry pi
 The I/O boards either feature digital inputs, relay outputs, analog inputs, analog outputs or a combination of these.
 Additionally, there are connections like a RS-485 serial lines (e.g. for interfacing with modbus) as well as a connector for a 1-wire bus (e.g. for temperature sensors).
 
-# Rationale
+## Rationale
 
 ![unipi module]
 
@@ -46,7 +46,7 @@ Considering the hardware platform, I think the unipi platform provides a number 
 - **community**: while working on the units and my own custom software, I would often reach out to the [unipi community forum]. They often reply quite quickly and have been a great help!
 - **connectivity**: apart from the I/O, the unipi units come with a lot of extra connectivity options such as wifi, wired ethernet, bluetooth, RS-485, one-wire, ...
 
-# Specific units
+## Specific units
 
 I have number of different unipi units in my setup, since I have a large amount of functionalities to support, for example:
 
@@ -61,7 +61,7 @@ While you can have both inputs and outputs on the same unipi unit, I did decide 
 - lights, relay control: [unipi neuron l403], which has up to 56 relay outputs
 - push button read-out: the [unipi neuron l303]. This was an upgraded version of the [unipi neuron m303] with up to 64 digital inputs, but at the time of writing, it seems this model is no longer supported.
 
-# Unipi axon
+## Unipi axon
 
 As a side note, I also have a **unipi axon S605** for _DALI light control_.
 The [unipi axon series] is another series of PLCs from the same brand.
@@ -76,7 +76,7 @@ The main feature I do like about DALI is the ability to dim lights directly from
 
 Note however that this specific unit also isn't able anymore, I suspect due to low demand.
 
-# Closing thoughts
+## Closing thoughts
 
 This was just a short description mainly about _why_ I did choose unipi neuron as the main hardware platform for my home automation.
 
