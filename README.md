@@ -10,4 +10,18 @@ Deployed using [github pages], theme stolen from [hugo beautiful jekyll], which 
 
 ## Local development
 
-    hugo server -D
+Enter the Nix development shell first:
+
+    nix develop
+
+Then run a local preview:
+
+    just serve
+
+Verify a production build with:
+
+    just build
+
+Run all local checks with:
+
+    just check
