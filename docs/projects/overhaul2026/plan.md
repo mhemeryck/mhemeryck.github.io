@@ -60,8 +60,14 @@ Tasks:
 - [x] add a `justfile` for common local operations
 - [x] document the local development command
 - [x] update GitHub Actions versions and action dependencies
+- [x] add a Hugo production build check to pull request CI
+- [x] remove the fixup-commit blocking workflow
+- [x] update Markdown working instructions in `AGENTS.md`
+- [x] normalize blog post heading levels for the current Hugo theme
+- [x] fix small Markdown content issues found during repository review
+- [x] add `lastmod` metadata for posts changed during cleanup
 - [x] verify the site can be built locally
-- [ ] verify the GitHub Pages deployment path still works
+- [x] verify the GitHub Pages deployment path still works
 
 Success criteria:
 
