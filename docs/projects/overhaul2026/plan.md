@@ -13,14 +13,14 @@ The work is intentionally focused on getting a usable CV ready for job applicati
 ## Checklist
 
 - [x] [Phase 0: repository and tooling cleanup](#phase-0-repository-and-tooling-cleanup)
-- [ ] [Phase 1: web CV from single source](#phase-1-web-cv-from-single-source)
+- [ ] [Phase 1: about page and web CV](#phase-1-about-page-and-web-cv)
 - [ ] [Phase 2: PDF CV](#phase-2-pdf-cv)
 - [ ] [Phase 3: application polish](#phase-3-application-polish)
 - [ ] [Phase 4: optional site overhaul](#phase-4-optional-site-overhaul)
 
 ## Near-Term Scope
 
-The near-term goal is to create a CV that can be read on the website and sent as a PDF for job applications.
+The near-term goal is to create a concise public profile and a complete CV that can be read on the website and sent as a PDF for job applications.
 
 This should avoid turning into a full site migration or complete redesign.
 
@@ -30,8 +30,8 @@ Focus on making existing seniority, ownership, and technical depth visible throu
 
 ### Near-Term Deliverables
 
-- single maintainable CV source
-- web CV page rendered from that source
+- concise `about` page for the public profile
+- complete web CV page used as the maintainable CV source
 - PDF CV generated from that source
 - clear links to CV, LinkedIn, GitHub, and relevant writing
 - minimal style improvements where they directly support readability and positioning
@@ -76,9 +76,9 @@ Success criteria:
 - GitHub Actions no longer rely on outdated action versions
 - the cleanup remains separate from content and design changes
 
-## Phase 1: Web CV From Single Source
+## Phase 1: About Page And Web CV
 
-Goal: turn the current CV material into a standalone web CV page backed by a single maintainable source.
+Goal: create a concise public `about` page and a complete standalone web CV page backed by one maintainable CV source.
 
 Tasks:
 
@@ -87,16 +87,18 @@ Tasks:
 - [ ] map [current-cv.md](current-cv.md) into the CV source
 - [ ] improve experience bullets around ownership, tradeoffs, and outcomes
 - [ ] choose which projects and writing links support the CV
-- [ ] render the CV source as a standalone Hugo page
-- [ ] decide whether the page should be called `about` or `cv`
-- [ ] make navigation point to the CV, writing, GitHub, and LinkedIn
+- [ ] keep `about` as a short curated profile rather than a complete CV
+- [ ] render the complete CV source as a standalone Hugo page
+- [ ] link from the `about` page to the full CV page
+- [ ] make navigation point to the public profile, writing, GitHub, and LinkedIn
 - [ ] keep styling changes small and focused on readability
 - [ ] remove or postpone material that belongs in a later portfolio overhaul
 
 Success criteria:
 
 - the CV content exists in one maintainable source
-- the web CV is readable and shareable
+- the about page is concise, readable, and shareable
+- the full web CV is complete enough to act as the source for PDF generation
 - the CV communicates seniority, systems thinking, ownership, and delivery
 - the existing blog can remain mostly unchanged
 - the content is ready to drive the PDF output
