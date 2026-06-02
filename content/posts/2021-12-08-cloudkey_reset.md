@@ -2,13 +2,14 @@
 title = "cloud key reset"
 subtitle = "unifi cloud key factory reset"
 date = "2021-12-08"
+lastmod = "2026-06-02"
 tags = ["unifi", "homelab", "note-to-self"]
 +++
 
 After my [last password issues post], I still had some places for which I didn't have an easy approach to reset the login.
 For my local network, I still use a unifi cloud key gen 1, to keep an overview of the network.
 
-# Cloud key
+## Cloud key
 
 The **[ubiquiti unifi cloud key]** is a small client device on the local network, specifically running the ubiquiti unifi controller software.
 The controller software is there to e.g. provision new (ubiquiti) hardware, to configure the network (switch ports, VLANs, firewalls, ...) but also to allow remote management from a web interface or phone app.
@@ -24,7 +25,7 @@ Despite being considered a _prosumer_ kind of brand, some features I would consi
 In the end, I still like the unifi products since they do have somewhat more enhanced features yet mostly **"just work"**.
 There was a time when I was running my own [openWrt]-enabled router, but the reality just is that after the initial setup, this is just something I barely feel the need to touch (and maintain).
 
-# Factory reset
+## Factory reset
 
 As mentioned above, the cloud key hardware runs both the main unifi controller software as well as its own firmware to manage said software.
 The login for the controller software is done via my [ui.com] account.
@@ -42,7 +43,7 @@ After grabbing a backup snapshot of the controller software, I did decide on jus
 
 Sure enough, the firmware management did now work with the default credentials (prompting me to change it straight after that).
 
-# Let's Encrypt certificates setup
+## Let's Encrypt certificates setup
 
 I want to be able to also access the cloud key on a regular URL even if it's only from my local network.
 Also, by default the cloud key controller software will use an HTTPS version (which is good), but it obviously has no built-in way to provide a valid certificate (not so good).
@@ -56,7 +57,7 @@ To summarize the steps for myself for future reference:
 1. DNS entry for this fixed IP: I use [pihole]'s built-in [dnsmasq] for this. This means that all devices on my local network will be able to resolve the host for the cloud key
 1. Set up a job on the cloud key to regularly pull in updated SSL certificates
 
-## `acme.sh` Let's Encrypt cloud key bot setup
+### `acme.sh` Let's Encrypt cloud key bot setup
 
 The way **Let's Encrypt works** is that you can request a certificate for your own domain name.
 Afterwards, the Let's Encrypt server will verify with you whether or not you actually own the domain for which you did request the SSL certificate.
@@ -75,7 +76,7 @@ Since I wouldn't like to lose these and since I have some minor differences due 
 Installing the bot:
 
 ```bash
-https://get.acme.sh | sh
+curl https://get.acme.sh | sh
 ```
 
 Installing a hook script to run on certificate renewal in `/root/.acme.sh/cloudkey-renew-hook.sh`
@@ -125,7 +126,7 @@ The crontab entry becomes:
 
 At this point, everything should be back up and running and the cloud key should be accessible from the custom domain _with_ a valid certificate!
 
-# Closing thoughts
+## Closing thoughts
 
 This post serves mainly as a **note-to-self** after needing to go through some steps to manually recover my cloud key setup.
 

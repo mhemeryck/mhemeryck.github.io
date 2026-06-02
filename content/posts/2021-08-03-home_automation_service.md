@@ -2,6 +2,7 @@
 title = "Service"
 subtitle = "Home assistant as the service layer"
 date = "2021-08-03"
+lastmod = "2026-06-02"
 tags = ["home automation", "mqtt", "tech", "home assistant"]
 +++
 
@@ -11,7 +12,7 @@ The final fundamental piece to bring everything together is what I call the _ser
 This post is a part of a larger series of posts on my home automation setup.
 See the [home automation overview post], to learn about the rationale and a description of the other posts!
 
-# Architecture
+## Architecture
 
 To recap, have a look at this drawing from the earlier [home automation architecture post].
 
@@ -25,7 +26,7 @@ In summary:
 
 Note that for this publish / subscribe system, all of the clients can (and will) function as both publisher and subscriber.
 
-# home assistant
+## home assistant
 
 I already did mention home assistant, but what is it really?
 
@@ -47,7 +48,7 @@ Though not required, I did find it interesting to learn about more about the way
 The integration I have been mostly using is [home assistant MQTT integration].
 At this point, this means that all of the I/O that is provided by the unipi units via an MQTT interface can now be readily represented as entities directly in home assistant!
 
-# Scenario
+## Scenario
 
 Let's make it more tangible by presenting the scenario from the [home automation architecture post] again, where a push button triggers a light.
 
@@ -78,7 +79,7 @@ In relation to the flow diagram above:
 1. the MQTT broker forwards the state update again to home assistant
 1. home assistant sees the state update for that light entity and updates its internal state
 
-# Containers and services
+## Containers and services
 
 Home assistant has multiple ways of installing and running the platform, see the [home assistant installation] page.
 
@@ -126,7 +127,7 @@ Over the course of time, I think I have actually ran home assistant in all of th
 Like everything in IT, there is no real _right_ or _wrong_ solution, it depends on your specific situation.
 My current approach is based on k3s -- but this is better left as the topic of a future post.
 
-# Sample setup
+## Sample setup
 
 All of the theoretical babble about containers and orchestration is just to come to this point where I can actually show something to run.
 For this sample setup, I will build part of the service layer using only `docker-compose` and a set of related home assistant configuration files.
@@ -169,7 +170,7 @@ I will go over the most important files in here:
 - `configuration.yaml`
 - `ui-lovelace.yaml`
 
-## `docker-compose.yaml`
+### `docker-compose.yaml`
 
 This the main file that will start all of the required containers.
 
@@ -249,7 +250,7 @@ homeassistant_1  | [services.d] done.
 
 This should actually have created the other configuration files for you.
 
-## `configuration.yaml`
+### `configuration.yaml`
 
 The next file to discuss is the main home assistant configuration file.
 
@@ -344,7 +345,7 @@ The `light.toggle` is an action that is built-in to home assistant and does just
 
 Check the [home assistant configuration] for more extensive documentation and further links.
 
-## `ui-lovelace.yaml`
+### `ui-lovelace.yaml`
 
 This file contains the visual outline for home assistant.
 
@@ -363,7 +364,7 @@ views:
 
 This just makes the demo a bit easier to look at.
 
-# Demo
+## Demo
 
 Let's see it in action!
 
@@ -393,7 +394,7 @@ When the push button state updates are pushed:
 
 Apart from controlling the light with the push button, it can also be controlled directly from home assistant; when toggling the light entity directly in home assistant, it just sends out the command on the MQTT topic directly.
 
-# Closing thoughts
+## Closing thoughts
 
 This concludes my approach to using (abusing?) home assistant and the MQTT integration as the central part of my home automation setup.
 

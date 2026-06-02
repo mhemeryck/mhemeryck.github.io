@@ -12,11 +12,11 @@ The work is intentionally split between near-term application work and longer-te
 
 ## Checklist
 
-- [ ] [Phase 0: repository and tooling cleanup](#phase-0-repository-and-tooling-cleanup)
-- [ ] [Phase 1: application profile](#phase-1-application-profile)
-- [ ] [Phase 2: resume and content model](#phase-2-resume-and-content-model)
-- [ ] [Phase 3: visual and technical overhaul](#phase-3-visual-and-technical-overhaul)
-- [ ] [Phase 4: resume generation](#phase-4-resume-generation)
+- [ ] [Phase 0: repository and tooling cleanup](#Phase 0: Repository And Tooling Cleanup)
+- [ ] [Phase 1: application profile](#Phase 1: Application Profile)
+- [ ] [Phase 2: resume and content model](#Phase 2: Resume And Content Model)
+- [ ] [Phase 3: visual and technical overhaul](#Phase 3: Visual And Technical Overhaul)
+- [ ] [Phase 4: resume generation](#Phase 4: Resume Generation)
 
 ## Near-Term Scope
 
@@ -60,8 +60,14 @@ Tasks:
 - [x] add a `justfile` for common local operations
 - [x] document the local development command
 - [x] update GitHub Actions versions and action dependencies
+- [x] add a Hugo production build check to pull request CI
+- [x] remove the fixup-commit blocking workflow
+- [x] update Markdown working instructions in `AGENTS.md`
+- [x] normalize blog post heading levels for the current Hugo theme
+- [x] fix small Markdown content issues found during repository review
+- [x] add `lastmod` metadata for posts changed during cleanup
 - [x] verify the site can be built locally
-- [ ] verify the GitHub Pages deployment path still works
+- [x] verify the GitHub Pages deployment path still works
 
 Success criteria:
 

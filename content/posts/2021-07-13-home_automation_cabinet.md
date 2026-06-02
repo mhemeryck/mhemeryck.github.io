@@ -2,6 +2,7 @@
 title = "Electrical cabinet"
 subtitle = "A quick tour inside"
 date = "2021-07-13"
+lastmod = "2026-06-02"
 tags = ["home automation", "tech", "wiring", "cabinet"]
 +++
 
@@ -13,7 +14,7 @@ The focus of this post is to show you some details of what this cabinet looks li
 This post is a part of a larger series of posts on my home automation setup.
 See the [home automation overview post], to learn about the rationale and a description of the other posts!
 
-# Inside the cabinet
+## Inside the cabinet
 
 Given the star-configuration for all of the lights, the amount of wiring in the central electricity cabinet quickly adds up.
 The following picture shows a work-in-progress view while laying out the cables:
@@ -23,7 +24,7 @@ The following picture shows a work-in-progress view while laying out the cables:
 Be sure you have a consistent _labelling scheme_ while pulling all of the cable.
 Looking back at these pictures, I think it is a bit of miracle I did not miss anything ...
 
-## Terminal clamps
+### Terminal clamps
 
 Besides from labelling the cables during the pulling of the cables, I also did use **terminal clamps**, like the [WAGO rail-mount terminal blocks].
 On one end of such a block, you have one or more terminals where you can connect your wires.
@@ -48,7 +49,7 @@ Functionally, these terminal clamps does not do all that much.
 In terms of costs, a single block is not that expensive but since the amount of blocks you need quickly adds up, so do the costs.
 Nonetheless, **I would still highly recommend it** to keep a clear overview while inside of your cabinet.
 
-## Relays
+### Relays
 
 The next picture shows 2 DIN-rails with all of the terminal blocks for my lights.
 
@@ -78,7 +79,7 @@ The following picture shows another set of terminal blocks that I did use for th
 - neutral wire (blue): since all neutral wires of a single circuit are placed next to each other, these can just be connected in parallel using a jumper.
 - relay: each of the lights are connected to "RO" connections coming from the unipi module.
 
-## Push buttons
+### Push buttons
 
 Next to the series of clamps for terminating the cables for the lights, I also did use the same type of clamps for **terminating the SVV analog signaling cable**:
 
@@ -107,7 +108,7 @@ Also, since the wire diameter is much lower, the screw connectors can just be us
 Since each of the green screw connectors could have up to 4 signal wire connections and 1 ground level, I did use 4-wire SVV cable to connect them to terminal clamps higher up in the cabinet.
 Note that I also did use my color coding again here (red / yellow / blue / white).
 
-# Closing thoughts
+## Closing thoughts
 
 I started this post with some scary pictures of electrical wiring spaghetti.
 
