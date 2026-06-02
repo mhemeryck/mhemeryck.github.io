@@ -11,9 +11,6 @@ socialShare = true
 
 [params.author]
 name = "Martijn Hemeryck"
-
-[author]
-name = "Martijn Hemeryck"
 website = "https://mhemeryck.xyz"
 github = "mhemeryck"
 linkedin = "martijn-hemeryck-67896245"
