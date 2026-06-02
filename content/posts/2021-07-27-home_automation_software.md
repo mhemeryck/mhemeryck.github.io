@@ -2,7 +2,7 @@
 title = "Software"
 subtitle = "Connecting the pieces together"
 date = "2021-07-27"
-lastmod = 2021-08-03
+lastmod = "2026-06-02"
 tags = ["home automation", "mqtt", "tech", "unipi"]
 +++
 

@@ -1,6 +1,7 @@
 +++
 title = "MQTT over TLS"
 date = "2018-11-12"
+lastmod = "2026-06-02"
 tags = ["mqtt", "note-to-self"]
 +++
 

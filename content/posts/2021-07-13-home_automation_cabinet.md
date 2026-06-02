@@ -2,6 +2,7 @@
 title = "Electrical cabinet"
 subtitle = "A quick tour inside"
 date = "2021-07-13"
+lastmod = "2026-06-02"
 tags = ["home automation", "tech", "wiring", "cabinet"]
 +++
 

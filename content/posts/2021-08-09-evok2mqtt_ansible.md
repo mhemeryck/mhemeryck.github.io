@@ -2,6 +2,7 @@
 title = "evok2mqtt ansible"
 subtitle = "Automating an evok2mqtt install"
 date = "2021-08-09"
+lastmod = "2026-06-02"
 tags = ["home automation", "evok2mqtt", "tech", "mqtt", "ansible"]
 +++
 

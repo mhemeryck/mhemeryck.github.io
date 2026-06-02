@@ -2,6 +2,7 @@
 title = "modbusbackup"
 subtitle = "An alternative approach to connecting unipi units"
 date = "2021-11-16"
+lastmod = "2026-06-02"
 tags = ["home automation", "tech", "modbus"]
 +++
 

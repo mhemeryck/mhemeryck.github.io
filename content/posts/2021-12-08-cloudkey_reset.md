@@ -2,6 +2,7 @@
 title = "cloud key reset"
 subtitle = "unifi cloud key factory reset"
 date = "2021-12-08"
+lastmod = "2026-06-02"
 tags = ["unifi", "homelab", "note-to-self"]
 +++
 

@@ -2,6 +2,7 @@
 title = "Password troubles"
 subtitle = "gpg + pass part deux"
 date = "2021-12-01"
+lastmod = "2026-06-02"
 tags = ["gpg", "pass", "git", "yubikey", "note-to-self"]
 +++
 

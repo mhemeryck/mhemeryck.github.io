@@ -2,6 +2,7 @@
 title = "unifi terraform"
 subtitle = "unifi cloud key infrastructure-as-code"
 date = "2021-12-16"
+lastmod = "2026-06-02"
 tags = ["unifi", "homelab", "infrastructure-as-code", "terraform", "note-to-self"]
 +++
 

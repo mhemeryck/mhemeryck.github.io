@@ -2,6 +2,7 @@
 title = "Hardware"
 subtitle = "Unipi units"
 date = "2021-07-20"
+lastmod = "2026-06-02"
 tags = ["home automation", "hardware", "unipi", "tech"]
 +++
 

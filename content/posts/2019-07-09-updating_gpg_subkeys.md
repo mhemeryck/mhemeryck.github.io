@@ -2,6 +2,7 @@
 title = "Updating GPG subkeys"
 subtitle = "My yearly yubikey GPG subkey rotation process"
 date = "2019-07-09"
+lastmod = "2026-06-02"
 tags = ["gpg", "yubikey", "note-to-self"]
 +++
 

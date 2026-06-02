@@ -2,6 +2,7 @@
 title = "Architecture"
 subtitle = "My home automation layout"
 date = "2021-06-22"
+lastmod = "2026-06-02"
 tags = ["home automation", "mqtt", "tech"]
 +++
 

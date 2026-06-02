@@ -2,6 +2,7 @@
 title = "Service"
 subtitle = "Home assistant as the service layer"
 date = "2021-08-03"
+lastmod = "2026-06-02"
 tags = ["home automation", "mqtt", "tech", "home assistant"]
 +++
 

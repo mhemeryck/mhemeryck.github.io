@@ -2,6 +2,7 @@
 title = "Schematics"
 subtitle = "One-wire diagram and floor plan"
 date = "2021-07-06"
+lastmod = "2026-06-02"
 tags = ["home automation", "schematics", "tech"]
 +++
 

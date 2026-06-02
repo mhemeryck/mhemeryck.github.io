@@ -2,6 +2,7 @@
 title = "Why"
 subtitle = "My vision for a modern home automation system"
 date = "2021-06-15"
+lastmod = "2026-06-02"
 tags = ["home automation", "tech"]
 +++
 

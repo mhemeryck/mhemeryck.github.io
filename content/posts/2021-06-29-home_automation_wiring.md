@@ -2,6 +2,7 @@
 title = "Wiring"
 subtitle = "Groundwork for a wired home automation setup"
 date = "2021-06-29"
+lastmod = "2026-06-02"
 tags = ["home automation", "wiring", "tech"]
 +++
 
