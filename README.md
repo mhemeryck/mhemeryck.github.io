@@ -16,8 +16,12 @@ Enter the Nix development shell first:
 
 Then run a local preview:
 
-    hugo server -D
+    just serve
 
 Verify a production build with:
 
-    hugo --minify
+    just build
+
+Run all local checks with:
+
+    just check

@@ -57,6 +57,7 @@ Tasks:
 - [x] update Hugo to a current version
 - [x] update Go to a current version if the repository still needs Go tooling
 - [x] add a Nix flake for local Hugo development tooling
+- [x] add a `justfile` for common local operations
 - [x] document the local development command
 - [x] update GitHub Actions versions and action dependencies
 - [x] verify the site can be built locally

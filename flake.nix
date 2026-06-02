@@ -26,6 +26,7 @@
               dprint
               go
               hugo
+              just
             ];
           };
         });
