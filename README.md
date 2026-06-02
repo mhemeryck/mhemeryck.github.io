@@ -10,4 +10,14 @@ Deployed using [github pages], theme stolen from [hugo beautiful jekyll], which 
 
 ## Local development
 
+Enter the Nix development shell first:
+
+    nix develop
+
+Then run a local preview:
+
     hugo server -D
+
+Verify a production build with:
+
+    hugo --minify

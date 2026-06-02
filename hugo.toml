@@ -1,5 +1,5 @@
 baseURL = "https://blog.mhemeryck.xyz/"
-languageCode = "en-us"
+locale = "en-us"
 title = "Martijn's musings"
 theme = "github.com/halogenica/beautifulhugo"
 
@@ -9,7 +9,7 @@ readingTime = true
 wordCount = true
 socialShare = true
 
-[[params.author]]
+[params.author]
 name = "Martijn Hemeryck"
 
 [author]

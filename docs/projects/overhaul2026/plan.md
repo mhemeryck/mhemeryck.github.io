@@ -53,13 +53,13 @@ This phase should make local development and deployment predictable without turn
 
 Tasks:
 
-- [ ] add an `AGENTS.md` file with project-specific working instructions
-- [ ] update Hugo to a current version
-- [ ] update Go to a current version if the repository still needs Go tooling
-- [ ] add a Nix flake for local Hugo development tooling
-- [ ] document the local development command
-- [ ] update GitHub Actions versions and action dependencies
-- [ ] verify the site can be built locally
+- [x] add an `AGENTS.md` file with project-specific working instructions
+- [x] update Hugo to a current version
+- [x] update Go to a current version if the repository still needs Go tooling
+- [x] add a Nix flake for local Hugo development tooling
+- [x] document the local development command
+- [x] update GitHub Actions versions and action dependencies
+- [x] verify the site can be built locally
 - [ ] verify the GitHub Pages deployment path still works
 
 Success criteria:
