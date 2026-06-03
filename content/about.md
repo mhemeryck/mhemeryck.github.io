@@ -109,6 +109,7 @@ Languages: Dutch, English, French, German, Japanese.
 
 ## Links
 
+- Full CV: [Martijn Hemeryck CV](/cv/)
 - GitHub: [mhemeryck](https://github.com/mhemeryck)
 - LinkedIn: [martijn-hemeryck](https://linkedin.com/in/martijn-hemeryck-67896245)
 - Blog: [Martyn's musings](/posts/)
