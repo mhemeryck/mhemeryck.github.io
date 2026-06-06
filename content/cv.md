@@ -25,23 +25,51 @@ August 2018 - present
 Codabox provides digital document delivery services for accountants and bookkeepers.
 My work has moved across backend development, analysis, architecture, cloud infrastructure, and technical leadership on several document-sourcing and delivery systems.
 
-Selected work streams:
+Selected projects and achievements:
 
-- **Document sourcing and delivery platform**
-  - Develop and maintain backend systems that retrieve, process, and deliver financial documents.
-  - Work in a long-lived Python/Django codebase with operational production ownership.
-- **Frontend and desktop applications**
-  - Contribute to the Vue.js MyCodabox frontend application used by customers to manage their Codabox services.
-  - Worked on the foundation for an Electron-based desktop application where local user workflows needed a dedicated client.
-  - Work across frontend and backend boundaries where product flows require changes in both.
-- **Service-oriented evolution**
-  - Help evolve parts of the platform toward clearer service boundaries where useful.
-  - Build services and integration components in Go and Python.
-- **Cloud and infrastructure**
-  - Work with GCP, AWS, Terraform, and infrastructure-as-code to support deployment, operations, and platform evolution.
-- **Analysis and architecture**
-  - Translate business and regulatory requirements into technical designs.
-  - Contribute to architecture decisions around ownership, integration boundaries, maintainability, and operational reliability.
+#### 2018-2020: Faster CODA Processing
+
+- The core Codabox system had issues delivering sourced CODA files from banks to customers on time.
+- Reworked the intermediate batch-processing steps so file processing could run in parallel.
+- Increased overall throughput and helped ensure customers received their files before 8h00 in the morning.
+
+#### 2021-2022: Consent And Mandate Signing Platform
+
+- Clients of accountants need to consent that banks can share their data with Codabox and that Codabox can share that data with their accountant.
+- Helped replace a largely paper-based mandate process with a digital signing flow during the onboarding of a new bank.
+- Integrated a third-party digital signing provider with the existing Codabox systems to support a fully digital process for both mandates.
+- Helped make the solution generic enough that most integrated banks could later move to the same flow with limited extra effort during the COVID pandemic.
+
+#### 2023: CARO / CCS Activation Flows
+
+- Worked on bank activation, reconnect, reinvite, and feedback flows for customer account registration.
+- Added clearer state handling, validation, reporting, and support visibility.
+- Supported gradual migration paths without disrupting business flows.
+
+#### 2023-2025: Partner SFTP And Bank Connectivity
+
+- Onboarded and stabilized file exchange with banks, social offices, and external partners.
+- Worked on SFTP, VPN, whitelisted IPs, credentials, scheduled downloads, backups, retries, and partner-specific validation.
+- Helped prevent silent data loss, failed transfers, and manual troubleshooting.
+
+#### 2023-2025: MyCodabox And Support Visibility
+
+- Contribute to the Vue.js MyCodabox frontend application used by customers to manage their Codabox services.
+- Worked on the foundation for an Electron-based desktop application where local user workflows needed a dedicated client.
+- Added customer-facing and support-facing visibility for activation, registration, reconnect, CARO, reporting, and failure states.
+- Built or improved support tooling, scheduled reports, data exports, counters, request tracing, and operational lookup flows.
+
+#### 2024-2026: Cloud, CI, And Security Modernization
+
+- Worked with GCP, AWS, Terraform, IAM, service accounts, API gateways, Pub/Sub, buckets, Cloud SQL, and managed transfer patterns.
+- Contributed to GitLab CI, SaaS runner migration, shared templates, workload identity, security gates, and dependency remediation.
+- Helped keep production services deployable, auditable, and aligned with security expectations.
+
+#### 2025-2026: Sourcery And CODA Domain Tooling
+
+- Worked on newer sourcing-platform foundations and SaltEdge-to-CODA flows.
+- Improved correctness around generated financial statements, balances, debit/credit signs, posting dates, and transaction boundaries.
+- Turned CODA domain knowledge into reusable parsing, generation, validation, debugging, and migration tooling.
 
 ### Unleashed
 
