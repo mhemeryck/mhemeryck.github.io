@@ -29,18 +29,20 @@ My work has moved across backend development, frontend development, analysis, ar
 
 Selected projects and achievements:
 
-#### 2018-2020: Faster CODA Processing
+#### 2025-2026: Sourcery And CODA Domain Tooling
 
-- The core Codabox system had issues delivering sourced CODA files from banks to customers on time.
-- Reworked the intermediate batch-processing steps so file processing could run in parallel.
-- Increased overall throughput and helped ensure customers received their files before 8h00 in the morning.
+- Worked on a new solution for generating historical bank statements from open-banking data.[^open-banking]
+- Helped steer the team toward a Go-first implementation model for new services.
+- Worked in a monorepo setup supporting multiple services, application code, infrastructure code, and CI pipelines from a single versioned context.
+- Helped shape a serverless-first infrastructure direction with AWS Lambda as the main runtime platform.
+- Worked on optimized CODA bank-statement parsing and generation with minimal allocations and memory usage.
 
-#### 2021-2022: Consent And Mandate Signing Platform
+#### 2023-2025: Partner SFTP And Bank Connectivity
 
-- Clients of accountants need to consent that banks can share their data with Codabox and that Codabox can share that data with their accountant.
-- Helped replace a largely paper-based mandate process with a digital signing flow during the onboarding of a new bank.
-- Integrated a third-party digital signing provider with the existing Codabox systems to support a fully digital process for both mandates.
-- Helped make the solution generic enough that most integrated banks could later move to the same flow with limited extra effort during the COVID pandemic.
+- Onboarded and stabilized file exchange with banks, social offices, and external partners.
+- Worked directly on network-level integrations using SFTP, VPNs, whitelisted IPs, credentials, and partner-specific validation.
+- Set up connectivity and supporting infrastructure with infrastructure-as-code according to security requirements and operational best practices.
+- Helped prevent silent data loss, failed transfers, and manual troubleshooting.
 
 #### 2023: CARO / CCS Activation Flows
 
@@ -50,14 +52,20 @@ Selected projects and achievements:
 - Helped set up an approach to migrate the implementation endpoint by endpoint from Java to Go while keeping both systems operational.
 - Helped fulfill the extra source-provider requirement during the migration instead of treating modernization and delivery as separate tracks.
 
-#### 2023-2025: Partner SFTP And Bank Connectivity
+#### 2021-2022: Consent And Mandate Signing Platform
 
-- Onboarded and stabilized file exchange with banks, social offices, and external partners.
-- Worked directly on network-level integrations using SFTP, VPNs, whitelisted IPs, credentials, and partner-specific validation.
-- Set up connectivity and supporting infrastructure with infrastructure-as-code according to security requirements and operational best practices.
-- Helped prevent silent data loss, failed transfers, and manual troubleshooting.
+- Clients of accountants need to consent that banks can share their data with Codabox and that Codabox can share that data with their accountant.
+- Helped replace a largely paper-based mandate process with a digital signing flow during the onboarding of a new bank.
+- Integrated a third-party digital signing provider with the existing Codabox systems to support a fully digital process for both mandates.
+- Helped make the solution generic enough that most integrated banks could later move to the same flow with limited extra effort during the COVID pandemic.
 
-#### 2023-2025: MyCodabox And Support Visibility
+#### 2018-2020: Faster CODA Processing
+
+- The core Codabox system had issues delivering sourced CODA files from banks to customers on time.
+- Reworked the intermediate batch-processing steps so file processing could run in parallel.
+- Increased overall throughput and helped ensure customers received their files before 8h00 in the morning.
+
+#### Ongoing: MyCodabox And Support Visibility
 
 - Worked beyond backend and infrastructure on customer-facing and internal support tooling frontend development.
 - Contributed to [MyCodabox](https://www.mycodabox.com/), the main portal accountants use to manage mandates and subscriptions.
@@ -66,7 +74,7 @@ Selected projects and achievements:
 - Built and improved internal support tooling, including Django-admin-based and React-based interfaces.
 - Added visibility for activation, registration, reconnect, CARO, reporting, and failure states across customer-facing and support-facing flows.
 
-#### 2024-2026: Cloud, CI, And Security Modernization
+#### Ongoing: Cloud, CI, And Security Modernization
 
 - Work in a DevOps model where the team runs and manages its own infrastructure.
 - Manage infrastructure through infrastructure-as-code, mostly with Terraform.
@@ -74,14 +82,6 @@ Selected projects and achievements:
 - Bring hands-on experience selecting appropriate cloud technologies, from VMs and Kubernetes clusters to serverless runtimes such as GCP Cloud Run and AWS Lambda.
 - Manage and improve CI pipelines across CircleCI, GitHub Actions, and GitLab CI.
 - Help keep production services deployable, auditable, and aligned with security expectations.
-
-#### 2025-2026: Sourcery And CODA Domain Tooling
-
-- Worked on a new solution for generating historical bank statements from open-banking data.
-- Helped steer the team toward a Go-first implementation model for new services.
-- Worked in a monorepo setup supporting multiple services, application code, infrastructure code, and CI pipelines from a single versioned context.
-- Helped shape a serverless-first infrastructure direction with AWS Lambda as the main runtime platform.
-- Worked on optimized CODA bank-statement parsing and generation with minimal allocations and memory usage.
 
 ### Unleashed
 
@@ -130,3 +130,4 @@ TODO
 TODO
 
 [^peppol]: PEPPOL is the European e-invoicing network.
+[^open-banking]: Open banking in this context builds on the [Payment Services Directive](https://en.wikipedia.org/wiki/Payment_Services_Directive).
