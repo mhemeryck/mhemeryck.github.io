@@ -22,8 +22,10 @@ TODO
 **Senior Software Engineer**
 August 2018 - present
 
-Codabox provides digital document delivery services for accountants and bookkeepers.
-My work has moved across backend development, analysis, architecture, cloud infrastructure, and technical leadership on several document-sourcing and delivery systems.
+Codabox provides accounting-data feeds for accountants and small and medium-sized enterprises doing their own accounting.
+The platform integrates with source providers such as banks, payroll offices, credit card providers, and [PEPPOL](https://peppol.org/).[^peppol]
+It handles both sourcing and delivery of accounting data, as well as the consent flows required to make those end-to-end data exchanges possible.
+My work has moved across backend development, frontend development, analysis, architecture, cloud infrastructure, and technical leadership on several of these sourcing, delivery, and consent systems.
 
 Selected projects and achievements:
 
@@ -42,34 +44,44 @@ Selected projects and achievements:
 
 #### 2023: CARO / CCS Activation Flows
 
-- Worked on bank activation, reconnect, reinvite, and feedback flows for customer account registration.
-- Added clearer state handling, validation, reporting, and support visibility.
-- Supported gradual migration paths without disrupting business flows.
+- CARO is Codabox's credit card statement offering to accountants.
+- Our team inherited an initial Java implementation and wanted to migrate it toward a Go-based stack.
+- At the same time, there was a business requirement to onboard an additional source provider.
+- Helped set up an approach to migrate the implementation endpoint by endpoint from Java to Go while keeping both systems operational.
+- Helped fulfill the extra source-provider requirement during the migration instead of treating modernization and delivery as separate tracks.
 
 #### 2023-2025: Partner SFTP And Bank Connectivity
 
 - Onboarded and stabilized file exchange with banks, social offices, and external partners.
-- Worked on SFTP, VPN, whitelisted IPs, credentials, scheduled downloads, backups, retries, and partner-specific validation.
+- Worked directly on network-level integrations using SFTP, VPNs, whitelisted IPs, credentials, and partner-specific validation.
+- Set up connectivity and supporting infrastructure with infrastructure-as-code according to security requirements and operational best practices.
 - Helped prevent silent data loss, failed transfers, and manual troubleshooting.
 
 #### 2023-2025: MyCodabox And Support Visibility
 
-- Contribute to the Vue.js MyCodabox frontend application used by customers to manage their Codabox services.
-- Worked on the foundation for an Electron-based desktop application where local user workflows needed a dedicated client.
-- Added customer-facing and support-facing visibility for activation, registration, reconnect, CARO, reporting, and failure states.
-- Built or improved support tooling, scheduled reports, data exports, counters, request tracing, and operational lookup flows.
+- Worked beyond backend and infrastructure on customer-facing and internal support tooling frontend development.
+- Contributed to [MyCodabox](https://www.mycodabox.com/), the main portal accountants use to manage mandates and subscriptions.
+- Worked on MyConsent, an onboarding tool for accountants' clients to safely activate integrations such as credit card statements according to PCI guidelines.
+- Did the groundwork for an Electron-based desktop delivery client where local customer workflows required a dedicated application.
+- Built and improved internal support tooling, including Django-admin-based and React-based interfaces.
+- Added visibility for activation, registration, reconnect, CARO, reporting, and failure states across customer-facing and support-facing flows.
 
 #### 2024-2026: Cloud, CI, And Security Modernization
 
-- Worked with GCP, AWS, Terraform, IAM, service accounts, API gateways, Pub/Sub, buckets, Cloud SQL, and managed transfer patterns.
-- Contributed to GitLab CI, SaaS runner migration, shared templates, workload identity, security gates, and dependency remediation.
-- Helped keep production services deployable, auditable, and aligned with security expectations.
+- Work in a DevOps model where the team runs and manages its own infrastructure.
+- Manage infrastructure through infrastructure-as-code, mostly with Terraform.
+- Worked mostly on GCP-based systems before taking a leading role in the team's transition toward AWS.
+- Bring hands-on experience selecting appropriate cloud technologies, from VMs and Kubernetes clusters to serverless runtimes such as GCP Cloud Run and AWS Lambda.
+- Manage and improve CI pipelines across CircleCI, GitHub Actions, and GitLab CI.
+- Help keep production services deployable, auditable, and aligned with security expectations.
 
 #### 2025-2026: Sourcery And CODA Domain Tooling
 
-- Worked on newer sourcing-platform foundations and SaltEdge-to-CODA flows.
-- Improved correctness around generated financial statements, balances, debit/credit signs, posting dates, and transaction boundaries.
-- Turned CODA domain knowledge into reusable parsing, generation, validation, debugging, and migration tooling.
+- Worked on a new solution for generating historical bank statements from open-banking data.
+- Helped steer the team toward a Go-first implementation model for new services.
+- Worked in a monorepo setup supporting multiple services, application code, infrastructure code, and CI pipelines from a single versioned context.
+- Helped shape a serverless-first infrastructure direction with AWS Lambda as the main runtime platform.
+- Worked on optimized CODA bank-statement parsing and generation with minimal allocations and memory usage.
 
 ### Unleashed
 
@@ -116,3 +128,5 @@ TODO
 ## Interests
 
 TODO
+
+[^peppol]: PEPPOL is the European e-invoicing network.
