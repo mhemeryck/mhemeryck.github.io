@@ -82,16 +82,18 @@ Goal: create a concise public `about` page and a complete standalone web CV page
 
 Tasks:
 
-- [ ] decide the CV source format
-- [ ] define the CV sections needed for job applications
+- [x] decide the CV source format
+- [x] define the CV sections needed for job applications
 - [ ] map [current-cv.md](current-cv.md) into the CV source
-- [ ] improve experience bullets around ownership, tradeoffs, and outcomes
+- [ ] complete the remaining CV sections after the Codabox experience
+- [x] improve the Codabox experience around ownership, tradeoffs, and outcomes
+- [ ] improve remaining experience bullets around ownership, tradeoffs, and outcomes
 - [ ] choose which projects and writing links support the CV
-- [ ] keep `about` as a short curated profile rather than a complete CV
-- [ ] render the complete CV source as a standalone Hugo page
-- [ ] link from the `about` page to the full CV page
-- [ ] make navigation point to the public profile, writing, GitHub, and LinkedIn
-- [ ] keep styling changes small and focused on readability
+- [x] keep `about` as a short curated profile rather than a complete CV
+- [x] render the complete CV source as a standalone Hugo page
+- [x] link from the `about` page to the full CV page
+- [x] make navigation point to the public profile, writing, GitHub, and LinkedIn
+- [x] keep styling changes small and focused on readability
 - [ ] remove or postpone material that belongs in a later portfolio overhaul
 
 Success criteria:
