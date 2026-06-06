@@ -35,7 +35,8 @@ Selected projects and achievements:
 - Helped steer the team toward a Go-first implementation model for new services.
 - Worked in a monorepo setup supporting multiple services, application code, infrastructure code, and CI pipelines from a single versioned context.
 - Helped shape a serverless-first infrastructure direction with AWS Lambda as the main runtime platform.
-- Worked on optimized CODA bank-statement parsing and generation with minimal allocations and memory usage.
+- Developed an optimized CODA bank-statement parsing and generation with minimal allocations and memory usage.
+- Started and improved AI-based tooling and project context for LLM-assisted workflows in the team.
 
 #### 2023-2025: Partner SFTP And Bank Connectivity
 
