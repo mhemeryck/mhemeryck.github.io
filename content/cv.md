@@ -136,21 +136,27 @@ Selected projects and responsibilities:
 - Worked on quantification of lung pathology based on computed tomography (CT).
 - Worked as a teaching assistant for an undergraduate digital signal processing course.
 
-## Selected Projects
-
-TODO
-
 ## Education
 
-### KU Leuven
+### M.Sc. Engineering: Electrical Engineering, KU Leuven
 
-TODO
+2008 - 2010
 
-### KU Leuven
+- Specialization in multimedia and signal processing.
+- Graduated cum laude.
+- Thesis: ["Integrated Stereo Acoustic Echo Cancellation and Speech Coding for Tele-/videoconferencing Applications"]
 
-TODO
+### B.Sc. Engineering: Electrical Engineering, KU Leuven
+
+2004 - 2008
+
+- Specialization in industrial management.
 
 ## Selected Academic Work
+
+- M.Sc. thesis, with Hans Van Herck: ["Integrated Stereo Acoustic Echo Cancellation and Speech Coding for Tele-/videoconferencing Applications"]
+
+## Selected Projects
 
 TODO
 
@@ -173,3 +179,5 @@ TODO
 [^peppol]: PEPPOL is the European e-invoicing network.
 [^open-banking]: Open banking in this context builds on the [Payment Services Directive](https://en.wikipedia.org/wiki/Payment_Services_Directive).
 [^stievie]: Stievie was a Belgian online streaming platform and predecessor to [VTM GO](https://www.vtmgo.be/).
+
+["Integrated Stereo Acoustic Echo Cancellation and Speech Coding for Tele-/videoconferencing Applications"]: /cv/Hemeryck_Martijn_masterproef_2009-2010.pdf
