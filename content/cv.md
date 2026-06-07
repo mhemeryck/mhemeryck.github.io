@@ -84,9 +84,26 @@ Selected projects and achievements:
 - Manage and improve CI pipelines across CircleCI, GitHub Actions, and GitLab CI.
 - Help keep production services deployable, auditable, and aligned with security expectations.
 
-### Unleashed
+### [Unleashed](https://unleashed.be) / [Mobile Vikings](https://mobilevikings.be)
 
-TODO
+**Software Engineer / Analyst**
+July 2016 - July 2018
+
+Unleashed was the digital product and engineering organization behind [Mobile Vikings](https://mobilevikings.be), [Jim Mobile](https://jimmobile.be), and Stievie.[^stievie]
+I worked across full-stack development and analysis roles for customer-facing telecom and media products.
+
+Selected projects and responsibilities:
+
+#### 2017-2018: Marketing Automation Squad
+
+- Worked on cross-brand full-stack development for Mobile Vikings, Jim Mobile, and Stievie.
+- Helped analyze and shape backend REST API architecture for marketing automation flows.
+
+#### 2016-2017: Mobile Vikings Get And Retain Squad
+
+- Worked on the Mobile Vikings prepaid registration project, helping the team adapt customer registration flows after Belgian regulation required prepaid SIM cards to be linked to verified identity.
+- Built and maintained full-stack marketing campaign features for Mobile Vikings.
+- Helped analyze marketing backend changes for a full mobile virtual network operator (MVNO) migration, supporting Mobile Vikings' move from a direct telecom backend integration to a third-party-managed backend and a customer SIM-swap migration.
 
 ### SoundTalks
 
@@ -132,3 +149,4 @@ TODO
 
 [^peppol]: PEPPOL is the European e-invoicing network.
 [^open-banking]: Open banking in this context builds on the [Payment Services Directive](https://en.wikipedia.org/wiki/Payment_Services_Directive).
+[^stievie]: Stievie was a Belgian online streaming platform and predecessor to [VTM GO](https://www.vtmgo.be/).
