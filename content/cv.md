@@ -167,7 +167,11 @@ Selected projects and responsibilities:
 
 ## Skills
 
-TODO
+- Selected backend and systems work with Python, Go, Rust, C, C++, and shell scripting.
+- Web and API development with Django, Flask, FastAPI, REST APIs, HTML, CSS, JavaScript, and Vue.js.
+- Cloud and infrastructure work across AWS, GCP, Terraform, Pulumi, Kubernetes, Docker, and AWS CDK.
+- Data and integration work involving PostgreSQL, SQL, Pub/Sub, SFTP, MQTT, Modbus, and DALI.
+- Delivery and operations tooling including Git, CI/CD, Linux, Nix, Nushell, Vim, Helix, and LaTeX.
 
 ## Certifications
 
@@ -176,7 +180,11 @@ TODO
 
 ## Languages
 
-TODO
+- Dutch
+- English
+- French
+- German
+- Japanese
 
 ## Interests
 
