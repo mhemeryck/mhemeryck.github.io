@@ -171,7 +171,8 @@ TODO
 
 ## Certifications
 
-TODO
+- [AWS Certified Solutions Architect - Associate](https://www.credly.com/badges/9cf26a0f-3ac9-475e-b679-493e624ae948/wallet), April 2026.
+- [Google Cloud Associate Cloud Engineer](/posts/2024-03-01-gcp_ace/), February 2024.
 
 ## Languages
 
