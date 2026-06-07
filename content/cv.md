@@ -105,9 +105,21 @@ Selected projects and responsibilities:
 - Built and maintained full-stack marketing campaign features for Mobile Vikings.
 - Helped analyze marketing backend changes for a full mobile virtual network operator (MVNO) migration, supporting Mobile Vikings' move from a direct telecom backend integration to a third-party-managed backend and a customer SIM-swap migration.
 
-### SoundTalks
+### [SoundTalks](https://www.soundtalks.com/en/)
 
-TODO
+**Research Engineer**
+September 2012 - July 2016
+
+SoundTalks is a KU Leuven spin-off developing acoustic monitoring technology for livestock health.
+I joined as the first employee, working in a small early-stage company where research, software development, field deployment, customer contact, and commercial support were closely connected.
+
+Selected responsibilities and achievements:
+
+- Led research and development work for the Pig Cough Monitor algorithm and supporting software.
+- Handled on-site installations, maintenance, data collection, and customer-facing technical follow-up.
+- Managed data storage and database work needed for algorithm development, validation, and product operation.
+- Improved software development practices around version control, build processes, and release management.
+- Represented the company at technical, academic, and commercial conferences, including direct conversations with potential partners and customers.
 
 ### KU Leuven Medical Imaging Research Center
 
