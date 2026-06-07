@@ -121,9 +121,20 @@ Selected responsibilities and achievements:
 - Improved software development practices around version control, build processes, and release management.
 - Represented the company at technical, academic, and commercial conferences, including direct conversations with potential partners and customers.
 
-### KU Leuven Medical Imaging Research Center
+### [KU Leuven Medical Imaging Research Center](https://www.kuleuven.be/samenwerking/mirc)
 
-TODO
+**Research Assistant**
+September 2010 - August 2012
+
+The Medical Imaging Research Center is a KU Leuven research center applying digital signal processing, machine vision, and image-analysis techniques to medical imaging problems.
+This was my first role after completing my master's degree, combining research software development, image analysis, and teaching assistance.
+
+Selected projects and responsibilities:
+
+- Worked on validation of a 3-D volumetric approach to evaluate local bone changes.
+- Developed software for integrated registration and segmentation in 2-D and 3-D follow-up analyses of oral and maxillofacial surgery using cone-beam computed tomography.
+- Worked on quantification of lung pathology based on computed tomography (CT).
+- Worked as a teaching assistant for an undergraduate digital signal processing course.
 
 ## Selected Projects
 
