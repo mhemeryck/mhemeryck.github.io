@@ -158,7 +158,12 @@ Selected projects and responsibilities:
 
 ## Selected Projects
 
-TODO
+- [Personal home automation system](/tags/home-automation/): Designed, built, and maintain a whole-home automation setup integrating wired controls, UniPi hardware, Modbus, DALI, MQTT, Home Assistant, and custom Go/Python services.
+  - [nest](https://github.com/mhemeryck/nest): Go-based home automation codebase for consolidating personal automation services.
+  - [modbridge](https://github.com/mhemeryck/modbridge): Go service for polling Modbus and Modbus TCP devices and publishing updates over MQTT.
+  - [evok2mqtt](https://github.com/mhemeryck/evok2mqtt): Python bridge that listens to the UniPi EVOK API over websockets and publishes device events to MQTT.
+  - [covers](https://github.com/mhemeryck/covers): MQTT-based home automation helper for mapping button input events to matching cover controls.
+- [iac](https://github.com/mhemeryck/iac): Terraform and Kubernetes setup for self-hosted services, including k3s, TLS automation, and service manifests.
 
 ## Skills
 
