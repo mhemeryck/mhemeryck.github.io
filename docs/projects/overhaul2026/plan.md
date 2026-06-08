@@ -9,6 +9,7 @@ The work is intentionally focused on getting a usable CV ready for job applicati
 - [brief.md](brief.md): long-term design brief and technical direction
 - [positioning.md](positioning.md): professional narrative and public positioning
 - [current-cv.md](current-cv.md): current CV contents captured as source material
+- [cv-achievement-themes.md](cv-achievement-themes.md): sanitized achievement themes for CV wording
 
 ## Checklist
 
