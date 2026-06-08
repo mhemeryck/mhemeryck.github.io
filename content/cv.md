@@ -41,8 +41,8 @@ Selected projects and achievements:
 - Helped steer the team toward a Go-first implementation model for new services.
 - Worked in a monorepo setup supporting multiple services, application code, infrastructure code, and CI pipelines from a single versioned context.
 - Helped shape a serverless-first infrastructure direction with AWS Lambda as the main runtime platform.
-- Developed an optimized CODA bank-statement parsing and generation with minimal allocations and memory usage.
-- Started and improved AI-based tooling and project context for LLM-assisted workflows in the team.
+- Developed optimized CODA bank-statement parsing and generation code with minimal allocations and memory usage.
+- Introduced LLM-assisted tooling and project context to make team workflows easier to navigate.
 
 #### 2023-2025: Partner SFTP And Bank Connectivity
 
@@ -74,7 +74,7 @@ Selected projects and achievements:
 
 #### Ongoing: MyCodabox And Support Visibility
 
-- Worked beyond backend and infrastructure on customer-facing and internal support tooling frontend development.
+- Worked beyond backend and infrastructure on customer-facing portals and internal support tooling.
 - Contributed to [MyCodabox](https://www.mycodabox.com/), the main portal accountants use to manage mandates and subscriptions.
 - Worked on MyConsent, an onboarding tool for accountants' clients to safely activate integrations such as credit card statements according to PCI guidelines.
 - Did the groundwork for an Electron-based desktop delivery client where local customer workflows required a dedicated application.
@@ -85,7 +85,7 @@ Selected projects and achievements:
 
 - Work in a DevOps model where the team runs and manages its own infrastructure.
 - Manage infrastructure through infrastructure-as-code, mostly with Terraform.
-- Worked mostly on GCP-based systems before taking a leading role in the team's transition toward AWS.
+- Worked mostly on GCP-based systems before helping lead the team's transition toward AWS.
 - Bring hands-on experience selecting appropriate cloud technologies, from VMs and Kubernetes clusters to serverless runtimes such as GCP Cloud Run and AWS Lambda.
 - Manage and improve CI pipelines across CircleCI, GitHub Actions, and GitLab CI.
 - Help keep production services deployable, auditable, and aligned with security expectations.
@@ -150,7 +150,7 @@ Selected projects and responsibilities:
 
 - Specialization in multimedia and signal processing.
 - Graduated cum laude.
-- Thesis: ["Integrated Stereo Acoustic Echo Cancellation and Speech Coding for Tele-/videoconferencing Applications"]
+- Thesis: see [Selected Academic Work](#selected-academic-work).
 
 ### B.Sc. Engineering: Electrical Engineering, KU Leuven
 
@@ -160,7 +160,23 @@ Selected projects and responsibilities:
 
 ## Selected Academic Work
 
-- M.Sc. thesis, with Hans Van Herck: ["Integrated Stereo Acoustic Echo Cancellation and Speech Coding for Tele-/videoconferencing Applications"]
+### Thesis
+
+- M.Sc. thesis, with Hans Van Herck: ["Integrated Stereo Acoustic Echo Cancellation and Speech Coding for Tele-/videoconferencing Applications"], KU Leuven, 2010.
+
+### Publications
+
+- Dries Berckmans, Martijn Hemeryck, Daniel Berckmans, Erik Vranken, and Toon van Waterschoot: "Animal Sound...Talks! Real-time Sound Analysis for Health Monitoring in Livestock", Animal Environment and Welfare, 2015.
+- Ilaria Fontana, Emanuela Tullo, Martijn Hemeryck, and Marcella Guarino: "Using Broiler Sound Frequency to Model Weight", Animal Environment and Welfare, 2015.
+- Martijn Hemeryck, Dries Berckmans, Erik Vranken, Emanuela Tullo, Ilaria Fontana, Marcella Guarino, and Toon van Waterschoot: ["The Pig Cough Monitor in the EU-PLF project: results and multimodal data analysis"](http://www.eu-plf.eu/index.php/events/event/ec-plf-2015/), Precision Livestock Farming '15, 2015.
+- Martijn Hemeryck and Dries Berckmans: ["Pig cough monitoring in the EU-PLF project: first results"](http://old.eaap.org/Previous_Annual_Meetings/2014Copenhagen/Papers/Published/S11_04.pdf), Precision livestock farming applications, 2014.
+- Marko Topalovic, Vasileios Exadaktylos, Anneleen Peeters, Johan Coolen, Walter Dewever, Martijn Hemeryck, Pieter Slagmolen, Karl Janssens, Daniel Berckmans, Marc Decramer, and Wim Janssens: ["Computer quantification of airway collapse on forced expiration to predict the presence of emphysema"](http://dx.doi.org/10.1186/1465-9921-14-131), Respiratory Research, 2013.
+
+### Presentations And Posters
+
+- "SoundTalks and the Pig Cough Monitor", Flanders Agrotronics, Leuven, Belgium, 2015.
+- "Model based image analysis for robust quantification of COPD on thorax CT", poster, Paleis der Academiën, Brussels, Belgium, 2011.
+- "Model based liver segmentation for surgery planning", oral presentation, Jesús Usón Minimally Invasive Surgery Centre, Cáceres, Spain, 2011.
 
 ## Selected Projects
 
@@ -173,7 +189,7 @@ Selected projects and responsibilities:
 
 ## Skills
 
-- Selected backend and systems work with Python, Go, Rust, C, C++, and shell scripting.
+- Selected experience includes backend and systems work with Python, Go, Rust, C, C++, and shell scripting.
 - Web and API development with Django, Flask, FastAPI, REST APIs, HTML, CSS, JavaScript, and Vue.js.
 - Cloud and infrastructure work across AWS, GCP, Terraform, Pulumi, Kubernetes, Docker, and AWS CDK.
 - Data and integration work involving PostgreSQL, SQL, Pub/Sub, SFTP, MQTT, Modbus, and DALI.
@@ -181,16 +197,17 @@ Selected projects and responsibilities:
 
 ## Certifications
 
-- [AWS Certified Solutions Architect - Associate](https://www.credly.com/badges/9cf26a0f-3ac9-475e-b679-493e624ae948/wallet), April 2026.
-- [Google Cloud Associate Cloud Engineer](/posts/2024-03-01-gcp_ace/), February 2024.
+- [AWS Certified Solutions Architect - Associate](https://www.credly.com/badges/9cf26a0f-3ac9-475e-b679-493e624ae948/public_url), April 2026.
+- [Google Cloud Associate Cloud Engineer](https://www.credly.com/badges/21b41ca0-4671-4ad6-9da9-0d96cb74e5d9/public_url), February 2024.
+- [LFS258: Kubernetes Fundamentals](https://www.credly.com/badges/e8cc322c-c59c-4f0c-a7bd-6348c48d7b10/public_url), July 2020.
 
 ## Languages
 
-- Dutch
-- English
-- French
-- German
-- Japanese
+- Dutch: native.
+- English: professional working proficiency.
+- French: intermediate working proficiency.
+- German: basic proficiency.
+- Japanese: basic proficiency.
 
 ## Interests
 
