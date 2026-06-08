@@ -12,11 +12,11 @@ The work is intentionally focused on getting a usable CV ready for job applicati
 
 ## Checklist
 
-- [x] [Phase 0: repository and tooling cleanup](#phase-0-repository-and-tooling-cleanup)
-- [ ] [Phase 1: about page and web CV](#phase-1-about-page-and-web-cv)
-- [ ] [Phase 2: PDF CV](#phase-2-pdf-cv)
-- [ ] [Phase 3: application polish](#phase-3-application-polish)
-- [ ] [Phase 4: optional site overhaul](#phase-4-optional-site-overhaul)
+- [x] [Phase 0: repository and tooling cleanup](plan#Phase 0: Repository And Tooling Cleanup)
+- [x] [Phase 1: about page and web CV](plan#Phase 1: About Page And Web CV)
+- [ ] [Phase 2: PDF CV](plan#Phase 2: PDF CV)
+- [ ] [Phase 3: application polish](plan#Phase 3: Application Polish)
+- [ ] [Phase 4: optional site overhaul](plan#Phase 4: Optional Site Overhaul)
 
 ## Near-Term Scope
 
@@ -30,11 +30,11 @@ Focus on making existing seniority, ownership, and technical depth visible throu
 
 ### Near-Term Deliverables
 
-- concise `about` page for the public profile
-- complete web CV page used as the maintainable CV source
+- [x] concise `about` page for the public profile
+- [x] complete web CV page used as the maintainable CV source
 - PDF CV generated from that source
-- clear links to CV, LinkedIn, GitHub, and relevant writing
-- minimal style improvements where they directly support readability and positioning
+- [x] clear links to CV, LinkedIn, GitHub, and relevant writing
+- [x] minimal style improvements where they directly support readability and positioning
 
 ### Near-Term Non-Goals
 
@@ -80,21 +80,27 @@ Success criteria:
 
 Goal: create a concise public `about` page and a complete standalone web CV page backed by one maintainable CV source.
 
+Status: complete.
+
+The web CV now contains profile, experience, education, selected academic work, selected projects, skills, certifications, languages, and interests.
+The `about` page is kept as a short curated profile that links to the full CV instead of duplicating it.
+The remaining near-term work is Phase 2 PDF generation from the completed web CV source.
+
 Tasks:
 
 - [x] decide the CV source format
 - [x] define the CV sections needed for job applications
-- [ ] map [current-cv.md](current-cv.md) into the CV source
-- [ ] complete the remaining CV sections after the Codabox experience
+- [x] map [current-cv.md](current-cv.md) into the CV source
+- [x] complete the remaining CV sections
 - [x] improve the Codabox experience around ownership, tradeoffs, and outcomes
-- [ ] improve remaining experience bullets around ownership, tradeoffs, and outcomes
-- [ ] choose which projects and writing links support the CV
+- [x] improve remaining experience bullets around ownership, tradeoffs, and outcomes
+- [x] choose which projects and writing links support the CV
 - [x] keep `about` as a short curated profile rather than a complete CV
 - [x] render the complete CV source as a standalone Hugo page
 - [x] link from the `about` page to the full CV page
 - [x] make navigation point to the public profile, writing, GitHub, and LinkedIn
 - [x] keep styling changes small and focused on readability
-- [ ] remove or postpone material that belongs in a later portfolio overhaul
+- [x] keep project pages and case studies postponed to a later portfolio overhaul
 
 Success criteria:
 
@@ -129,7 +135,7 @@ Goal: make the web CV and PDF CV clear enough to support job applications.
 
 Tasks:
 
-- [ ] refine the opening profile around [positioning.md](positioning.md)
+- [ ] refine the opening profile around [positioning.md](positioning#Positioning Statement)
 - [ ] link relevant blog posts as supporting evidence where useful
 - [ ] tighten project and experience wording based on the generated outputs
 - [ ] verify the web CV is easy to find from the site navigation
