@@ -28,10 +28,10 @@ I am a developer and maker at heart, with a practical drive to solve problems en
 **Senior Software Engineer**
 August 2018 - present
 
-Codabox provides accounting-data feeds for accountants and small and medium-sized enterprises doing their own accounting.
-The platform integrates with source providers such as banks, payroll offices, credit card providers, and [PEPPOL](https://peppol.org/).[^peppol]
+Codabox provides accounting-data feeds for accountants and bookkeepers.
+The platform integrates with source providers such as banks, payroll offices, credit card providers, and e-invoicing solutions.[^peppol]
 It handles both sourcing and delivery of accounting data, as well as the consent flows required to make those end-to-end data exchanges possible.
-My work has moved across backend development, frontend development, analysis, architecture, cloud infrastructure, and technical leadership on several of these sourcing, delivery, and consent systems.
+My work has moved across backend and frontend development, analysis, architecture, cloud infrastructure, and technical leadership on several of these systems.
 
 Selected projects and achievements:
 
@@ -39,32 +39,32 @@ Selected projects and achievements:
 
 - Worked on a new solution for generating historical bank statements from open-banking data.[^open-banking]
 - Helped steer the team toward a Go-first implementation model for new services.
-- Worked in a monorepo setup supporting multiple services, application code, infrastructure code, and CI pipelines from a single versioned context.
-- Helped shape a serverless-first infrastructure direction with AWS Lambda as the main runtime platform.
+- Built the monorepo foundation for multiple services, combining application code, infrastructure code, and CI pipelines in a single versioned context.
+- Designed and built the serverless-first infrastructure foundation, using AWS Lambda as the main runtime platform for new services.
 - Developed optimized CODA bank-statement parsing and generation code with minimal allocations and memory usage.
 - Introduced LLM-assisted tooling and project context to make team workflows easier to navigate.
 
 #### 2023-2025: Partner SFTP And Bank Connectivity
 
 - Onboarded and stabilized file exchange with banks, social offices, and external partners.
-- Worked directly on network-level integrations using SFTP, VPNs, whitelisted IPs, credentials, and partner-specific validation.
+- Worked directly on network-level integrations using SFTP, VPNs, allowlisted IPs, credentials, and partner-specific validation.
 - Set up connectivity and supporting infrastructure with infrastructure-as-code according to security requirements and operational best practices.
 - Helped prevent silent data loss, failed transfers, and manual troubleshooting.
 
-#### 2023: CARO / CCS Activation Flows
+#### 2023: CARO / Credit Card Statement Activation Flows
 
 - CARO is Codabox's credit card statement offering to accountants.
 - Our team inherited an initial Java implementation and wanted to migrate it toward a Go-based stack.
 - At the same time, there was a business requirement to onboard an additional source provider.
-- Helped set up an approach to migrate the implementation endpoint by endpoint from Java to Go while keeping both systems operational.
-- Helped fulfill the extra source-provider requirement during the migration instead of treating modernization and delivery as separate tracks.
+- Helped set up an approach to migrate the implementation endpoint-by-endpoint from Java to Go while keeping both systems operational in production.
+- Helped fulfill the extra source provider requirement during the migration instead of treating modernization and delivery as separate tracks.
 
 #### 2021-2022: Consent And Mandate Signing Platform
 
 - Clients of accountants need to consent that banks can share their data with Codabox and that Codabox can share that data with their accountant.
 - Helped replace a largely paper-based mandate process with a digital signing flow during the onboarding of a new bank.
 - Integrated a third-party digital signing provider with the existing Codabox systems to support a fully digital process for both mandates.
-- Helped make the solution generic enough that most integrated banks could later move to the same flow with limited extra effort during the COVID pandemic.
+- Built the solution as a reusable production flow that most integrated banks later adopted, and that remains in use for digital mandate signing.
 
 #### 2018-2020: Faster CODA Processing
 
@@ -76,8 +76,8 @@ Selected projects and achievements:
 
 - Worked beyond backend and infrastructure on customer-facing portals and internal support tooling.
 - Contributed to [MyCodabox](https://www.mycodabox.com/), the main portal accountants use to manage mandates and subscriptions.
-- Worked on MyConsent, an onboarding tool for accountants' clients to safely activate integrations such as credit card statements according to PCI guidelines.
-- Did the groundwork for an Electron-based desktop delivery client where local customer workflows required a dedicated application.
+- Worked on MyConsent, an onboarding tool for accountants' clients to safely activate integrations such as credit card statements according to [PCI](https://www.pcisecuritystandards.org/standards/pci-dss/) guidelines.
+- Did the groundwork for an [Electron](https://www.electronjs.org/)-based desktop delivery client where local customer workflows required a dedicated application.
 - Built and improved internal support tooling, including Django-admin-based and React-based interfaces.
 - Added visibility for activation, registration, reconnect, CARO, reporting, and failure states across customer-facing and support-facing flows.
 
@@ -85,10 +85,10 @@ Selected projects and achievements:
 
 - Work in a DevOps model where the team runs and manages its own infrastructure.
 - Manage infrastructure through infrastructure-as-code, mostly with Terraform.
-- Worked mostly on GCP-based systems before helping lead the team's transition toward AWS.
-- Bring hands-on experience selecting appropriate cloud technologies, from VMs and Kubernetes clusters to serverless runtimes such as GCP Cloud Run and AWS Lambda.
+- Worked mostly on GCP-based systems before leading the team's transition toward AWS.
+- Bring hands-on experience selecting appropriate cloud technologies, from VMs and Kubernetes deployments to serverless runtimes such as GCP Cloud Run and AWS Lambda.
 - Manage and improve CI pipelines across CircleCI, GitHub Actions, and GitLab CI.
-- Help keep production services deployable, auditable, and aligned with security expectations.
+- Keep production services always deployable, auditable, and aligned with security expectations.
 
 ### [Unleashed](https://unleashed.be) / [Mobile Vikings](https://mobilevikings.be)
 
@@ -124,8 +124,8 @@ Selected responsibilities and achievements:
 - Led research and development work for the Pig Cough Monitor algorithm and supporting software.
 - Handled on-site installations, maintenance, data collection, and customer-facing technical follow-up.
 - Managed data storage and database work needed for algorithm development, validation, and product operation.
-- Improved software development practices around version control, build processes, and release management.
-- Represented the company at technical, academic, and commercial conferences, including direct conversations with potential partners and customers.
+- Developed software development practices around version control, build processes, and release management.
+- Represented the company at technical, academic, and commercial conferences, including direct interactions with potential partners and customers.
 
 ### [KU Leuven Medical Imaging Research Center](https://www.kuleuven.be/samenwerking/mirc)
 
@@ -150,7 +150,7 @@ Selected projects and responsibilities:
 
 - Specialization in multimedia and signal processing.
 - Graduated cum laude.
-- Thesis: see [Selected Academic Work](#selected-academic-work).
+- Thesis: see [Selected Academic Work](cv#Selected Academic Work).
 
 ### B.Sc. Engineering: Electrical Engineering, KU Leuven
 
@@ -162,7 +162,7 @@ Selected projects and responsibilities:
 
 ### Thesis
 
-- M.Sc. thesis, with Hans Van Herck: ["Integrated Stereo Acoustic Echo Cancellation and Speech Coding for Tele-/videoconferencing Applications"], KU Leuven, 2010.
+- M.Sc. thesis, with Hans Van Herck: ["Integrated Stereo Acoustic Echo Cancellation and Speech Coding for Tele-/videoconferencing Applications"](/cv/Hemeryck_Martijn_masterproef_2009-2010.pdf), KU Leuven, 2010.
 
 ### Publications
 
@@ -185,12 +185,13 @@ Selected projects and responsibilities:
   - [modbridge](https://github.com/mhemeryck/modbridge): Go service for polling Modbus and Modbus TCP devices and publishing updates over MQTT.
   - [evok2mqtt](https://github.com/mhemeryck/evok2mqtt): Python bridge that listens to the UniPi EVOK API over websockets and publishes device events to MQTT.
   - [covers](https://github.com/mhemeryck/covers): MQTT-based home automation helper for mapping button input events to matching cover controls.
+  - [hausmaus](https://github.com/mhemeryck/hausmaus): Rust-based home automation tooling.
 - [iac](https://github.com/mhemeryck/iac): Terraform and Kubernetes setup for self-hosted services, including k3s, TLS automation, and service manifests.
 
 ## Skills
 
 - Selected experience includes backend and systems work with Python, Go, Rust, C, C++, and shell scripting.
-- Web and API development with Django, Flask, FastAPI, REST APIs, HTML, CSS, JavaScript, and Vue.js.
+- Web and API development with Django, Flask, FastAPI, REST / RPC APIs, HTML, CSS, JavaScript, HTMX and Vue.js.
 - Cloud and infrastructure work across AWS, GCP, Terraform, Pulumi, Kubernetes, Docker, and AWS CDK.
 - Data and integration work involving PostgreSQL, SQL, Pub/Sub, SFTP, MQTT, Modbus, and DALI.
 - Delivery and operations tooling including Git, CI/CD, Linux, Nix, Nushell, Vim, Helix, and LaTeX.
@@ -217,8 +218,6 @@ Selected projects and responsibilities:
 - Science and physics, through books, podcasts, and general curiosity.
 - Music and culture, with a particular interest in electronic music.
 
-[^peppol]: PEPPOL is the European e-invoicing network.
+[^peppol]: [PEPPOL](https://peppol.org/) is the European e-invoicing network.
 [^open-banking]: Open banking in this context builds on the [Payment Services Directive](https://en.wikipedia.org/wiki/Payment_Services_Directive).
 [^stievie]: Stievie was a Belgian online streaming platform and predecessor to [VTM GO](https://www.vtmgo.be/).
-
-["Integrated Stereo Acoustic Echo Cancellation and Speech Coding for Tele-/videoconferencing Applications"]: /cv/Hemeryck_Martijn_masterproef_2009-2010.pdf
