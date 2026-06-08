@@ -29,6 +29,9 @@ This repository contains a Hugo-based personal website and blog.
 - Never push without explicit user approval.
 - Approval for one git operation does not imply approval for another.
 - When in doubt, stop and ask before running `git commit`, `git push`, or any command that changes remote state.
+- Write pull request descriptions so they can be used directly as squash commit messages.
+- Start with the intended commit title, then a blank line, then a concise body that explains why the change exists.
+- Avoid checklist-style pull request descriptions unless explicitly requested.
 
 ## Deployment
 

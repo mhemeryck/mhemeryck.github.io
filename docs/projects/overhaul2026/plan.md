@@ -1,47 +1,47 @@
 # Plan
 
-This document tracks the practical plan for turning the existing blog and CV material into a coherent professional profile.
+This document tracks the practical plan for turning the existing CV material into a single-source CV with web and PDF outputs.
 
-The work is intentionally split between near-term application work and longer-term overhaul work.
+The work is intentionally focused on getting a usable CV ready for job applications without turning the blog into a full portfolio rebuild.
 
 ## Guiding Documents
 
 - [brief.md](brief.md): long-term design brief and technical direction
-- [positioning.md](positioning.md): professional narrative and public positioning
+- [positioning.md](positioning.md): professional narrative, CV voice, and public positioning
 - [current-cv.md](current-cv.md): current CV contents captured as source material
 
 ## Checklist
 
-- [ ] [Phase 0: repository and tooling cleanup](#Phase 0: Repository And Tooling Cleanup)
-- [ ] [Phase 1: application profile](#Phase 1: Application Profile)
-- [ ] [Phase 2: resume and content model](#Phase 2: Resume And Content Model)
-- [ ] [Phase 3: visual and technical overhaul](#Phase 3: Visual And Technical Overhaul)
-- [ ] [Phase 4: resume generation](#Phase 4: Resume Generation)
+- [x] [Phase 0: repository and tooling cleanup](plan#Phase 0: Repository And Tooling Cleanup)
+- [x] [Phase 1: about page and web CV](plan#Phase 1: About Page And Web CV)
+- [ ] [Phase 2: PDF CV](plan#Phase 2: PDF CV)
+- [ ] [Phase 3: application polish](plan#Phase 3: Application Polish)
+- [ ] [Phase 4: optional site overhaul](plan#Phase 4: Optional Site Overhaul)
 
 ## Near-Term Scope
 
-The near-term goal is to improve the public profile enough to support a job application.
+The near-term goal is to create a concise public profile and a complete CV that can be read on the website and sent as a PDF for job applications.
 
 This should avoid turning into a full site migration or complete redesign.
 
 Keep the current Hugo setup unless there is a strong reason to change it.
 
-Focus on making existing seniority and project ownership visible.
+Focus on making existing seniority, ownership, and technical depth visible through the CV.
 
 ### Near-Term Deliverables
 
-- professional landing page
-- projects overview page
-- one strong project case study
-- clear links to CV, LinkedIn, GitHub, and relevant writing
-- minimal style improvements where they directly support readability and positioning
+- [x] concise `about` page for the public profile
+- [x] complete web CV page used as the maintainable CV source
+- PDF CV generated from that source
+- [x] clear links to CV, LinkedIn, GitHub, and relevant writing
+- [x] minimal style improvements where they directly support readability and positioning
 
 ### Near-Term Non-Goals
 
 - full Zola migration
 - full custom design system
-- complete resume data model
-- PDF resume generation
+- portfolio project pages
+- project case studies
 - full blog migration or rewrite
 - perfect portfolio site
 
@@ -76,76 +76,91 @@ Success criteria:
 - GitHub Actions no longer rely on outdated action versions
 - the cleanup remains separate from content and design changes
 
-## Phase 1: Application Profile
+## Phase 1: About Page And Web CV
 
-Goal: create a credible, focused public profile quickly.
+Goal: create a concise public `about` page and a complete standalone web CV page backed by one maintainable CV source.
+
+Status: complete.
+
+The web CV now contains profile, experience, education, selected academic work, selected projects, skills, certifications, languages, and interests.
+The `about` page is kept as a short curated profile that links to the full CV instead of duplicating it.
+The remaining near-term work is Phase 2 PDF generation from the completed web CV source.
 
 Tasks:
 
-- [ ] define homepage message from [positioning.md](positioning.md)
-- [ ] add or adapt homepage content around professional positioning
-- [ ] add a projects section
-- [ ] write one case study for the home automation platform
-- [ ] link existing home automation blog posts as supporting evidence
-- [ ] make navigation point to projects, writing, CV, GitHub, and LinkedIn
-- [ ] keep styling changes small and deliberate
+- [x] decide the CV source format
+- [x] define the CV sections needed for job applications
+- [x] map [current-cv.md](current-cv.md) into the CV source
+- [x] complete the remaining CV sections
+- [x] improve the Codabox experience around ownership, tradeoffs, and outcomes
+- [x] improve remaining experience bullets around ownership, tradeoffs, and outcomes
+- [x] choose which projects and writing links support the CV
+- [x] keep `about` as a short curated profile rather than a complete CV
+- [x] render the complete CV source as a standalone Hugo page
+- [x] link from the `about` page to the full CV page
+- [x] make navigation point to the public profile, writing, GitHub, and LinkedIn
+- [x] keep styling changes small and focused on readability
+- [x] keep project pages and case studies postponed to a later portfolio overhaul
+
+Success criteria:
+
+- the CV content exists in one maintainable source
+- the about page is concise, readable, and shareable
+- the full web CV is complete enough to act as the source for PDF generation
+- the CV communicates seniority, systems thinking, ownership, and delivery
+- the existing blog can remain mostly unchanged
+- the content is ready to drive the PDF output
+
+## Phase 2: PDF CV
+
+Goal: generate a sendable PDF CV from the same source as the web CV.
+
+Tasks:
+
+- [ ] choose the PDF generation approach
+- [ ] generate a PDF CV from the CV source
+- [ ] verify the PDF layout is suitable for job applications
+- [ ] decide how the existing LaTeX CV should evolve or be retired
+- [ ] document the command for regenerating the PDF
+
+Success criteria:
+
+- web and PDF CV outputs are consistent
+- resume content is not duplicated across systems
+- updating the CV and regenerating outputs is straightforward
+
+## Phase 3: Application Polish
+
+Goal: make the web CV and PDF CV clear enough to support job applications.
+
+Tasks:
+
+- [ ] refine the opening profile around [positioning.md](positioning#Positioning Statement)
+- [ ] link relevant blog posts as supporting evidence where useful
+- [ ] tighten project and experience wording based on the generated outputs
+- [ ] verify the web CV is easy to find from the site navigation
+- [ ] verify the PDF is suitable to send with applications
 
 Success criteria:
 
 - a technically sophisticated reviewer can understand what kind of engineer I am within a minute
-- the site communicates systems thinking, ownership, and delivery
-- the site no longer reads only as a chronological blog
+- the CV communicates systems thinking, ownership, and delivery
+- the application materials are ready to share
 
-## Phase 2: Resume And Content Model
+## Phase 4: Optional Site Overhaul
 
-Goal: turn the current CV and project material into reusable structured content.
-
-Tasks:
-
-- [ ] design a structured resume data model
-- [ ] map [current-cv.md](current-cv.md) into the model
-- [ ] decide which resume content belongs on the website versus in a PDF
-- [ ] create an HTML resume page
-- [ ] improve selected experience bullets around ownership, tradeoffs, and outcomes
-- [ ] add additional project pages beyond home automation
-
-Success criteria:
-
-- resume content exists in one maintainable source
-- website and resume tell the same story
-- project pages provide evidence for resume claims
-
-## Phase 3: Visual And Technical Overhaul
-
-Goal: make the site feel intentionally designed rather than theme-driven.
+Goal: improve the surrounding site only if the current setup becomes limiting.
 
 Tasks:
 
-- [ ] decide whether to stay on Hugo or migrate to Zola
-- [ ] replace the current theme-driven style with custom templates and CSS
-- [ ] refine typography, spacing, navigation, and project presentation
+- [ ] add project pages or case studies only if they support applications
+- [ ] decide whether to stay on Hugo or migrate to Zola only if there is a concrete reason
+- [ ] replace the current theme-driven style with custom templates and CSS only if needed
+- [ ] improve typography, spacing, navigation, and project presentation
 - [ ] preserve important URLs where possible
-- [ ] revisit deployment and CI after the generator decision
 
 Success criteria:
 
-- the site looks and feels like a durable engineering portfolio
+- the site supports the CV without becoming a full redesign project
 - the implementation remains simple and maintainable
 - content remains Markdown-based and easy to update
-
-## Phase 4: Resume Generation
-
-Goal: generate multiple resume outputs from the same source data.
-
-Tasks:
-
-- [ ] generate HTML resume from structured data
-- [ ] generate PDF resume from the same data
-- [ ] consider machine-readable formats if useful
-- [ ] decide how the existing LaTeX CV should evolve or be retired
-
-Success criteria:
-
-- resume data is not duplicated across systems
-- HTML and PDF outputs are consistent
-- updating resume content is straightforward

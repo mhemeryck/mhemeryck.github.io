@@ -23,4 +23,4 @@ path = "github.com/halogenica/beautifulhugo"
 
 [[menu.main]]
 name = "About me"
-url = "https://mhemeryck.xyz"
+url = "/about/"

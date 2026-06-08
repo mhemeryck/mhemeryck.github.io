@@ -306,6 +306,122 @@ Entries should emphasize:
 
 Technology should appear as context, not as the main claim.
 
+## CV Achievement Themes
+
+The strongest public narrative is broad engineering ownership across financial-data platforms, partner integrations, consent flows, support visibility, and cloud delivery.
+The CV should emphasize systems thinking, practical delivery, and operational reliability rather than a long list of internal project names.
+
+### Financial-Data Platform Work
+
+- systems that ingest, transform, validate, and deliver financial documents and account data
+- reliability and correctness in flows where small data mistakes can have high business impact
+- older processing paths evolved toward clearer APIs, jobs, cloud functions, queues, and reusable domain tooling
+
+Useful public framing:
+
+- financial-data workflows
+- document ingestion and delivery
+- accounting-domain correctness
+- reusable domain tooling
+
+### Consent, Signing, And Mandate Flows
+
+- customer consent, mandate signing, signed-document storage, status synchronization, and operational feedback
+- customer-facing journeys, backend integration, document handling, and recovery paths
+- visibility and robustness for sensitive customer and accounting workflows
+
+Useful public framing:
+
+- consent and mandate platforms
+- signing-provider integrations
+- document lifecycle handling
+- customer journey reliability
+
+### Partner And Bank Connectivity
+
+- file exchange and API integration with external financial partners
+- secure connectivity, scheduled processing, backup-before-processing patterns, retries, validation, and operational diagnostics
+- reduced manual support work around failed transfers, missing data, and unclear partner states
+
+Useful public framing:
+
+- partner integrations
+- bank connectivity
+- secure file exchange
+- operationally safe ingestion
+
+### Support Visibility And Operational Tooling
+
+- internal tools and reporting paths that made activation, registration, document, and customer-support states easier to inspect
+- useful state exposed through APIs, dashboards, scheduled exports, support screens, request identifiers, and counters
+- support and operations teams enabled to investigate customer issues without direct database access or developer intervention
+
+Useful public framing:
+
+- support tooling
+- operational visibility
+- reporting and diagnostics
+- customer-support enablement
+
+### Cloud, CI, And Delivery Modernization
+
+- cloud infrastructure, deployment automation, CI/CD migration, environment configuration, and infrastructure-as-code
+- more reproducible, auditable, and cloud-native delivery patterns
+- production reliability through dependency hygiene, security-gate fixes, and shared delivery conventions
+
+Useful public framing:
+
+- cloud modernization
+- infrastructure-as-code
+- CI/CD and delivery automation
+- security-oriented delivery
+
+### End-To-End Ownership
+
+- analysis, implementation, infrastructure, delivery, and production follow-up
+- domain understanding combined with practical engineering choices and operational feedback
+- ownership of work crossing team, system, and stakeholder boundaries
+
+Useful public framing:
+
+- end-to-end ownership
+- cross-functional engineering
+- production-minded delivery
+- long-term maintainability
+
+## CV Voice
+
+The CV should sound like a practical engineer, not a corporate resume.
+
+Preferred voice:
+
+- direct, grounded, and technically honest
+- engineer first, software specialist second
+- personal enough to show developer and maker identity, but not casual or chatty
+- confident without inflated senior-title language
+- concrete about systems, ownership, and outcomes
+
+Preferred phrases:
+
+- developer and maker at heart
+- practical drive to solve problems end to end
+- analyze systems, take them apart, design them, and build them up again
+- technical design, operational reliability, and domain understanding
+- practical engineering across backend systems, cloud infrastructure, and system integration
+
+Avoid:
+
+- generic resume language
+- exaggerated leadership claims
+- vague claims of passion
+- long technology keyword dumps
+- internal project names without public context
+- detailed partner onboarding timelines
+- security scanner names or vulnerability details unless described generically
+- exact infrastructure topology or access patterns
+- commit-history-derived claims that cannot be explained without internal context
+- local repository paths, personal email metadata, and generated-analysis notes
+
 ## Current CV Observations
 
 The current LaTeX CV contains the right raw material, but it mostly presents experience as roles, technologies, and responsibilities.
