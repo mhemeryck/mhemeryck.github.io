@@ -188,7 +188,11 @@ Selected projects and responsibilities:
 
 ## Interests
 
-TODO
+- Endurance training, especially running and indoor rowing, with a focus on long-term consistency.
+- Personal engineering projects around home automation, document handling, and self-hosted infrastructure.
+- Technical writing and learning, including systems design, cloud architecture, Nix/NixOS, and Go.
+- Science and physics, through books, podcasts, and general curiosity.
+- Music and culture, with a particular interest in electronic music.
 
 [^peppol]: PEPPOL is the European e-invoicing network.
 [^open-banking]: Open banking in this context builds on the [Payment Services Directive](https://en.wikipedia.org/wiki/Payment_Services_Directive).
