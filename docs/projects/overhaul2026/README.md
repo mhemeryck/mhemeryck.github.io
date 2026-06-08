@@ -7,6 +7,6 @@ The goal is to make the public profile accurately reflect senior engineering exp
 ## Documents
 
 - [brief.md](brief.md): long-term design brief for the website and resume system
-- [positioning.md](positioning.md): professional narrative and public positioning
+- [positioning.md](positioning.md): professional narrative, CV voice, and public positioning
 - [current-cv.md](current-cv.md): current LaTeX CV contents captured as source material
 - [plan.md](plan.md): phased implementation plan and near-term application scope
