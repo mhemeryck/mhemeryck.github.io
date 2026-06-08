@@ -13,7 +13,13 @@ subtitle = "Martijn Hemeryck"
 
 ## Profile
 
-TODO
+Engineer with an electrical engineering background, originally specialized in embedded software and digital signal processing.
+
+Over time I branched into broader backend, cloud, infrastructure, and full-stack engineering.
+I focus on product-facing platforms where technical design, operational reliability, and domain understanding all matter.
+
+I like to analyze systems, take them apart, design them, and build them up again.
+I am a developer and maker at heart, with a practical drive to solve problems end to end.
 
 ## Experience
 
