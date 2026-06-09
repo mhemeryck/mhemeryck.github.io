@@ -32,7 +32,7 @@ Focus on making existing seniority, ownership, and technical depth visible throu
 
 - [x] concise `about` page for the public profile
 - [x] complete web CV page used as the maintainable CV source
-- PDF CV generated from that source
+- [x] PDF CV generated from that source
 - [x] clear links to CV, LinkedIn, GitHub, and relevant writing
 - [x] minimal style improvements where they directly support readability and positioning
 
@@ -115,13 +115,19 @@ Success criteria:
 
 Goal: generate a sendable PDF CV from the same source as the web CV.
 
+Status: in progress.
+
+The PDF is generated at build time from `content/cv.md` using Pandoc and Typst.
+The generated PDF is written to `public/cv/martijn-hemeryck-cv.pdf` and included in the GitHub Pages deployment artifact.
+Run `just cv-pdf` to regenerate it locally after building the site output directory.
+
 Tasks:
 
-- [ ] choose the PDF generation approach
-- [ ] generate a PDF CV from the CV source
+- [x] choose the PDF generation approach
+- [x] generate a PDF CV from the CV source
 - [ ] verify the PDF layout is suitable for job applications
 - [ ] decide how the existing LaTeX CV should evolve or be retired
-- [ ] document the command for regenerating the PDF
+- [x] document the command for regenerating the PDF
 
 Success criteria:
 

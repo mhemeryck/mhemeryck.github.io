@@ -27,7 +27,15 @@
               go
               hugo
               just
+              liberation_ttf
+              nushell
+              pandoc
+              typst
             ];
+
+            shellHook = ''
+              export TYPST_FONT_PATHS=${pkgs.liberation_ttf}/share/fonts/truetype
+            '';
           };
         });
     };
