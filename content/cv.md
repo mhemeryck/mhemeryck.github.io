@@ -162,7 +162,7 @@ Selected projects and responsibilities:
 
 ### Thesis
 
-- M.Sc. thesis, with Hans Van Herck: ["Integrated Stereo Acoustic Echo Cancellation and Speech Coding for Tele-/videoconferencing Applications"](/cv/Hemeryck_Martijn_masterproef_2009-2010.pdf), KU Leuven, 2010.
+- M.Sc. thesis, with Hans Van Herck: ["Integrated Stereo Acoustic Echo Cancellation and Speech Coding for Tele-/videoconferencing Applications"](https://mhemeryck.github.io/cv/Hemeryck_Martijn_masterproef_2009-2010.pdf), KU Leuven, 2010.
 
 ### Publications
 
@@ -180,7 +180,7 @@ Selected projects and responsibilities:
 
 ## Selected Projects
 
-- [Personal home automation system](/tags/home-automation/): Designed, built, and maintain a whole-home automation setup integrating wired controls, UniPi hardware, Modbus, DALI, MQTT, Home Assistant, and custom Go/Python services.
+- Personal home automation system: Designed, built, and maintain a whole-home automation setup integrating wired controls, UniPi hardware, Modbus, DALI, MQTT, Home Assistant, and custom Go/Python services.
   - [nest](https://github.com/mhemeryck/nest): Go-based home automation codebase for consolidating personal automation services.
   - [modbridge](https://github.com/mhemeryck/modbridge): Go service for polling Modbus and Modbus TCP devices and publishing updates over MQTT.
   - [evok2mqtt](https://github.com/mhemeryck/evok2mqtt): Python bridge that listens to the UniPi EVOK API over websockets and publishes device events to MQTT.

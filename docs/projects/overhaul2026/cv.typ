@@ -5,20 +5,20 @@
 
 #set page(
   paper: "a4",
-  margin: (x: 17mm, y: 14mm),
+  margin: (x: 18mm, y: 15mm),
   numbering: "1",
 )
 
 #set text(
   font: "IBM Plex Sans",
-  size: 9.6pt,
+  size: 10pt,
   fill: body-color,
   lang: "en",
 )
 
 #set par(
-  leading: 0.56em,
-  spacing: 0.45em,
+  leading: 0.64em,
+  spacing: 0.55em,
 )
 
 #show link: it => {
@@ -27,12 +27,12 @@
 }
 
 #show list: it => {
-  set list(marker: "-", indent: 1.05em, body-indent: 0.4em)
+  set list(marker: "-", indent: 1.15em, body-indent: 0.45em)
   it
 }
 
 #show heading.where(level: 1): it => {
-  v(0.7em)
+  v(0.85em)
   text(
     font: "IBM Plex Mono",
     size: 14pt,
@@ -40,13 +40,13 @@
     fill: accent,
     tracking: 0.5pt,
   )[#it.body]
-  v(0.22em)
-  line(length: 100%, stroke: 0.6pt + accent-muted)
   v(0.28em)
+  line(length: 100%, stroke: 0.6pt + accent-muted)
+  v(0.36em)
 }
 
 #show heading.where(level: 2): it => {
-  v(0.55em)
+  v(0.7em)
   text(
     font: "IBM Plex Mono",
     size: 9.5pt,
@@ -54,16 +54,16 @@
     fill: accent,
     tracking: 0.35pt,
   )[#upper(it.body)]
-  v(0.16em)
+  v(0.22em)
 }
 
 #show heading.where(level: 3): it => {
-  v(0.35em)
+  v(0.45em)
   text(size: 10pt, weight: "bold")[#it.body]
 }
 
 #show heading.where(level: 4): it => {
-  v(0.28em)
+  v(0.36em)
   text(
     font: "IBM Plex Mono",
     size: 8.4pt,
