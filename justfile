@@ -25,6 +25,7 @@ cv-pdf:
         | pandoc - \
             --from markdown+footnotes \
             --pdf-engine typst \
+            --template docs/projects/overhaul2026/cv.typ \
             --metadata title=CV \
             --metadata 'author=Martijn Hemeryck' \
             --metadata lang=en \

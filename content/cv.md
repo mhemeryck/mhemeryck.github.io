@@ -9,7 +9,7 @@ subtitle = "Martijn Hemeryck"
 - GitHub: [mhemeryck](https://github.com/mhemeryck)
 - LinkedIn: [martijn-hemeryck](https://linkedin.com/in/martijn-hemeryck-67896245)
 - Stack Overflow: [martyn](https://stackoverflow.com/users/1393391/martyn)
-- Blog: [Martyn's musings](/posts/)
+- Blog: [Martyn's musings](https://mhemeryck.github.io/posts/)
 
 ## Profile
 
