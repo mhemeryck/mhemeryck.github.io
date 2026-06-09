@@ -168,8 +168,8 @@ Selected projects and responsibilities:
 
 - Dries Berckmans, Martijn Hemeryck, Daniel Berckmans, Erik Vranken, and Toon van Waterschoot: "Animal Sound...Talks! Real-time Sound Analysis for Health Monitoring in Livestock", Animal Environment and Welfare, 2015.
 - Ilaria Fontana, Emanuela Tullo, Martijn Hemeryck, and Marcella Guarino: "Using Broiler Sound Frequency to Model Weight", Animal Environment and Welfare, 2015.
-- Martijn Hemeryck, Dries Berckmans, Erik Vranken, Emanuela Tullo, Ilaria Fontana, Marcella Guarino, and Toon van Waterschoot: ["The Pig Cough Monitor in the EU-PLF project: results and multimodal data analysis"](http://www.eu-plf.eu/index.php/events/event/ec-plf-2015/), Precision Livestock Farming '15, 2015.
-- Martijn Hemeryck and Dries Berckmans: ["Pig cough monitoring in the EU-PLF project: first results"](http://old.eaap.org/Previous_Annual_Meetings/2014Copenhagen/Papers/Published/S11_04.pdf), Precision livestock farming applications, 2014.
+- Martijn Hemeryck, Dries Berckmans, Erik Vranken, Emanuela Tullo, Ilaria Fontana, Marcella Guarino, and Toon van Waterschoot: "The Pig Cough Monitor in the EU-PLF project: results and multimodal data analysis", Precision Livestock Farming '15, 2015.
+- Martijn Hemeryck and Dries Berckmans: "Pig cough monitoring in the EU-PLF project: first results", Precision livestock farming applications, 2014.
 - Marko Topalovic, Vasileios Exadaktylos, Anneleen Peeters, Johan Coolen, Walter Dewever, Martijn Hemeryck, Pieter Slagmolen, Karl Janssens, Daniel Berckmans, Marc Decramer, and Wim Janssens: ["Computer quantification of airway collapse on forced expiration to predict the presence of emphysema"](http://dx.doi.org/10.1186/1465-9921-14-131), Respiratory Research, 2013.
 
 ### Presentations And Posters

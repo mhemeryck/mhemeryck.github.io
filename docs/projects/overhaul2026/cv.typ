@@ -89,7 +89,7 @@
 
     #v(0.25em)
     #text(size: 9pt, fill: muted)[
-      Senior Software Engineer | backend | cloud | systems | product platforms
+      dev | maker | engineer
     ]
   ],
   [#image("static/about/avatar-160.png", width: 24mm)],
