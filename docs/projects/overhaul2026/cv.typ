@@ -17,8 +17,8 @@
 )
 
 #set par(
-  leading: 0.64em,
-  spacing: 0.55em,
+  leading: 0.68em,
+  spacing: 0.8em,
 )
 
 #show link: it => {
@@ -27,50 +27,48 @@
 }
 
 #show list: it => {
-  set list(marker: "-", indent: 1.15em, body-indent: 0.45em)
+  set list(marker: "-", indent: 1.15em, body-indent: 0.45em, spacing: 0.35em)
   it
 }
 
 #show heading.where(level: 1): it => {
-  v(0.85em)
-  text(
-    font: "IBM Plex Mono",
-    size: 14pt,
-    weight: "bold",
-    fill: accent,
-    tracking: 0.5pt,
-  )[#it.body]
-  v(0.28em)
-  line(length: 100%, stroke: 0.6pt + accent-muted)
-  v(0.36em)
+  block(above: 1.15em, below: 0.6em)[
+    #text(
+      font: "IBM Plex Mono",
+      size: 14pt,
+      weight: "bold",
+      fill: accent,
+      tracking: 0.5pt,
+    )[#it.body]
+    #v(0.35em)
+    #line(length: 100%, stroke: 0.6pt + accent-muted)
+  ]
 }
 
-#show heading.where(level: 2): it => {
-  v(0.7em)
-  text(
+#show heading.where(level: 2): it => block(above: 0.95em, below: 0.45em)[
+  #text(
     font: "IBM Plex Mono",
     size: 9.5pt,
     weight: "bold",
     fill: accent,
     tracking: 0.35pt,
   )[#upper(it.body)]
-  v(0.22em)
-}
+]
 
-#show heading.where(level: 3): it => {
-  v(0.45em)
-  text(size: 10pt, weight: "bold")[#it.body]
-}
+#show heading.where(level: 3): it => block(above: 0.9em, below: 0.7em)[
+  #text(size: 10pt, weight: "bold")[#it.body]
+]
 
-#show heading.where(level: 4): it => {
-  v(0.36em)
-  text(
+#show heading.where(level: 4): it => block(above: 0.9em, below: 0.45em)[
+  #line(length: 100%, stroke: 0.35pt + rgb("#e1e8eb"))
+  #v(0.28em)
+  #text(
     font: "IBM Plex Mono",
-    size: 8.4pt,
+    size: 8.8pt,
     weight: "bold",
     fill: muted,
   )[#it.body]
-}
+]
 
 #show strong: it => text(weight: "bold")[#it.body]
 
