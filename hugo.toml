@@ -1,4 +1,4 @@
-baseURL = "https://blog.mhemeryck.xyz/"
+baseURL = "https://mhemeryck.xyz/"
 locale = "en-us"
 title = "Martijn's musings"
 theme = "github.com/halogenica/beautifulhugo"
