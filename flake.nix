@@ -26,8 +26,17 @@
               dprint
               go
               hugo
+              ibm-plex
               just
+              liberation_ttf
+              nushell
+              pandoc
+              typst
             ];
+
+            shellHook = ''
+              export TYPST_FONT_PATHS=${pkgs.ibm-plex}/share/fonts:${pkgs.liberation_ttf}/share/fonts/truetype
+            '';
           };
         });
     };

@@ -38,7 +38,7 @@ The writing is mostly practical: documenting decisions, implementation details, 
 
 ## Links
 
-- Full CV: [Martijn Hemeryck CV](/cv/)
+- Full CV: [web](/cv/) and [PDF](/cv/martijn-hemeryck-cv.pdf)
 - GitHub: [mhemeryck](https://github.com/mhemeryck)
 - LinkedIn: [martijn-hemeryck](https://linkedin.com/in/martijn-hemeryck-67896245)
 - Blog: [Martyn's musings](/posts/)

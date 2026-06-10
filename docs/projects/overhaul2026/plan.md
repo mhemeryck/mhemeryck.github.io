@@ -14,7 +14,7 @@ The work is intentionally focused on getting a usable CV ready for job applicati
 
 - [x] [Phase 0: repository and tooling cleanup](plan#Phase 0: Repository And Tooling Cleanup)
 - [x] [Phase 1: about page and web CV](plan#Phase 1: About Page And Web CV)
-- [ ] [Phase 2: PDF CV](plan#Phase 2: PDF CV)
+- [x] [Phase 2: PDF CV](plan#Phase 2: PDF CV)
 - [ ] [Phase 3: application polish](plan#Phase 3: Application Polish)
 - [ ] [Phase 4: optional site overhaul](plan#Phase 4: Optional Site Overhaul)
 
@@ -32,7 +32,7 @@ Focus on making existing seniority, ownership, and technical depth visible throu
 
 - [x] concise `about` page for the public profile
 - [x] complete web CV page used as the maintainable CV source
-- PDF CV generated from that source
+- [x] PDF CV generated from that source
 - [x] clear links to CV, LinkedIn, GitHub, and relevant writing
 - [x] minimal style improvements where they directly support readability and positioning
 
@@ -115,13 +115,20 @@ Success criteria:
 
 Goal: generate a sendable PDF CV from the same source as the web CV.
 
+Status: complete.
+
+The PDF is generated at build time from `content/cv.md` using Pandoc and Typst.
+The generated PDF is written to `public/cv/martijn-hemeryck-cv.pdf` and included in the GitHub Pages deployment artifact.
+Run `just cv-pdf` to regenerate it locally after building the site output directory.
+This generated PDF flow supersedes maintaining a separate LaTeX CV for the site.
+
 Tasks:
 
-- [ ] choose the PDF generation approach
-- [ ] generate a PDF CV from the CV source
-- [ ] verify the PDF layout is suitable for job applications
-- [ ] decide how the existing LaTeX CV should evolve or be retired
-- [ ] document the command for regenerating the PDF
+- [x] choose the PDF generation approach
+- [x] generate a PDF CV from the CV source
+- [x] verify the PDF layout is suitable for job applications
+- [x] decide how the existing LaTeX CV should evolve or be retired
+- [x] document the command for regenerating the PDF
 
 Success criteria:
 
