@@ -388,6 +388,7 @@ Codabox
 Codabox's
 codebase
 Coolen
+DAgafschrift
 COPD
 Decramer
 deployable
@@ -398,6 +399,7 @@ Exadaktylos
 FastAPI
 Fontana
 GitLab
+geCOdeerd
 Guarino
 hausmaus
 Hemeryck
@@ -438,6 +440,7 @@ serverless
 SFTP
 Slagmolen
 SoundTalks
+sourcery
 Stievie
 stievie
 Tele

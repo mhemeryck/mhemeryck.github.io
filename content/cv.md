@@ -237,5 +237,5 @@ Selected projects and responsibilities:
 
 [^peppol]: [PEPPOL](https://peppol.org/) is the European e-invoicing network.
 [^open-banking]: Open banking in this context builds on the [Payment Services Directive](https://en.wikipedia.org/wiki/Payment_Services_Directive).
-[^coda]: [CODA](https://febelfin.be/en/themes/digitalization-innovation/regulations/a-coda-file-what-is-it-and-what-can-you-use-it-for), or geCOdeerd DAgafschrift, is a coded bank statement file type used in Belgium.
+[^coda]: [CODA](https://febelfin.be/en/themes/digitalization-innovation/regulations/a-coda-file-what-is-it-and-what-can-you-use-it-for), or "geCOdeerd DAgafschrift", is a coded bank statement file type used in Belgium.
 [^stievie]: Stievie was a Belgian online streaming platform and predecessor to [VTM GO](https://www.vtmgo.be/).
