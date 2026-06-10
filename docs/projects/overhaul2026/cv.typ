@@ -5,7 +5,7 @@
 
 #set page(
   paper: "a4",
-  margin: (x: 18mm, y: 15mm),
+  margin: (x: 17mm, y: 14mm),
   numbering: "1",
 )
 
@@ -18,7 +18,7 @@
 
 #set par(
   leading: 0.68em,
-  spacing: 0.8em,
+  spacing: 0.72em,
 )
 
 #show link: it => {
