@@ -16,7 +16,7 @@ The work is intentionally focused on getting a usable CV ready for job applicati
 - [x] [Phase 1: about page and web CV](plan#Phase 1: About Page And Web CV)
 - [x] [Phase 2: PDF CV](plan#Phase 2: PDF CV)
 - [ ] [Phase 3: application polish](plan#Phase 3: Application Polish)
-- [ ] [Phase 4: optional site overhaul](plan#Phase 4: Optional Site Overhaul)
+- [ ] [Phase 4: re-terminal site rebrand](plan#Phase 4: Re-Terminal Site Rebrand)
 
 ## Near-Term Scope
 
@@ -154,12 +154,20 @@ Success criteria:
 - the CV communicates systems thinking, ownership, and delivery
 - the application materials are ready to share
 
-## Phase 4: Optional Site Overhaul
+## Phase 4: Re-Terminal Site Rebrand
 
-Goal: improve the surrounding site only if the current setup becomes limiting.
+Goal: rebrand the surrounding site with the re-terminal Hugo theme while preserving the CV and writing work already completed.
+
+The site should keep the existing Hugo setup and URLs unless there is a concrete reason to change them.
+The initial migration should stay small and focus on theme adoption, navigation, readability, and build stability.
 
 Tasks:
 
+- [x] migrate the Hugo theme from Beautiful Hugo to re-terminal
+- [x] configure the site title, subtitle, logo text, menu, and theme color for the new brand
+- [x] preserve existing URLs for about, CV, posts, and the generated PDF CV
+- [x] verify the web CV and blog posts render with the new theme
+- [x] verify the production build and PDF generation still work
 - [ ] add project pages or case studies only if they support applications
 - [ ] decide whether to stay on Hugo or migrate to Zola only if there is a concrete reason
 - [ ] replace the current theme-driven style with custom templates and CSS only if needed
