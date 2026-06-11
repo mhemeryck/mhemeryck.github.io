@@ -5,7 +5,6 @@ pagination.pagerSize = 10
 
 [params]
 contentTypeName = "posts"
-favicon = "favicon.ico"
 themeColor = "orange"
 showMenuItems = 5
 showLanguageSelector = false
