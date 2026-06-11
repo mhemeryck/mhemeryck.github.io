@@ -230,7 +230,7 @@ Selected projects and responsibilities:
 
 ## Links
 
-- Location: [Tongeren-Borgloon, Belgium](geo:50.7865,5.4174)
+- Location: Flanders, Belgium
 - GitHub: [mhemeryck](https://github.com/mhemeryck)
 - LinkedIn: [martijn-hemeryck](https://linkedin.com/in/martijn-hemeryck-67896245)
 - Blog: [Martyn's musings](https://mhemeryck.github.io/posts/)

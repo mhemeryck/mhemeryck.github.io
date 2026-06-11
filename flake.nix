@@ -32,10 +32,11 @@
               nushell
               pandoc
               typst
+              nerd-fonts.fira-code
             ];
 
             shellHook = ''
-              export TYPST_FONT_PATHS=${pkgs.ibm-plex}/share/fonts:${pkgs.liberation_ttf}/share/fonts/truetype
+              export TYPST_FONT_PATHS=${pkgs.nerd-fonts.fira-code}/share/fonts:${pkgs.ibm-plex}/share/fonts:${pkgs.liberation_ttf}/share/fonts/truetype
             '';
           };
         });

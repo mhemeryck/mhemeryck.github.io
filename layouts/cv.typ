@@ -1,7 +1,7 @@
-#let accent = rgb("#1f5f75")
-#let accent-muted = rgb("#bfd2d9")
-#let body-color = rgb("#202020")
-#let muted = rgb("#555555")
+#let accent = rgb("#ffa86a")
+#let accent-muted = rgb("#ffd7bd")
+#let body-color = rgb("#222129")
+#let muted = rgb("#5f5c65")
 
 #set page(
   paper: "a4",
@@ -34,7 +34,7 @@
 #show heading.where(level: 1): it => {
   block(above: 1.15em, below: 0.6em)[
     #text(
-      font: "IBM Plex Mono",
+      font: "FiraCode Nerd Font",
       size: 14pt,
       weight: "bold",
       fill: accent,
@@ -47,7 +47,7 @@
 
 #show heading.where(level: 2): it => block(above: 0.95em, below: 0.45em)[
   #text(
-    font: "IBM Plex Mono",
+    font: "FiraCode Nerd Font",
     size: 9.5pt,
     weight: "bold",
     fill: accent,
@@ -60,10 +60,10 @@
 ]
 
 #show heading.where(level: 4): it => block(above: 0.9em, below: 0.45em)[
-  #line(length: 100%, stroke: 0.35pt + rgb("#e1e8eb"))
+  #line(length: 100%, stroke: 0.35pt + rgb("#f0e2d8"))
   #v(0.28em)
   #text(
-    font: "IBM Plex Mono",
+    font: "FiraCode Nerd Font",
     size: 8.8pt,
     weight: "bold",
     fill: muted,
@@ -78,7 +78,7 @@
   align: (left, center),
   [
     #text(
-      font: "IBM Plex Mono",
+      font: "FiraCode Nerd Font",
       size: 18pt,
       weight: "bold",
       fill: accent,
