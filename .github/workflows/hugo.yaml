@@ -47,8 +47,7 @@ jobs:
           HUGO_ENV: production
         run: |
           nix develop --command hugo \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --minify
       - name: Build CV PDF
         run: nix develop --command just cv-pdf
       - name: Upload artifact
