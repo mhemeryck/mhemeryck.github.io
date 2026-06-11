@@ -1,3 +1,4 @@
+.hugo_build.lock
 .wordlist.dic
 public/
 resources/_gen/
