@@ -10,8 +10,8 @@
 )
 
 #set text(
-  font: "FiraCode Nerd Font",
-  size: 9.4pt,
+  font: "IBM Plex Sans",
+  size: 10pt,
   fill: body-color,
   lang: "en",
 )
