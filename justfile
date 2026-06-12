@@ -12,6 +12,7 @@ build:
 
 check:
     dprint check
+    pyspelling
     hugo --minify
     just cv-pdf
 
